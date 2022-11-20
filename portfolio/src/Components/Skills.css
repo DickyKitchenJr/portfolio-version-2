@@ -1,0 +1,138 @@
+.skills{
+    color: white;
+}
+
+/* Hard Skills section */
+.hardskills{
+    backdrop-filter: blur(3px);
+    display: inline-block;
+}
+
+@media only screen and (min-width: 601px) {
+    /* for desktop/tablet */
+    .hardskills{
+        background-color: black;
+        width: 50vw;
+        backdrop-filter: none;
+    }
+}
+
+.skillsh2{
+    text-align: center;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.skillsblock{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto;
+}
+
+.wordpress{
+    grid-column-start: 2;
+}
+
+.skillIcon{
+    text-align: center;
+    padding: 1rem;
+}
+
+.icon{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 250%;
+}
+
+@media only screen and (min-width: 601px) {
+    /* for desktop/tablet */
+    .icon{
+    font-size: 210%;
+    }
+}
+
+.htmlIcon{
+    color: hsl(30, 100%, 50%);
+}
+
+.cssIcon{
+    color: hsl(210, 100%, 50%);
+}
+
+.javascriptIcon{
+    color: hsl(60, 100%, 50%);
+}
+
+.reactIcon{
+    color: hsl(195, 91%, 69%);
+}
+
+.githubIcon{
+    color: hsl(0, 0%, 100%);
+}
+
+.vscodeIcon{
+    max-width: 40%;
+    margin-bottom: -.3rem;
+}
+
+@media only screen and (min-width: 768px) {
+    /* for tablet */
+    .vscodeIcon{
+        max-width: 33%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    /* for laptop */
+    .vscodeIcon{
+        max-width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* for desktop */
+    .vscodeIcon{
+        max-width: 20%;
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    /* for 4k and large screens */
+    .vscodeIcon{
+        max-width: 15%;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    /* for Galaxy Fold phone */
+    .vscodeIcon{
+        max-width: 60%;
+    }
+}
+
+.wordpressIcon{
+    color: hsl(195, 48%, 54%);
+}
+
+.iconCaption{
+    color: white;
+}
+
+/* Soft Skills section */
+
+.softskills p{
+    text-align: center;
+    padding: .1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 601px) {
+    /* for desktop/tablet */
+    .softskills{
+        display: inline-block;
+        width: 48vw;
+        float: right;
+        backdrop-filter: none;
+    }
+}

@@ -34,7 +34,7 @@ function Skills() {
         contentClassName="skills"
         strength={600}
       >
-        <div className="hardskills">
+        <div className="hardskills" style={{visibility: "hidden"}}>
           <h2 className="skillsh2">Hard Skills</h2>
           <div className="skillsblock">
             <figure className="skillIcon html">

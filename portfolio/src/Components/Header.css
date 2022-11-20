@@ -1,4 +1,33 @@
-h1{
-    font-family: Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: "Karla";
+    src: url(../Fonts/Karla-VariableFont_wght.woff);
+}
+
+@font-face {
+    font-family: "Karla Italic";
+    src: url(../Fonts/Karla-Italic-VariableFont_wght.woff);
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    src: url(../Fonts/Inconsolata-VariableFont_wdth\,wght.woff);
+}
+
+.hero{
+    padding: 1rem;
+    background-color: hsl(144, 40%, 18%);
+    color: hsl(354, 91%, 52%);
+    border-bottom: 3px solid hsl(230, 36%, 84%);
+}
+
+h1.banner{
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
     text-align: center;
+    font-size: 4rem;
+}
+
+p.banner{
+    font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import "./Skills.css";
-// import code from '../Images/codeBackground.jpg'
 import keyboard from "../Images/keyboard.jpg";
 import VSCode from "../Images/VSCode.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

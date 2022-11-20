@@ -68,16 +68,16 @@ function Skills() {
           </div>
         </div>
         <div className="softskills">
-            <h2 className="skillsh2">Soft Skills</h2>
-            <p>Verbal Communication</p>
-            <p>Written Communication</p>
-            <p>Team-oriented</p>
-            <p>Problem-solving</p>
-            <p>Creativity</p>
-            <p>Adaptability</p>
-            <p>Teachable</p>
-            <p>Open-minded</p>
-            <p>Able to receive and apply constructive criticism</p>
+          <h2 className="skillsh2">Soft Skills</h2>
+          <p>Verbal Communication</p>
+          <p>Written Communication</p>
+          <p>Team-oriented</p>
+          <p>Problem-solving</p>
+          <p>Creativity</p>
+          <p>Adaptability</p>
+          <p>Teachable</p>
+          <p>Open-minded</p>
+          <p>Able to receive and apply constructive criticism</p>
         </div>
       </Parallax>
     </>

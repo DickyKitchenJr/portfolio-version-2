@@ -25,8 +25,8 @@ function Skills() {
     <>
       <div className="skillsTitle">
         <h2>Skills</h2>
-        <button>Hard Skills</button>
-        <button>Soft Skills</button>
+        <button className="hardbutton">Hard Skills</button>
+        <button className="softbutton">Soft Skills</button>
       </div>
       <div className="skills">
         <div className="hardskills">

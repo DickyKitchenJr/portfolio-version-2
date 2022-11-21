@@ -23,6 +23,12 @@
   padding-bottom: 1rem;
 }
 
+.hardbutton{
+  padding: 1rem;
+  background-image: linear-gradient(hsl(150, 1%, 50%), hsl(210, 25%, 97%) 50%, hsl(150, 1%, 50%));
+;
+}
+
 .skills {
   display: flex;
   justify-content: space-between;

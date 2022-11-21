@@ -23,17 +23,48 @@
   padding-bottom: 1rem;
 }
 
+.skillsTitle h2{
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+}
+
 .hardbutton{
   margin-right: 0.5rem ;
   padding: 1rem;
   background-image: linear-gradient(hsl(150, 1%, 50%), hsl(210, 25%, 97%) 50%, hsl(150, 1%, 50%));
+  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
 ;
+}
+
+.hardbutton:hover{
+  background-image: linear-gradient(hsl(210, 25%, 97%), hsl(150, 1%, 50%), hsl(210, 25%, 97%));
+}
+
+.hardbutton:active{
+  background-image: none;
+  font-weight: bold;
+  color: hsl(0, 100%, 54%);
+  background-image: linear-gradient(hsl(150, 1%, 50%), hsl(0, 0%, 29%), hsl(150, 1%, 50%));
 }
 
 .softbutton{
   margin-left: 0.5rem;
   padding: 1rem;
   background-image: linear-gradient(hsl(0, 0%, 100%), hsl(240, 100%, 88%), hsl(0, 0%, 100%));
+  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+
+.softbutton:hover{
+  background-image: linear-gradient(hsl(240, 100%, 88%), hsl(0, 0%, 100%), hsl(240, 100%, 88%));
+}
+
+.softbutton:active{
+  background-image: none;
+  font-weight: bold;
+  color: hsl(180, 100%, 65%);
+  background-image: linear-gradient(hsl(0, 3%, 78%), hsl(240, 87%, 80%), hsl(0, 3%, 78%));
 }
 
 .skills {

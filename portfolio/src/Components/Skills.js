@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Skills.css";
 import VSCode from "../Images/VSCode.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,15 +21,44 @@ const WordPress = (
 );
 
 function Skills() {
+  const [hardSkillsHidden, setHardSkillsHidden] = useState(0)
+  const [softSkillsHidden, setSoftSkillsHidden] = useState(1)
+
+  const hardHide = () => {
+    setHardSkillsHidden(1)
+    setSoftSkillsHidden(0)
+  }
+
+  const softHide = () => {
+    setSoftSkillsHidden(1)
+    setHardSkillsHidden(0)
+  }
+
+  const hardHandleClick = () =>{
+    if(hardSkillsHidden === 1){
+      softHide();
+    }
+  }
+
+  const softHandleClick = () =>{
+    if(softSkillsHidden === 1){
+      hardHide();
+    }
+  }
+
   return (
     <>
       <div className="skillsTitle">
         <h2>Skills</h2>
-        <button className="hardbutton">Hard Skills</button>
-        <button className="softbutton">Soft Skills</button>
+        <button className="hardbutton" onClick={() => hardHandleClick()}>
+          Hard Skills
+        </button>
+        <button className="softbutton" onClick={() => softHandleClick()}>
+          Soft Skills
+        </button>
       </div>
       <div className="skills">
-        <div className="hardskills">
+        <div className="hardskills" visibility={hardSkillsHidden}>
           <h2 className="skillsh2">Hard Skills</h2>
           <div className="skillsblock">
             <figure className="skillIcon html">
@@ -62,7 +91,7 @@ function Skills() {
             </figure>
           </div>
         </div>
-        <div className="softskills">
+        <div className="softskills" visibility={softSkillsHidden}>
           <h2 className="skillsh2">Soft Skills</h2>
           <p>Verbal Communication</p>
           <p>Written Communication</p>

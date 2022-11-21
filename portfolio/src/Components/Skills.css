@@ -82,6 +82,10 @@
   color: hsl(230, 36%, 84%);
 }
 
+.hardskills[visibility="1"]{
+  visibility: hidden;
+}
+
 @media only screen and (min-width: 601px) {
   /* for desktop/tablet */
   .hardskills {
@@ -213,4 +217,8 @@
     width: 50vw;
     backdrop-filter: none;
   }
+}
+
+.softskills[visibility = "1"]{
+  visibility: hidden;
 }

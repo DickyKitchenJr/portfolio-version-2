@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Inconsolata";
-  src: url(../Fonts/Inconsolata-VariableFont_wdth\,wght.woff);
+  src: url(../Fonts/InconsolataVariable.ttf);
 }
 
 .skillsTitle {
@@ -23,55 +23,83 @@
   padding-bottom: 1rem;
 }
 
-.skillsTitle h2{
+.skillsTitle h2 {
   font-size: 1.75rem;
   padding-bottom: 1rem;
 }
 
-.hardbutton{
-  margin-right: 0.5rem ;
+.hardbutton {
+  margin-right: 0.5rem;
   padding: 1rem;
-  background-image: linear-gradient(hsl(150, 1%, 50%), hsl(210, 25%, 97%) 50%, hsl(150, 1%, 50%));
+  background-image: linear-gradient(
+    hsl(150, 1%, 50%),
+    hsl(210, 25%, 97%) 50%,
+    hsl(150, 1%, 50%)
+  );
   font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
-;
 }
 
-.hardbutton:hover{
-  background-image: linear-gradient(hsl(210, 25%, 97%), hsl(150, 1%, 50%), hsl(210, 25%, 97%));
+.hardbutton:hover {
+  background-image: linear-gradient(
+    hsl(210, 25%, 97%),
+    hsl(150, 1%, 50%),
+    hsl(210, 25%, 97%)
+  );
 }
 
-.hardbutton:active{
+.hardbutton:active {
   background-image: none;
   font-weight: bold;
   color: hsl(0, 100%, 54%);
-  background-image: linear-gradient(hsl(150, 1%, 50%), hsl(0, 0%, 29%), hsl(150, 1%, 50%));
+  background-image: linear-gradient(
+    hsl(150, 1%, 50%),
+    hsl(0, 0%, 29%),
+    hsl(150, 1%, 50%)
+  );
 }
 
-.softbutton{
+.softbutton {
   margin-left: 0.5rem;
   padding: 1rem;
-  background-image: linear-gradient(hsl(0, 0%, 100%), hsl(240, 100%, 88%), hsl(0, 0%, 100%));
+  background-image: linear-gradient(
+    hsl(0, 0%, 100%),
+    hsl(240, 100%, 88%),
+    hsl(0, 0%, 100%)
+  );
   font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
 }
 
-.softbutton:hover{
-  background-image: linear-gradient(hsl(240, 100%, 88%), hsl(0, 0%, 100%), hsl(240, 100%, 88%));
+.softbutton:hover {
+  background-image: linear-gradient(
+    hsl(240, 100%, 88%),
+    hsl(0, 0%, 100%),
+    hsl(240, 100%, 88%)
+  );
 }
 
-.softbutton:active{
+.softbutton:active {
   background-image: none;
   font-weight: bold;
   color: hsl(180, 100%, 65%);
-  background-image: linear-gradient(hsl(0, 3%, 78%), hsl(240, 87%, 80%), hsl(0, 3%, 78%));
+  background-image: linear-gradient(
+    hsl(0, 3%, 78%),
+    hsl(240, 87%, 80%),
+    hsl(0, 3%, 78%)
+  );
 }
 
 .skills {
-  display: flex;
-  justify-content: space-between;
   background-image: url("../Images/skills.jpg");
   background-size: cover;
+}
+
+@media only screen and (min-width: 601px) {
+  .skills {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /* Hard Skills section */
@@ -80,10 +108,11 @@
   backdrop-filter: blur(3px);
   display: inline-block;
   color: hsl(230, 36%, 84%);
+  width: 100vw;
 }
 
-.hardskills[visibility="1"]{
-  visibility: hidden;
+.hardskills[visibility="1"] {
+  display: none;
 }
 
 @media only screen and (min-width: 601px) {
@@ -91,6 +120,11 @@
   .hardskills {
     width: 50vw;
     backdrop-filter: none;
+  }
+
+  .hardskills[visibility="1"] {
+    visibility: hidden;
+    display: inline-block;
   }
 }
 
@@ -201,14 +235,20 @@
 
 .softskills p {
   text-align: center;
-  padding: 0.1rem;
+  padding: 0.2rem;
   font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
+  font-weight: bold;
 }
 
 .softskills {
   background-color: hsla(230, 36%, 84%, 0.8);
   color: hsl(220, 5%, 11%);
+  width: 100vw;
+}
+
+.softskills[visibility="1"]{
+  display: none;
 }
 
 @media only screen and (min-width: 601px) {
@@ -217,8 +257,9 @@
     width: 50vw;
     backdrop-filter: none;
   }
-}
 
-.softskills[visibility = "1"]{
-  visibility: hidden;
+  .softskills[visibility="1"] {
+    visibility: hidden;
+    display: inline-block;
+  }
 }

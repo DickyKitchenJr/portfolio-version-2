@@ -16,6 +16,8 @@
 .hero{
     padding-top: 6rem;
     padding-bottom: 6rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     color: hsl(354, 91%, 52%);
     border-bottom: 3px solid whitesmoke;
     background-image: url('../Images/me.jpeg');
@@ -37,6 +39,8 @@ h1.banner{
     text-align: center;
     font-size: 4rem;
     border-bottom: 3px solid whitesmoke;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 p.banner{

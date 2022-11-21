@@ -24,9 +24,16 @@
 }
 
 .hardbutton{
+  margin-right: 0.5rem ;
   padding: 1rem;
   background-image: linear-gradient(hsl(150, 1%, 50%), hsl(210, 25%, 97%) 50%, hsl(150, 1%, 50%));
 ;
+}
+
+.softbutton{
+  margin-left: 0.5rem;
+  padding: 1rem;
+  background-image: linear-gradient(hsl(0, 0%, 100%), hsl(240, 100%, 88%), hsl(0, 0%, 100%));
 }
 
 .skills {

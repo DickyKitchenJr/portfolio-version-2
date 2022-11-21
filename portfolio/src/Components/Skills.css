@@ -119,7 +119,6 @@
   /* for desktop/tablet */
   .hardskills {
     width: 50vw;
-    backdrop-filter: none;
   }
 
   .hardskills[visibility="1"] {
@@ -245,6 +244,7 @@
   background-color: hsla(230, 36%, 84%, 0.8);
   color: hsl(220, 5%, 11%);
   width: 100vw;
+  backdrop-filter: blur(2px);
 }
 
 .softskills[visibility="1"]{
@@ -255,7 +255,6 @@
   /* for desktop/tablet */
   .softskills {
     width: 50vw;
-    backdrop-filter: none;
   }
 
   .softskills[visibility="1"] {

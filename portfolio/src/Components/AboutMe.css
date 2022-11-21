@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Karla";
+  src: url(../Fonts/Karla-VariableFont_wght.woff);
+}
+
+@font-face {
+  font-family: "Karla Italic";
+  src: url(../Fonts/Karla-Italic-VariableFont_wght.woff);
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url(../Fonts/InconsolataVariable.ttf);
+}
+
+.aboutMeTitle {
+  font-family: "Karla", Arial, Helvetica, sans-serif;
+  color: hsl(354, 91%, 52%);
+  background-color: hsla(220, 5%, 11%, 0.5);
+  text-align: center;
+  border-bottom: 3px solid whitesmoke;
+  border-top: 3px solid whitesmoke;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.aboutMeTitle h2 {
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+}

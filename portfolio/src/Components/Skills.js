@@ -1,10 +1,7 @@
 import React from "react";
-import { Parallax } from "react-parallax";
 import "./Skills.css";
-import keyboard from "../Images/keyboard.jpg";
 import VSCode from "../Images/VSCode.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
 import { faSquareJs } from "@fortawesome/free-brands-svg-icons";
@@ -26,14 +23,13 @@ const WordPress = (
 function Skills() {
   return (
     <>
-      <Parallax
-        blur={0}
-        bgImage={keyboard}
-        bgImageAlt="various lines of code"
-        contentClassName="skills"
-        strength={600}
-      >
-        <div className="hardskills" style={{visibility: "hidden"}}>
+      <div className="skillsTitle">
+        <h2>Skills</h2>
+        <button>Hard Skills</button>
+        <button>Soft Skills</button>
+      </div>
+      <div className="skills">
+        <div className="hardskills">
           <h2 className="skillsh2">Hard Skills</h2>
           <div className="skillsblock">
             <figure className="skillIcon html">
@@ -78,7 +74,7 @@ function Skills() {
           <p>Open-minded</p>
           <p>Able to receive and apply constructive criticism</p>
         </div>
-      </Parallax>
+      </div>
     </>
   );
 }

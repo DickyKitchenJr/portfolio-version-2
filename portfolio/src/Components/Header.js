@@ -1,22 +1,32 @@
-import React from "react";
-import { Parallax } from "react-parallax";
-import me from "../Images/me.jpeg";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 
 function Header() {
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  const detectWindowSize = () => {
+    setWindowSize({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", detectWindowSize);
+    return () => {
+      window.removeEventListener("resize", detectWindowSize);
+    };
+  }, [windowSize]);
+
   return (
     <>
-    <Parallax
-        blur={0}
-        bgImage={me}
-        bgImageAlt="DK at his desk"
-        contentClassName="herobanner"
-        strength={600}
-      ><div className="hero">
-        <h1 className="banner">DK's Portfolio</h1>
-        <p className="banner">Coding Makes Me Happy</p>
-      </div></Parallax>
-      
+      <h1 className="banner">DK's Portfolio</h1>
+        <div className="hero">
+          <p className="banner">Coding Makes Me Happy</p>
+        </div>
     </>
   );
 }

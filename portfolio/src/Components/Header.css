@@ -14,20 +14,41 @@
 }
 
 .hero{
-    padding: 1rem;
-    background-color: hsl(144, 40%, 18%);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     color: hsl(354, 91%, 52%);
-    border-bottom: 3px solid hsl(230, 36%, 84%);
+    border-bottom: 3px solid whitesmoke;
+    background-image: url('../Images/me.jpeg');
+    background-size: 140%;
+    background-position-x: 60%;
+}
+
+@media only screen and (min-width: 601px) {
+    .hero{
+        background-size: 100% 250%;
+        background-position-y: 10%;
+    }
 }
 
 h1.banner{
     font-family: 'Karla', Arial, Helvetica, sans-serif;
+    color: hsl(354, 91%, 52%);
+    background-color: hsla(220, 5%, 11%, .5);
     text-align: center;
     font-size: 4rem;
+    border-bottom: 3px solid whitesmoke;
 }
 
 p.banner{
     font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-size: 1.5rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsla(220, 5%, 11%, .8);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }

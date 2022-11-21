@@ -1,25 +1,38 @@
 @font-face {
-    font-family: "Karla";
-    src: url(../Fonts/Karla-VariableFont_wght.woff);
+  font-family: "Karla";
+  src: url(../Fonts/Karla-VariableFont_wght.woff);
 }
 
 @font-face {
-    font-family: "Karla Italic";
-    src: url(../Fonts/Karla-Italic-VariableFont_wght.woff);
+  font-family: "Karla Italic";
+  src: url(../Fonts/Karla-Italic-VariableFont_wght.woff);
 }
 
 @font-face {
-    font-family: "Inconsolata";
-    src: url(../Fonts/Inconsolata-VariableFont_wdth\,wght.woff);
+  font-family: "Inconsolata";
+  src: url(../Fonts/Inconsolata-VariableFont_wdth\,wght.woff);
+}
+
+.skillsTitle {
+  font-family: "Karla", Arial, Helvetica, sans-serif;
+  color: hsl(354, 91%, 52%);
+  background-color: hsla(220, 5%, 11%, 0.5);
+  text-align: center;
+  border-bottom: 3px solid whitesmoke;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .skills {
   display: flex;
   justify-content: space-between;
+  background-image: url("../Images/skills.jpg");
+  background-size: cover;
 }
 
 /* Hard Skills section */
 .hardskills {
+  background-color: hsla(220, 5%, 11%, 0.8);
   backdrop-filter: blur(3px);
   display: inline-block;
   color: hsl(230, 36%, 84%);
@@ -28,7 +41,6 @@
 @media only screen and (min-width: 601px) {
   /* for desktop/tablet */
   .hardskills {
-    background-color: hsla(220, 5%, 11%, .8);
     width: 50vw;
     backdrop-filter: none;
   }
@@ -37,7 +49,7 @@
 .skillsh2 {
   text-align: center;
   padding: 1rem;
-  font-family: 'Karla', Arial, Helvetica, sans-serif;
+  font-family: "Karla", Arial, Helvetica, sans-serif;
 }
 
 .skillsblock {
@@ -133,7 +145,8 @@
 }
 
 .iconCaption {
-  font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
 }
 
 /* Soft Skills section */
@@ -141,14 +154,18 @@
 .softskills p {
   text-align: center;
   padding: 0.1rem;
-  font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+
+.softskills {
+  background-color: hsla(230, 36%, 84%, 0.8);
+  color: hsl(220, 5%, 11%);
 }
 
 @media only screen and (min-width: 601px) {
   /* for desktop/tablet */
   .softskills {
-    background-color: hsla(230, 36%, 84%, .8);
-    color: hsl(220, 5%, 11%);
     width: 50vw;
     backdrop-filter: none;
   }

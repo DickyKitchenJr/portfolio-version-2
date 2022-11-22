@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./AboutMe.css";
-import meTall from "../Images/meTallBW.webp";
+import meTall from "../Images/meCenteredBW.webp";
 import meWide from "../Images/meWideBW.webp";
 
 function AboutMe() {
@@ -27,7 +27,7 @@ function AboutMe() {
 
   useEffect(() => {
     const backgroundImage = () => {
-      if (windowSize.width <= 1040) {
+      if (windowSize.width <= 1020) {
         setPicture(meTall);
       } else {
         setPicture(meWide);

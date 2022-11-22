@@ -21,12 +21,28 @@
 
 .aboutMeTitle h2 {
   font-size: 1.75rem;
-  padding-bottom: 1rem;
 }
 
 .aboutMe{
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   padding: 2rem;
+}
+
+@media only screen and (min-width: 980px) {
+  /* desktops and laptops */
+  .aboutMe{
+    background-size: cover;
+    background-position: top;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  /* large screen desktops */
+  .aboutMe{
+    background-size: contain;
+    background-position: none;
+  }
 }
 
 .aboutMeContent{

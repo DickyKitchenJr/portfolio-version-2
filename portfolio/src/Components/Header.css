@@ -1,16 +1,11 @@
 @font-face {
-    font-family: "Karla";
-    src: url(../Fonts/Karla-VariableFont_wght.woff);
-}
-
-@font-face {
-    font-family: "Karla Italic";
-    src: url(../Fonts/Karla-Italic-VariableFont_wght.woff);
-}
-
-@font-face {
     font-family: "Inconsolata";
     src: url(../Fonts/InconsolataVariable.ttf);
+}
+
+@font-face {
+    font-family: 'Secular';
+    src: url(../Fonts/SecularOne.ttf);
 }
 
 .hero{
@@ -20,22 +15,22 @@
     padding-right: 1.5rem;
     color: hsl(354, 91%, 52%);
     border-bottom: 3px solid whitesmoke;
-    background-image: url('../Images/me.jpeg');
-    background-size: 140%;
-    background-position-x: 60%;
+    background-image: url('../Images/smileEggBW.webp');
+    background-size: 160%;
+    background-position: center;
 }
 
 @media only screen and (min-width: 601px) {
     .hero{
-        background-size: 100% 250%;
-        background-position-y: 10%;
+        background-size: cover;
+        background-position: center;
     }
 }
 
 h1.banner{
-    font-family: 'Karla', Arial, Helvetica, sans-serif;
+    font-family: 'Secular', Arial, Helvetica, sans-serif;
     color: hsl(354, 91%, 52%);
-    background-color: hsla(220, 5%, 11%, .5);
+    background-color: hsla(220, 5%, 11%, .7);
     text-align: center;
     font-size: 4rem;
     border-bottom: 3px solid whitesmoke;

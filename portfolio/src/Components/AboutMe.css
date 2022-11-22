@@ -1,22 +1,17 @@
 @font-face {
-  font-family: "Karla";
-  src: url(../Fonts/Karla-VariableFont_wght.woff);
-}
-
-@font-face {
-  font-family: "Karla Italic";
-  src: url(../Fonts/Karla-Italic-VariableFont_wght.woff);
-}
-
-@font-face {
   font-family: "Inconsolata";
   src: url(../Fonts/InconsolataVariable.ttf);
 }
 
+@font-face {
+  font-family: 'Secular';
+  src: url(../Fonts/SecularOne.ttf);
+}
+
 .aboutMeTitle {
-  font-family: "Karla", Arial, Helvetica, sans-serif;
+  font-family: "Secular", Arial, Helvetica, sans-serif;
   color: hsl(354, 91%, 52%);
-  background-color: hsla(220, 5%, 11%, 0.5);
+  background-color: hsla(220, 5%, 11%, 0.7);
   text-align: center;
   border-bottom: 3px solid whitesmoke;
   border-top: 3px solid whitesmoke;

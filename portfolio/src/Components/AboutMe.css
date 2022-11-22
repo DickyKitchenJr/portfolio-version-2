@@ -23,3 +23,22 @@
   font-size: 1.75rem;
   padding-bottom: 1rem;
 }
+
+.aboutMe{
+  background-size: cover;
+  padding: 2rem;
+}
+
+.aboutMeContent{
+  font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsla(220, 5%, 11%, .8);
+    color: hsl(354, 91%, 52%);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}

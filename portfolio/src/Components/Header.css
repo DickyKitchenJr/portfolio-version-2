@@ -13,7 +13,7 @@
     padding-bottom: 6rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    color: hsl(354, 91%, 52%);
+    color: hsl(230, 36%, 84%);
     border-bottom: 3px solid whitesmoke;
     background-image: url('../Images/smileEggBW.webp');
     background-size: 160%;
@@ -29,7 +29,7 @@
 
 h1.banner{
     font-family: 'Secular', Arial, Helvetica, sans-serif;
-    color: hsl(354, 91%, 52%);
+    color: hsl(230, 36%, 84%);
     background-color: hsla(220, 5%, 11%, .7);
     text-align: center;
     font-size: 4rem;

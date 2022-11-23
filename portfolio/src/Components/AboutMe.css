@@ -10,7 +10,7 @@
 
 .aboutMeTitle {
   font-family: "Secular", Arial, Helvetica, sans-serif;
-  color: hsl(354, 91%, 52%);
+  color: hsl(230, 36%, 84%);
   background-color: hsla(220, 5%, 11%, 0.7);
   text-align: center;
   border-bottom: 3px solid whitesmoke;
@@ -52,7 +52,7 @@
     margin-left: auto;
     margin-right: auto;
     background-color: hsla(220, 5%, 11%, .8);
-    color: hsl(354, 91%, 52%);
+    color: hsl(230, 36%, 84%);
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-left: 2rem;

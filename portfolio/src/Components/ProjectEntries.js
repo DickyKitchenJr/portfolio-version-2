@@ -100,7 +100,7 @@ export const ProjectEntries = [
   },
   {
     backgroundImage: PortfolioBig,
-    Title: "Portfolio Site",
+    Title: "This Portfolio Site",
     Pupose: [
       "to create a place for potential clients and employers to view my portfolio",
     ],

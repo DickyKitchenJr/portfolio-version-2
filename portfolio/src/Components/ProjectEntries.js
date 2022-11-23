@@ -8,6 +8,8 @@ export const ProjectEntries = [
     Resources: [
       "React",
       "CSS",
+      "HTML",
+      "JavaScript",
       "Visual Studio Code",
       "original Amazon books best seller thriller and suspense site for reference",
       "Font Awesome",
@@ -34,7 +36,7 @@ export const ProjectEntries = [
       "to accept user input to update the user name and pictures",
       "to demonstrate successful use of the Unsplash API",
     ],
-    Resources: ["React", "CSS", "Visual Studio Code", "Unsplash API", "GitHub"],
+    Resources: ["React", "CSS", "Visual Studio Code", "Unsplash API", "GitHub", "HTML", "JavaScript"],
     Challenges: [
       "intial attempt to request data using different parameters from the Unsplash API resulted in slightly different presentation of the json data returned, requiring different treatment of the data when using different parameters for request",
     ],
@@ -54,6 +56,8 @@ export const ProjectEntries = [
       "React",
       "Font Awesome",
       "CSS",
+      "HTML",
+      "JavaScript",
       "Visual Studio Code",
       "Corel PaintShop Pro for editing picture used",
       "GitHub",
@@ -89,6 +93,8 @@ export const ProjectEntries = [
     Resources: [
       "React",
       "CSS",
+      "HTML",
+      "JavaScript",
       "Visual Studio Code",
       "Corel PaintShop Pro for editing picture used",
       "GitHub",

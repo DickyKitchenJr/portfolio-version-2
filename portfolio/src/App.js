@@ -1,12 +1,9 @@
 import { Parallax } from "react-parallax";
 import code from "./Images/codeBackground.jpg";
-import codeBW from "./Images/codeBackgroundBW.webp";
-import codeHCBW from "./Images/codeBackgroundHighContrastBW.webp";
-import codeInverseBW from "./Images/codeBackgroundInverseBW.webp";
-import codeSepia from "./Images/codeBackgroundSepia.webp";
 import Header from "./Components/Header";
 import Skills from "./Components/Skills";
 import AboutMe from "./Components/AboutMe";
+import Projects from "./Components/Projects";
 import "./App.css";
 
 function App() {
@@ -22,6 +19,7 @@ function App() {
         <Header />
         <Skills />
         <AboutMe />
+        <Projects />
       </Parallax>
     </>
   );

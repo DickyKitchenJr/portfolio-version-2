@@ -28,7 +28,7 @@ function ProjectContents() {
           <ul>
             <li>
               <a className="link" href="" target="_blank">
-                Content Here
+                GitHub
               </a>
             </li>
           </ul>
@@ -36,7 +36,7 @@ function ProjectContents() {
           <ul>
             <li>
               <a className="link" href="" target="_blank">
-                Content Here
+                Hosted Here
               </a>
             </li>
           </ul>

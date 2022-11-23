@@ -15,11 +15,7 @@ function Projects() {
         <button className="previous">Prior</button>
         <button className="next">Next</button>
       </div>
-      <div className="projects">
-        <div className="projectsContent">
-          <ProjectContents />
-        </div>
-      </div>
+      <ProjectContents />
     </>
   );
 }

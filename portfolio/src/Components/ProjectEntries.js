@@ -1,12 +1,12 @@
-import AmazonBig from '../Images/amazonsite.webp';
-import PFetchBig from '../Images/picturefetch.webp';
-import ReactPicBig from '../Images/reactexperiments.webp';
-import TAMBig from '../Images/theaverageman.webp';
-import PortfolioBig from "../Images/portfolio.webp"
+import AmazonBig from "../Images/amazonsite.webp";
+import PFetchBig from "../Images/picturefetch.webp";
+import ReactPicBig from "../Images/reactexperiments.webp";
+import TAMBig from "../Images/theaverageman.webp";
+import PortfolioBig from "../Images/portfolio.webp";
 
 export const ProjectEntries = [
   {
-    backgroundImage: {AmazonBig},
+    backgroundImage: { AmazonBig },
     Title: "Clone Amazon Thriller Books Best Sellers",
     Pupose: [
       "to create a site using visual references, similar to if a client were to give you a mockup of something they want you to build",
@@ -36,13 +36,21 @@ export const ProjectEntries = [
     Live: "https://mock-amazon-best-seller.netlify.app/",
   },
   {
-    backgroundImage: {PFetchBig},
+    backgroundImage: { PFetchBig },
     Title: "Picture Fetch",
     Pupose: [
       "to accept user input to update the user name and pictures",
       "to demonstrate successful use of the Unsplash API",
     ],
-    Resources: ["React", "CSS", "Visual Studio Code", "Unsplash API", "GitHub", "HTML", "JavaScript"],
+    Resources: [
+      "React",
+      "CSS",
+      "Visual Studio Code",
+      "Unsplash API",
+      "GitHub",
+      "HTML",
+      "JavaScript",
+    ],
     Challenges: [
       "intial attempt to request data using different parameters from the Unsplash API resulted in slightly different presentation of the json data returned, requiring different treatment of the data when using different parameters for request",
     ],
@@ -53,7 +61,7 @@ export const ProjectEntries = [
     Live: "https://api-picture-results.netlify.app/",
   },
   {
-    backgroundImage: {ReactPicBig},
+    backgroundImage: { ReactPicBig },
     Title: "React Sample Projects",
     Pupose: [
       "to provide a place to showcase small projects using differet React skills including the use of hooks",
@@ -75,7 +83,7 @@ export const ProjectEntries = [
     Live: "https://react-sample-projects.netlify.app/",
   },
   {
-    backgroundImage: {TAMBig},
+    backgroundImage: { TAMBig },
     Title: "WordPress Website",
     Pupose: [
       "to create a character inspired site to entice readers to look into the source book",
@@ -91,7 +99,7 @@ export const ProjectEntries = [
     Live: "https://theaverageman.dickykitchen.com/",
   },
   {
-    backgroundImage: {PortfolioBig},
+    backgroundImage: { PortfolioBig },
     Title: "Portfolio Site",
     Pupose: [
       "to create a place for potential clients and employers to view my portfolio",

@@ -3,19 +3,32 @@ import ProjectContents from "./ProjectContents";
 import "./Projects.css";
 
 function Projects() {
-    const [prevDisabled, setPrevDisabled] = useState();
-    const [nextDisabled, setNextDisabled] = useState();
+    const [displayProject, setDisplayProject] = useState(0)
 
-    // TODO: map through array of project data
+    const handleClickPrior = () =>{
+      if(displayProject === 0){
+        setDisplayProject(4)
+      } else{
+        setDisplayProject(displayProject - 1)
+      }
+    };
+
+    const handleClickNext = () =>{
+      if (displayProject === 4) {
+        setDisplayProject(0);
+      } else {
+        setDisplayProject(displayProject + 1);
+      }
+    };
 
   return (
     <>
       <div className="projectsTitle">
         <h2>Projects</h2>
-        <button className="previous">Prior</button>
-        <button className="next">Next</button>
+        <button className="previous" onClick={handleClickPrior}>Prior</button>
+        <button className="next" onClick={handleClickNext}>Next</button>
       </div>
-      <ProjectContents />
+      <ProjectContents displayProject = {displayProject}/>
     </>
   );
 }

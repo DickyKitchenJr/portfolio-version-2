@@ -8,15 +8,25 @@ function Projects() {
         <h2>Projects</h2>
       </div>
       <div className="projects">
-        <h3>Title</h3>
-        <p>Purpose:</p>
-        <ul><li>Content Here</li></ul>
-        <p>Resources Used:</p>
-        <ul><li>Content Here</li></ul>
-        <p>Challenges:</p>
-        <ul><li>Content Here</li></ul>
-        <p>Potential Future Improvements:</p>
-        <ul><li>Content Here</li></ul>
+        <div className="projectsContent">
+          <h3>Title</h3>
+          <p>Purpose:</p>
+          <ul>
+            <li>Content Here</li>
+          </ul>
+          <p>Resources Used:</p>
+          <ul>
+            <li>Content Here</li>
+          </ul>
+          <p>Challenges:</p>
+          <ul>
+            <li>Content Here</li>
+          </ul>
+          <p>Potential Future Improvements:</p>
+          <ul>
+            <li>Content Here</li>
+          </ul>
+        </div>
       </div>
     </>
   );

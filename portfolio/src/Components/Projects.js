@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ProjectEntries } from "./ProjectEntries";
+import ProjectContents from "./ProjectContents";
 import "./Projects.css";
 
 function Projects() {
@@ -17,23 +17,7 @@ function Projects() {
       </div>
       <div className="projects">
         <div className="projectsContent">
-          <h3>Title</h3>
-          <p>Purpose:</p>
-          <ul>
-            <li>Content Here</li>
-          </ul>
-          <p>Resources Used:</p>
-          <ul>
-            <li>Content Here</li>
-          </ul>
-          <p>Challenges:</p>
-          <ul>
-            <li>Content Here</li>
-          </ul>
-          <p>Potential Future Improvements:</p>
-          <ul>
-            <li>Content Here</li>
-          </ul>
+          <ProjectContents />
         </div>
       </div>
     </>

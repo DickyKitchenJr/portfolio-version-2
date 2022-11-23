@@ -25,7 +25,7 @@ function ProjectContents() {
       <p>Source Code:</p>
       <ul>
         <li>
-          <a href="" target="_blank">
+          <a className="link" href="" target="_blank">
             Content Here
           </a>
         </li>
@@ -33,7 +33,7 @@ function ProjectContents() {
       <p>Live Site:</p>
       <ul>
         <li>
-          <a href="" target="_blank">
+          <a className="link" href="" target="_blank">
             Content Here
           </a>
         </li>

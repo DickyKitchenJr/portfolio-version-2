@@ -74,6 +74,10 @@
     padding-top: .75rem;
 }
 
+.link{
+    color: blue;
+}
+
 /* PURPOSE: added as placeholder, to be deleted later */
 .projects{
     background-image: url('https://images.unsplash.com/photo-1657023982414-3edf1bab761b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80');

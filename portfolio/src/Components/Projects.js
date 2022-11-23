@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { ProjectEntries } from "./ProjectEntries";
 import "./Projects.css";
 
 function Projects() {
     const [prevDisabled, setPrevDisabled] = useState();
     const [nextDisabled, setNextDisabled] = useState();
+
+    // TODO: map through array of project data
 
   return (
     <>

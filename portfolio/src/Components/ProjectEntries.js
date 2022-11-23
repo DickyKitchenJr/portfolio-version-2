@@ -1,0 +1,42 @@
+export const ProjectEntries = [
+  {
+    backgroundImage: "",
+    Title: "",
+    Pupose: "",
+    Resources: [""],
+    Challenges: [""],
+    Improvements: [""],
+  },
+  {
+    backgroundImage: "",
+    Title: "",
+    Pupose: "",
+    Resources: [""],
+    Challenges: [""],
+    Improvements: [""],
+  },
+  {
+    backgroundImage: "",
+    Title: "",
+    Pupose: "",
+    Resources: [""],
+    Challenges: [""],
+    Improvements: [""],
+  },
+  {
+    backgroundImage: "",
+    Title: "",
+    Pupose: "",
+    Resources: [""],
+    Challenges: [""],
+    Improvements: [""],
+  },
+  {
+    backgroundImage: "",
+    Title: "",
+    Pupose: "",
+    Resources: [""],
+    Challenges: [""],
+    Improvements: [""],
+  },
+];

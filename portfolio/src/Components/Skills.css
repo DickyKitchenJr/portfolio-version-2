@@ -25,14 +25,13 @@
 
 .hardbutton {
   margin-right: 0.5rem;
-  padding: 1rem;
+  padding: .5rem;
   background-image: linear-gradient(
     hsl(150, 1%, 50%),
     hsl(210, 25%, 97%) 50%,
     hsl(150, 1%, 50%)
   );
-  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
+  font-family: "Secular", Arial, Helvetica, sans-serif;
 }
 
 .hardbutton:hover {
@@ -56,14 +55,13 @@
 
 .softbutton {
   margin-left: 0.5rem;
-  padding: 1rem;
+  padding: .5rem;
   background-image: linear-gradient(
     hsl(0, 0%, 100%),
     hsl(240, 100%, 88%),
     hsl(0, 0%, 100%)
   );
-  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
+  font-family: "Secular", Arial, Helvetica, sans-serif;
 }
 
 .softbutton:hover {

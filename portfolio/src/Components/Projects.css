@@ -21,6 +21,29 @@
 
 .projectsTitle h2{
     font-size: 1.75rem;
+    padding-bottom: 1rem;
+}
+
+.previous{
+  margin-right: 0.5rem;
+  padding: .5rem;
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+}
+
+.previous:active{
+    color: hsl(132, 100%, 50%);
+    background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 50%), hsl(0, 0%, 100%));
+}
+
+.next{
+  margin-left: 0.5rem;
+  padding: .5rem;
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+}
+
+.next:active{
+    color: hsl(132, 100%, 50%);
+    background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 50%), hsl(0, 0%, 100%));
 }
 
 .projectsContent {

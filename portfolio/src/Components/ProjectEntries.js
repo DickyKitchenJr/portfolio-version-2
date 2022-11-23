@@ -6,7 +6,7 @@ import PortfolioBig from "../Images/portfolio.webp";
 
 export const ProjectEntries = [
   {
-    backgroundImage: { AmazonBig },
+    backgroundImage: AmazonBig,
     Title: "Clone Amazon Thriller Books Best Sellers",
     Pupose: [
       "to create a site using visual references, similar to if a client were to give you a mockup of something they want you to build",
@@ -36,7 +36,7 @@ export const ProjectEntries = [
     Live: "https://mock-amazon-best-seller.netlify.app/",
   },
   {
-    backgroundImage: { PFetchBig },
+    backgroundImage: PFetchBig,
     Title: "Picture Fetch",
     Pupose: [
       "to accept user input to update the user name and pictures",
@@ -61,7 +61,7 @@ export const ProjectEntries = [
     Live: "https://api-picture-results.netlify.app/",
   },
   {
-    backgroundImage: { ReactPicBig },
+    backgroundImage: ReactPicBig,
     Title: "React Sample Projects",
     Pupose: [
       "to provide a place to showcase small projects using differet React skills including the use of hooks",
@@ -83,7 +83,7 @@ export const ProjectEntries = [
     Live: "https://react-sample-projects.netlify.app/",
   },
   {
-    backgroundImage: { TAMBig },
+    backgroundImage: TAMBig,
     Title: "WordPress Website",
     Pupose: [
       "to create a character inspired site to entice readers to look into the source book",
@@ -99,7 +99,7 @@ export const ProjectEntries = [
     Live: "https://theaverageman.dickykitchen.com/",
   },
   {
-    backgroundImage: { PortfolioBig },
+    backgroundImage: PortfolioBig,
     Title: "Portfolio Site",
     Pupose: [
       "to create a place for potential clients and employers to view my portfolio",
@@ -121,7 +121,7 @@ export const ProjectEntries = [
     Improvements: [
       "continue to add more projects as skills continue to advance",
     ],
-    Source: null,
+    Source: "https://github.com/DickyKitchenJr/portfolio-version-2",
     Live: null,
   },
 ];

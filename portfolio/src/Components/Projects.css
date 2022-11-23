@@ -46,6 +46,12 @@
     background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 50%), hsl(0, 0%, 100%));
 }
 
+.projects{
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+}
+
 .projectsContent {
     font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
@@ -58,6 +64,7 @@
     padding-bottom: 3rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    backdrop-filter: blur(3px);
 }
 
 .projectsContent h3{
@@ -78,9 +85,3 @@
     color: blue;
 }
 
-/* PURPOSE: added as placeholder, to be deleted later */
-.projects{
-    background-image: url('https://images.unsplash.com/photo-1657023982414-3edf1bab761b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80');
-    background-size: cover;
-    padding: 2rem;
-}

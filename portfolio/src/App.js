@@ -1,5 +1,5 @@
 import { Parallax } from "react-parallax";
-import code from "./Images/codeBackground.jpg";
+import code from "./Images/codeBackground.webp";
 import Header from "./Components/Header";
 import Skills from "./Components/Skills";
 import AboutMe from "./Components/AboutMe";

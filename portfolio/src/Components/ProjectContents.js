@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Projects.css";
 import { ProjectEntries } from "./ProjectEntries";
 
 function ProjectContents({displayProject}) {
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  const detectWindowSize = () => {
+    setWindowSize({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", detectWindowSize);
+    return () => {
+      window.removeEventListener("resize", detectWindowSize);
+    };
+  }, [windowSize]);
+
+
   return (
     <>
     {console.log(displayProject)}
@@ -10,7 +30,7 @@ function ProjectContents({displayProject}) {
         return (
           <div
             key={ProjectEntries.indexOf(entry)}
-            style={{ backgroundImage: `url(${entry.backgroundImage})`, display: displayProject !== ProjectEntries.indexOf(entry) ? 'none' : 'block' }}
+            style={{ backgroundImage: windowSize.width >= 600 ? `url(${entry.backgroundImage})`: `url(${entry.backgroundImageSmall})`, display: displayProject !== ProjectEntries.indexOf(entry) ? 'none' : 'block' }}
             className="projects"
           >
             <div className="projectsContent">

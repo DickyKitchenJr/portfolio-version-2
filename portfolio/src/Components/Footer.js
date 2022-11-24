@@ -13,7 +13,7 @@ const Instagram = <FontAwesomeIcon icon={faInstagram} />;
 
 function Footer() {
   return (
-    <h4 className="footer">
+    <p className="footer">
       Find me on &nbsp;&nbsp;
       <a
         href="https://github.com/DickyKitchenJr"
@@ -38,7 +38,7 @@ function Footer() {
       >
         {Instagram} Instagram
       </a>
-    </h4>
+    </p>
   );
 }
 

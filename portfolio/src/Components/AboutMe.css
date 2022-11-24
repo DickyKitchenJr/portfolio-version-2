@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: 'Secular';
+  font-family: "Secular";
   src: url(../Fonts/SecularOne.ttf);
 }
 
@@ -23,7 +23,7 @@
   font-size: 1.75rem;
 }
 
-.aboutMe{
+.aboutMe {
   background-size: contain;
   background-position: center;
   padding: 2rem;
@@ -31,7 +31,7 @@
 
 @media only screen and (min-width: 980px) {
   /* desktops and laptops */
-  .aboutMe{
+  .aboutMe {
     background-size: cover;
     background-position: top;
   }
@@ -39,22 +39,23 @@
 
 @media only screen and (min-width: 1800px) {
   /* large screen desktops */
-  .aboutMe{
+  .aboutMe {
     background-size: contain;
     background-position: none;
   }
 }
 
-.aboutMeContent{
-  font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: hsla(220, 5%, 11%, .8);
-    color: hsl(230, 36%, 84%);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+.aboutMeContent {
+  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  font-size: 1.5rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsla(220, 5%, 11%, 0.8);
+  color: hsl(230, 36%, 84%);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }

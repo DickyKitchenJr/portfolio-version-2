@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Inconsolata";
+  src: url(../Fonts/InconsolataVariable.ttf);
+}
+
+@font-face {
+  font-family: 'Secular';
+  src: url(../Fonts/SecularOne.ttf);
+}
+
+.contactTitle {
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+  color: hsl(230, 36%, 84%);
+  background-color: hsla(220, 5%, 11%, 0.7);
+  text-align: center;
+  border-bottom: 3px solid whitesmoke;
+  border-top: 3px solid whitesmoke;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.contactTitle h2 {
+  font-size: 1.75rem;
+}
+
+.contactBackground{
+    background-image: url('../Images/forhire.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.contact{
+    width: fit-content;
+    margin-left: auto; 
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contact p{
+    font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: hsl(230, 36%, 84%);
+    margin-bottom: 1rem;
+}
+
+.contact form{
+    display: inline-flex;
+    flex-direction: column;  
+    background-color: hsla(220, 5%, 11%, 0.55);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border: 2px solid whitesmoke;
+}
+
+.contact input{
+    text-align: center;
+    padding: .65rem;
+    margin-bottom: 1rem;
+    font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contact textarea{
+    padding: .5rem;
+    margin-bottom: 1rem;
+    font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contact button{
+  padding: .5rem;
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+}
+
+.contact button:active{
+    color: hsl(132, 100%, 50%);
+    background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 50%), hsl(0, 0%, 100%));
+}

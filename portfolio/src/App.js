@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Skills from "./Components/Skills";
 import AboutMe from "./Components/AboutMe";
 import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
 import "./App.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Skills />
         <AboutMe />
         <Projects />
+        <Contact />
       </Parallax>
     </>
   );

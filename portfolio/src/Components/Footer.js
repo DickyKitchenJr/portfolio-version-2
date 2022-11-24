@@ -1,9 +1,11 @@
 import React from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const GitHub = <FontAwesomeIcon icon={faGithub} />;
+const LinkedIn = <FontAwesomeIcon icon={faLinkedin} />
+const Instagram = <FontAwesomeIcon icon={faInstagram} />
 
 function Footer() {
   return (
@@ -22,7 +24,7 @@ function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        LinkedIn
+        {LinkedIn} LinkedIn
       </a>
       , and &nbsp;
       <a
@@ -30,7 +32,7 @@ function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        Instagram
+        {Instagram} Instagram
       </a>
     </h4>
   );

@@ -1,11 +1,13 @@
 @font-face {
   font-family: "Inconsolata";
   src: url(../Fonts/InconsolataVariable.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Secular";
   src: url(../Fonts/SecularOne.ttf);
+  font-display: swap;
 }
 
 .contactTitle {

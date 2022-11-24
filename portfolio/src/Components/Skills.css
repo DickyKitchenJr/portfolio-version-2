@@ -1,11 +1,13 @@
 @font-face {
   font-family: "Inconsolata";
   src: url(../Fonts/InconsolataVariable.ttf);
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Secular';
+  font-family: "Secular";
   src: url(../Fonts/SecularOne.ttf);
+  font-display: swap;
 }
 
 .skillsTitle {
@@ -25,7 +27,7 @@
 
 .hardbutton {
   margin-right: 0.5rem;
-  padding: .5rem;
+  padding: 0.5rem;
   background-image: linear-gradient(
     hsl(150, 1%, 50%),
     hsl(210, 25%, 97%) 50%,
@@ -55,7 +57,7 @@
 
 .softbutton {
   margin-left: 0.5rem;
-  padding: .5rem;
+  padding: 0.5rem;
   background-image: linear-gradient(
     hsl(0, 0%, 100%),
     hsl(240, 100%, 88%),
@@ -240,7 +242,7 @@
   backdrop-filter: blur(2px);
 }
 
-.softskills[visibility="1"]{
+.softskills[visibility="1"] {
   display: none;
 }
 

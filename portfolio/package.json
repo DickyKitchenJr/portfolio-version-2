@@ -1,6 +1,8 @@
 {
   "name": "portfolio",
+  "homepage": "https://dickykitchen.com/",
   "version": "0.1.0",
+  "description": "Dicky Kitchen Jr's Portfolio Page",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",

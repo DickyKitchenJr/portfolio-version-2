@@ -9,7 +9,7 @@ function Contact() {
       </div>
       <div className="contactBackground">
         <div className="contact">
-          <form action="https://formsubmit.co/your@email.com" method="POST">
+          <form action="https://formsubmit.co/dkitchencodes@gmail.com" method="POST">
             <p>Have a job or a question for me?</p>
             <input type="text" name="name" placeholder="Your Name" required />
             <input

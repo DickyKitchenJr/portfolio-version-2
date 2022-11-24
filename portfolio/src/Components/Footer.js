@@ -1,11 +1,15 @@
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 const GitHub = <FontAwesomeIcon icon={faGithub} />;
-const LinkedIn = <FontAwesomeIcon icon={faLinkedin} />
-const Instagram = <FontAwesomeIcon icon={faInstagram} />
+const LinkedIn = <FontAwesomeIcon icon={faLinkedin} />;
+const Instagram = <FontAwesomeIcon icon={faInstagram} />;
 
 function Footer() {
   return (
@@ -26,7 +30,7 @@ function Footer() {
       >
         {LinkedIn} LinkedIn
       </a>
-      , and &nbsp;
+      , and &nbsp;&nbsp;
       <a
         href="https://www.instagram.com/oldguylearnscoding/"
         target="_blank"
@@ -38,4 +42,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;

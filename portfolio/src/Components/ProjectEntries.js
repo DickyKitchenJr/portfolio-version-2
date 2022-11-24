@@ -1,12 +1,18 @@
 import AmazonBig from "../Images/amazonsite.webp";
+import AmazonSmall from "../Images/amazonSmall.webp";
 import PFetchBig from "../Images/picturefetch.webp";
+import PFetchSmall from "../Images/pictureFetchSmall.webp";
 import ReactPicBig from "../Images/reactexperiments.webp";
+import ReactPicSmall from "../Images/reactExperimentsSmall.webp";
 import TAMBig from "../Images/theaverageman.webp";
+import TAMSmall from "../Images/theAverageManSmall.webp";
 import PortfolioBig from "../Images/portfolio.webp";
+import PortfolioSmall from "../Images/portfolioSmall.webp";
 
 export const ProjectEntries = [
   {
     backgroundImage: AmazonBig,
+    backgroundImageSmall: AmazonSmall,
     Title: "Clone Amazon Thriller Books Best Sellers",
     Pupose: [
       "to create a site using visual references, similar to if a client were to give you a mockup of something they want you to build",
@@ -37,6 +43,7 @@ export const ProjectEntries = [
   },
   {
     backgroundImage: PFetchBig,
+    backgroundImageSmall: PFetchSmall,
     Title: "Picture Fetch",
     Pupose: [
       "to accept user input to update the user name and pictures",
@@ -62,6 +69,7 @@ export const ProjectEntries = [
   },
   {
     backgroundImage: ReactPicBig,
+    backgroundImageSmall: ReactPicSmall,
     Title: "React Sample Projects",
     Pupose: [
       "to provide a place to showcase small projects using differet React skills including the use of hooks",
@@ -84,6 +92,7 @@ export const ProjectEntries = [
   },
   {
     backgroundImage: TAMBig,
+    backgroundImageSmall: TAMSmall,
     Title: "WordPress Website",
     Pupose: [
       "to create a character inspired site to entice readers to look into the source book",
@@ -100,6 +109,7 @@ export const ProjectEntries = [
   },
   {
     backgroundImage: PortfolioBig,
+    backgroundImageSmall: PortfolioSmall,
     Title: "This Portfolio Site",
     Pupose: [
       "to create a place for potential clients and employers to view my portfolio",

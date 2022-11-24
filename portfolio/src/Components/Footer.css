@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: 'Secular';
+  font-family: "Secular";
   src: url(../Fonts/SecularOne.ttf);
 }
 
@@ -21,6 +21,6 @@
   padding-right: 1rem;
 }
 
-.footer a{
-    color: hsl(240, 100%, 50%);
+.footer a {
+  color: hsl(240, 100%, 50%);
 }

@@ -21,30 +21,30 @@ const WordPress = (
 );
 
 function Skills() {
-  const [hardSkillsHidden, setHardSkillsHidden] = useState(0)
-  const [softSkillsHidden, setSoftSkillsHidden] = useState(1)
+  const [hardSkillsHidden, setHardSkillsHidden] = useState(0);
+  const [softSkillsHidden, setSoftSkillsHidden] = useState(1);
 
   const hardHide = () => {
-    setHardSkillsHidden(1)
-    setSoftSkillsHidden(0)
-  }
+    setHardSkillsHidden(1);
+    setSoftSkillsHidden(0);
+  };
 
   const softHide = () => {
-    setSoftSkillsHidden(1)
-    setHardSkillsHidden(0)
-  }
+    setSoftSkillsHidden(1);
+    setHardSkillsHidden(0);
+  };
 
-  const hardHandleClick = () =>{
-    if(hardSkillsHidden === 1){
+  const hardHandleClick = () => {
+    if (hardSkillsHidden === 1) {
       softHide();
     }
-  }
+  };
 
-  const softHandleClick = () =>{
-    if(softSkillsHidden === 1){
+  const softHandleClick = () => {
+    if (softSkillsHidden === 1) {
       hardHide();
     }
-  }
+  };
 
   return (
     <>

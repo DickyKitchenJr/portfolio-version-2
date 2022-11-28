@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Projects.css";
 import { ProjectEntries } from "./ProjectEntries";
+import PageSpeed from "../Images/pagespeed.webp";
 
 function ProjectContents({displayProject}) {
   const [windowSize, setWindowSize] = useState({
@@ -25,12 +26,20 @@ function ProjectContents({displayProject}) {
 
   return (
     <>
-    {console.log(displayProject)}
       {ProjectEntries.map((entry) => {
         return (
           <div
             key={ProjectEntries.indexOf(entry)}
-            style={{ backgroundImage: windowSize.width >= 600 ? `url(${entry.backgroundImage})`: `url(${entry.backgroundImageSmall})`, display: displayProject !== ProjectEntries.indexOf(entry) ? 'none' : 'block' }}
+            style={{
+              backgroundImage:
+                windowSize.width >= 600
+                  ? `url(${entry.backgroundImage})`
+                  : `url(${entry.backgroundImageSmall})`,
+              display:
+                displayProject !== ProjectEntries.indexOf(entry)
+                  ? "none"
+                  : "block",
+            }}
             className="projects"
           >
             <div className="projectsContent">
@@ -53,6 +62,13 @@ function ProjectContents({displayProject}) {
                   return <li>{challenge}</li>;
                 })}
               </ul>
+              {entry.Title === "This Portfolio Site" ? (
+                <img
+                  src={PageSpeed}
+                  alt="score from page speed insight"
+                  className="pagespeed"
+                />
+              ) : null}
               <p>Potential Future Improvements:</p>
               <ul>
                 {entry.Improvements.map((improve) => {

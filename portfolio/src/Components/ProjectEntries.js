@@ -127,6 +127,7 @@ export const ProjectEntries = [
       "choosing a color scheme",
       "deciding on background pictures to use",
       "making adjustments for a 'mobile first' build",
+      "achieving a near perfect score on PageSpeed Insights",
     ],
     Improvements: [
       "continue to add more projects as skills continue to advance",

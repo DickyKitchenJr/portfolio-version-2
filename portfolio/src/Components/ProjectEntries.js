@@ -8,11 +8,42 @@ import TAMBig from "../Images/theaverageman.webp";
 import TAMSmall from "../Images/theAverageManSmall.webp";
 import PortfolioBig from "../Images/portfolio.webp";
 import PortfolioSmall from "../Images/portfolioSmall.webp";
+import PageSpeed from "../Images/pagespeed.webp";
 import MayhemBig from "../Images/mayhemBig.webp";
 import MayhemSmall from "../Images/mayhemSmall.webp";
 import MayhemTest from "../Images/mayhemTest.webp";
 
 export const ProjectEntries = [
+  {
+    backgroundImage: MayhemBig,
+    backgroundImageSmall: MayhemSmall,
+    Title: "MayhemMills.com",
+    Pupose: [
+      "to create a client website to meet the client's needs and aesthetic preferences",
+    ],
+    ClientReview:
+      "'If you are looking for someone to build an awesome custom website for a competitive price, this is the dude to talk to. He communicated great throughout the process, had some really great ideas, and wasn’t happy until I was happy.'",
+    Resources: [
+      "React",
+      "CSS",
+      "HTML",
+      "JavaScript",
+      "Visual Studio Code",
+      "Corel PaintShop Pro for editing pictures used",
+      "GitHub",
+    ],
+    Challenges: [
+      "keeping the client informed of progress",
+      "helping to educate the client in what impacts website performance",
+      "helping to educate the client in what impacts user experience on websites",
+      "achieving a near perfect score on PageSpeed Insights",
+    ],
+    Test: MayhemTest,
+    Improvement: null,
+    Source:
+      "https://github.com/DickyKitchenJr/sites-for-others/tree/main/mayhems-site",
+    Live: "https://mayhemmills.com/",
+  },
   {
     backgroundImage: AmazonBig,
     backgroundImageSmall: AmazonSmall,
@@ -132,6 +163,7 @@ export const ProjectEntries = [
       "making adjustments for a 'mobile first' build",
       "achieving a near perfect score on PageSpeed Insights",
     ],
+    Test: PageSpeed,
     Improvements: [
       "continue to add more projects as skills continue to advance",
     ],

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Projects.css";
 import { ProjectEntries } from "./ProjectEntries";
-import PageSpeed from "../Images/pagespeed.webp";
 
 function ProjectContents({displayProject}) {
   const [windowSize, setWindowSize] = useState({
@@ -50,6 +49,12 @@ function ProjectContents({displayProject}) {
                   return <li>{reason}</li>;
                 })}
               </ul>
+              {entry.ClientReview ? (<>
+              <p>Client Review:</p>
+              <ul>
+                <li>{entry.ClientReview}</li>
+              </ul>
+              </>) : null}
               <p>Resources Used:</p>
               <ul>
                 {entry.Resources.map((used) => {
@@ -62,19 +67,19 @@ function ProjectContents({displayProject}) {
                   return <li>{challenge}</li>;
                 })}
               </ul>
-              {entry.Title === "This Portfolio Site" ? (
+              {entry.Test ? (
                 <img
-                  src={PageSpeed}
+                  src={entry.Test}
                   alt="score from page speed insight"
                   className="pagespeed"
                 />
               ) : null}
-              <p>Potential Future Improvements:</p>
+              {entry.Improvements ? (<><p>Potential Future Improvements:</p>
               <ul>
                 {entry.Improvements.map((improve) => {
                   return <li>{improve}</li>;
                 })}
-              </ul>
+              </ul></>): null}
               {entry.Source ? (
                 <>
                   <p>Source Code:</p>

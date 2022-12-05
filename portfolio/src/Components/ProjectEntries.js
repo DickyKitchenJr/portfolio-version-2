@@ -8,6 +8,9 @@ import TAMBig from "../Images/theaverageman.webp";
 import TAMSmall from "../Images/theAverageManSmall.webp";
 import PortfolioBig from "../Images/portfolio.webp";
 import PortfolioSmall from "../Images/portfolioSmall.webp";
+import MayhemBig from "../Images/mayhemBig.webp";
+import MayhemSmall from "../Images/mayhemSmall.webp";
+import MayhemTest from "../Images/mayhemTest.webp";
 
 export const ProjectEntries = [
   {

@@ -7,14 +7,14 @@ function Projects() {
 
   const handleClickPrior = () => {
     if (displayProject === 0) {
-      setDisplayProject(4);
+      setDisplayProject(5);
     } else {
       setDisplayProject(displayProject - 1);
     }
   };
 
   const handleClickNext = () => {
-    if (displayProject === 4) {
+    if (displayProject === 5) {
       setDisplayProject(0);
     } else {
       setDisplayProject(displayProject + 1);

@@ -12,6 +12,9 @@ import PageSpeed from "../Images/pagespeed.webp";
 import MayhemBig from "../Images/mayhemBig.webp";
 import MayhemSmall from "../Images/mayhemSmall.webp";
 import MayhemTest from "../Images/mayhemTest.webp";
+import jsPlaygroundSmall from "../Images/jsplaygroundSmall.webp";
+import jsPlaygroundBig from "../Images/jsplaygroundBig.webp";
+import jsPlaygroundTest from "../Images/jsplaygroundTest.webp";
 
 export const ProjectEntries = [
   {
@@ -100,6 +103,21 @@ export const ProjectEntries = [
     ],
     Source: "https://github.com/DickyKitchenJr/picture-fetch",
     Live: "https://api-picture-results.netlify.app/",
+  },
+  {
+    backgroundImage: jsPlaygroundBig,
+    backgroundImageSmall: jsPlaygroundSmall,
+    Title: "JavaScript Playground",
+    Pupose: ["to provide a place to showcase small projects using JavaScript"],
+    Resources: ["JavaScript", "CSS", "HTML", "Visual Studio Code", "GitHub"],
+    Challenges: [
+      "deciding what projects to build",
+      "achieving a perfect score on PageSpeed Insights",
+    ],
+    Test: jsPlaygroundTest,
+    Improvements: ["continue to add more projects"],
+    Source: "https://github.com/DickyKitchenJr/JavaScript-Playground",
+    Live: "https://jsplayground.dickykitchen.com/",
   },
   {
     backgroundImage: ReactPicBig,

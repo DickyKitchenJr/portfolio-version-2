@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ProjectContents from "./ProjectContents";
+import { ProjectEntries } from "./ProjectEntries";
 import "./Projects.css";
 
 function Projects() {
@@ -7,14 +8,14 @@ function Projects() {
 
   const handleClickPrior = () => {
     if (displayProject === 0) {
-      setDisplayProject(5);
+      setDisplayProject(ProjectEntries.length -1);
     } else {
       setDisplayProject(displayProject - 1);
     }
   };
 
   const handleClickNext = () => {
-    if (displayProject === 5) {
+    if (displayProject === ProjectEntries.length -1) {
       setDisplayProject(0);
     } else {
       setDisplayProject(displayProject + 1);

@@ -1,12 +1,12 @@
 import AltAboutMe from "./AltComponents/AltAboutMe";
-import Contact from "./Components/Contact";
+import AltContact from "./AltComponents/AltContact";
 
 
 function AltApp() {
   return (
     <>
     <AltAboutMe /> 
-    <Contact />
+    <AltContact />
     </>
   )
 }

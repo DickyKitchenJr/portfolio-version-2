@@ -27,16 +27,16 @@ function AltProjectContent({ displayProject }) {
         return (
           <div
             key={ProjectEntries.indexOf(entry)}
-            // style={{
+            style={{
             //   backgroundImage:
             //     windowSize.width >= 600
             //       ? `url(${entry.backgroundImage})`
             //       : `url(${entry.backgroundImageSmall})`,
-            //   display:
-            //     displayProject !== ProjectEntries.indexOf(entry)
-            //       ? "none"
-            //       : "block",
-            // }}
+              display:
+                displayProject !== ProjectEntries.indexOf(entry)
+                  ? "none"
+                  : "block",
+            }}
             className="altProjects"
           >
             <div className="altProjectsContent">

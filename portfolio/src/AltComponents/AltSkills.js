@@ -81,7 +81,7 @@ function AltSkills() {
               <figcaption className="altIconCaption">GitHub</figcaption>
             </figure>
             <figure className="altSkillIcon vscode">
-              <img src={VSCode} alt="VS Code icon" className="altVscodeIcon" />
+              <img src={VSCode} alt="VS Code icon" className="vscodeIcon" />
               <figcaption className="altIconCaption">VS Code</figcaption>
             </figure>
             <figure className="altSkillIcon wordpress">

@@ -1,0 +1,13 @@
+.style{
+    background-color: hsla(0, 0%, 83%, 0.5);
+    border-bottom: 3px solid black;
+}
+
+.style h2{
+    text-align: center;
+}
+
+.style nav{
+    display: flex;
+    justify-content: space-evenly;
+}

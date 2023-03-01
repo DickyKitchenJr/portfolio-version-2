@@ -65,13 +65,13 @@ function AltProjectContent({ displayProject }) {
                   return <li>{challenge}</li>;
                 })}
               </ul>
-              {entry.Test ? (
+              {/* {entry.Test ? (
                 <img
                   src={entry.Test}
                   alt="score from page speed insight"
                   className="pagespeed"
                 />
-              ) : null}
+              ) : null} */}
               {entry.Improvements ? (<><p>Potential Future Improvements:</p>
               <ul>
                 {entry.Improvements.map((improve) => {
@@ -84,7 +84,7 @@ function AltProjectContent({ displayProject }) {
                   <ul>
                     <li>
                       <a
-                        className="link"
+                        className="altLink"
                         href={entry.Source}
                         target="_blank"
                         rel="noreferrer"

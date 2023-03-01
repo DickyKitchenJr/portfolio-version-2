@@ -19,4 +19,4 @@ function BonesDarkApp() {
   )
 }
 
-export default BonesDarkApp
+export default BonesDarkApp;

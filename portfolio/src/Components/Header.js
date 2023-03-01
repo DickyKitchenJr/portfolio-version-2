@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import StyleNav from "./StyleNav";
 import "./Header.css";
 
 function Header() {
@@ -24,6 +25,7 @@ function Header() {
   return (
     <>
       <h1 className="banner">DK's Portfolio</h1>
+      <StyleNav />
         <div className="hero">
           <p className="banner">Coding Makes Me Happy</p>
         </div>

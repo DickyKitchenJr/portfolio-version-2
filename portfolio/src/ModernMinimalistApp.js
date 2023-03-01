@@ -19,4 +19,4 @@ function ModernMinimalistApp() {
   )
 }
 
-export default ModernMinimalistApp
+export default ModernMinimalistApp;

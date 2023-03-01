@@ -64,7 +64,7 @@ function AboutMe() {
           <br />
           At first, I did most of my coding on the CodeCademy platform, but
           recently I have performed more coding in my GitHub repositories to
-          more easily show activity and growth. <br />
+          better let others see my activity and growth. <br />
           <br />
           Moving forward, my goal is to find a company I can grow at and a team
           that creates great things. <br />

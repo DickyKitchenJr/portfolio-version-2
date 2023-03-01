@@ -4,6 +4,7 @@ import AltSkills from "./AltComponents/AltSkills";
 import AltProjects from "./AltComponents/AltProjects";
 import AltContact from "./AltComponents/AltContact";
 import AltFooter from "./AltComponents/AltFooter";
+import './BonesLightApp.css';
 
 
 function BonesLightApp() {
@@ -19,4 +20,4 @@ function BonesLightApp() {
   )
 }
 
-export default BonesLightApp
+export default BonesLightApp;

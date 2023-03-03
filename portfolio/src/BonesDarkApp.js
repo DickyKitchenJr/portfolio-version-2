@@ -4,19 +4,21 @@ import AltSkills from "./AltComponents/AltSkills";
 import AltProjects from "./AltComponents/AltProjects";
 import AltContact from "./AltComponents/AltContact";
 import AltFooter from "./AltComponents/AltFooter";
-
+import './BonesDarkApp.css';
 
 function BonesDarkApp() {
   return (
     <>
-    <AltHeader />
-    <AltAboutMe />
-    <AltSkills /> 
-    <AltProjects />
-    <AltContact />
-    <AltFooter />
+      <div className="bonesDarkApp">
+        <AltHeader />
+        <AltAboutMe />
+        <AltSkills />
+        <AltProjects />
+        <AltContact />
+        <AltFooter />
+      </div>
     </>
-  )
+  );
 }
 
 export default BonesDarkApp;

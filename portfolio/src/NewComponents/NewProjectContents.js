@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "../Components/Projects.css";
 import { NewProjectEntries } from "./NewProjectEntries";
 
-function NewProjectContents({displayProject}) {
+function NewProjectContents({displayProject, styling}) {
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -39,9 +38,9 @@ function NewProjectContents({displayProject}) {
                   ? "none"
                   : "block",
             }}
-            className="projects"
+            className={`${styling}-projects`}
           >
-            <div className="projectsContent">
+            <div className={`${styling}-projectsContent`}>
               <h3>{entry.Title}</h3>
               <p>Purpose:</p>
               <ul>
@@ -71,7 +70,7 @@ function NewProjectContents({displayProject}) {
                 <img
                   src={entry.Test}
                   alt="score from page speed insight"
-                  className="pagespeed"
+                  className={`${styling}-pagespeed`}
                 />
               ) : null}
               {entry.Improvements ? (<><p>Potential Future Improvements:</p>
@@ -86,7 +85,7 @@ function NewProjectContents({displayProject}) {
                   <ul>
                     <li>
                       <a
-                        className="link"
+                        className={`${styling}-link`}
                         href={entry.Source}
                         target="_blank"
                         rel="noreferrer"
@@ -104,7 +103,7 @@ function NewProjectContents({displayProject}) {
                   <ul>
                     <li>
                       <a
-                        className="link"
+                        className={`${styling}-link`}
                         href={entry.Live}
                         target="_blank"
                         rel="noreferrer"

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import NewProjectContents from "./NewProjectContents";
 import { NewProjectEntries } from "./NewProjectEntries";
-import "../Components/Projects.css";
 
-function NewProjects() {
+function NewProjects({styling}) {
   const [displayProject, setDisplayProject] = useState(0);
 
   const handleClickPrior = () => {
@@ -24,16 +23,16 @@ function NewProjects() {
 
   return (
     <>
-      <div className="projectsTitle">
+      <div className={`${styling}-projectsTitle`}>
         <h2>Projects</h2>
-        <button className="previous" onClick={handleClickPrior}>
+        <button className={`${styling}-previous`} onClick={handleClickPrior}>
           Prior
         </button>
-        <button className="next" onClick={handleClickNext}>
+        <button className={`${styling}-next`} onClick={handleClickNext}>
           Next
         </button>
       </div>
-      <NewProjectContents displayProject={displayProject} />
+      <NewProjectContents displayProject={displayProject} styling={styling}/>
     </>
   );
 }

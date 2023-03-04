@@ -1,0 +1,579 @@
+/* Header.js */
+@font-face {
+    font-family: "Inconsolata";
+    src: url(../Fonts/InconsolataVariable.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Secular';
+    src: url(../Fonts/SecularOne.ttf);
+    font-display: swap;
+}
+
+h1.default-banner{
+    font-family: 'Secular', Arial, Helvetica, sans-serif;
+    color: hsl(230, 36%, 84%);
+    background-color: hsla(220, 5%, 11%, .7);
+    text-align: center;
+    font-size: 4rem;
+    border-bottom: 3px solid whitesmoke;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Style Nav Section */
+.default-style{
+    background-color: hsla(0, 0%, 83%, 0.5);
+    border-bottom: 3px solid whitesmoke;
+}
+
+.default-style h2{
+    text-align: center;
+}
+
+.default-style nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Skills.js */
+.default-hero{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: hsl(230, 36%, 84%);
+    border-bottom: 3px solid whitesmoke;
+    background-image: url('../Images/smileEggBW.webp');
+    background-size: 160%;
+    background-position: center;
+}
+
+@media only screen and (min-width: 601px) {
+    .default-hero{
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+p.default-banner{
+    font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsla(220, 5%, 11%, .65);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.default-skillsTitle {
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+  color: hsl(230, 36%, 84%);
+  background-color: hsla(220, 5%, 11%, 0.7);
+  text-align: center;
+  border-bottom: 3px solid whitesmoke;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.default-skillsTitle h2 {
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+}
+
+.default-hardbutton {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  background-image: linear-gradient(
+    hsl(150, 1%, 50%),
+    hsl(210, 25%, 97%) 50%,
+    hsl(150, 1%, 50%)
+  );
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+}
+
+.default-hardbutton:hover {
+  background-image: linear-gradient(
+    hsl(210, 25%, 97%),
+    hsl(150, 1%, 50%),
+    hsl(210, 25%, 97%)
+  );
+}
+
+.default-hardbutton:active {
+  background-image: none;
+  font-weight: bold;
+  color: hsl(0, 100%, 54%);
+  background-image: linear-gradient(
+    hsl(150, 1%, 50%),
+    hsl(0, 0%, 29%),
+    hsl(150, 1%, 50%)
+  );
+}
+
+.default-softbutton {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  background-image: linear-gradient(
+    hsl(0, 0%, 100%),
+    hsl(240, 100%, 88%),
+    hsl(0, 0%, 100%)
+  );
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+}
+
+.default-softbutton:hover {
+  background-image: linear-gradient(
+    hsl(240, 100%, 88%),
+    hsl(0, 0%, 100%),
+    hsl(240, 100%, 88%)
+  );
+}
+
+.default-softbutton:active {
+  background-image: none;
+  font-weight: bold;
+  color: hsl(180, 100%, 65%);
+  background-image: linear-gradient(
+    hsl(0, 3%, 78%),
+    hsl(240, 87%, 80%),
+    hsl(0, 3%, 78%)
+  );
+}
+
+.default-skills {
+  background-image: url("../Images/skillsBW.webp");
+  background-size: cover;
+}
+
+@media only screen and (min-width: 601px) {
+  .default-skills {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Hard Skills section */
+.default-hardskills {
+  background-color: hsla(220, 5%, 11%, 0.8);
+  backdrop-filter: blur(3px);
+  display: inline-block;
+  color: hsl(230, 36%, 84%);
+  width: 100vw;
+}
+
+.default-hardskills[visibility="1"] {
+  display: none;
+}
+
+@media only screen and (min-width: 601px) {
+  /* for desktop/tablet */
+  .default-hardskills {
+    width: 50vw;
+  }
+
+  .default-hardskills[visibility="1"] {
+    visibility: hidden;
+    display: inline-block;
+  }
+}
+
+.default-skillsh2 {
+  text-align: center;
+  padding: 1rem;
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+}
+
+.default-skillsblock {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto auto auto;
+}
+
+.default-wordpress {
+  grid-column-start: 2;
+}
+
+.default-skillIcon {
+  text-align: center;
+  padding: 1rem;
+}
+
+.default-icon {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 250%;
+}
+
+@media only screen and (min-width: 601px) {
+  /* for desktop/tablet */
+  .default-icon {
+    font-size: 210%;
+  }
+}
+
+.default-htmlIcon {
+  color: hsl(30, 100%, 50%);
+}
+
+.default-cssIcon {
+  color: hsl(210, 100%, 50%);
+}
+
+.default-javascriptIcon {
+  color: hsl(60, 100%, 50%);
+}
+
+.default-reactIcon {
+  color: hsl(195, 91%, 69%);
+}
+
+.default-githubIcon {
+  color: hsl(0, 0%, 100%);
+}
+
+.default-vscodeIcon {
+  max-width: 40%;
+  margin-bottom: -0.3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  /* for tablet */
+  .default-vscodeIcon {
+    max-width: 33%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* for laptop */
+  .default-vscodeIcon {
+    max-width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* for desktop */
+  .default-vscodeIcon {
+    max-width: 20%;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  /* for 4k and large screens */
+  .default-vscodeIcon {
+    max-width: 15%;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  /* for Galaxy Fold phone */
+  .default-vscodeIcon {
+    max-width: 60%;
+  }
+}
+
+.default-wordpressIcon {
+  color: hsl(195, 48%, 54%);
+}
+
+.default-iconCaption {
+  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+
+/* Soft Skills section */
+
+.default-softskills p {
+  text-align: center;
+  padding: 0.2rem;
+  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  font-weight: bold;
+}
+
+.default-softskills {
+  background-color: hsla(230, 36%, 84%, 0.8);
+  color: hsl(220, 5%, 11%);
+  width: 100vw;
+  backdrop-filter: blur(2px);
+}
+
+.default-softskills[visibility="1"] {
+  display: none;
+}
+
+@media only screen and (min-width: 601px) {
+  /* for desktop/tablet */
+  .default-softskills {
+    width: 50vw;
+  }
+
+  .default-softskills[visibility="1"] {
+    visibility: hidden;
+    display: inline-block;
+  }
+}
+
+/* AboutMe.js */
+.default-aboutMeTitle {
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+  color: hsl(230, 36%, 84%);
+  background-color: hsla(220, 5%, 11%, 0.7);
+  text-align: center;
+  border-bottom: 3px solid whitesmoke;
+  border-top: 3px solid whitesmoke;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.default-aboutMeTitle h2 {
+  font-size: 1.75rem;
+}
+
+.default-aboutMe {
+  background-size: contain;
+  background-position: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+@media only screen and (min-width: 400px) {
+  .default-aboutMe {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  /* desktops and laptops */
+  .default-aboutMe {
+    background-size: cover;
+    background-position: top;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  /* large screen desktops */
+  .default-aboutMe {
+    background-size: contain;
+    background-position: none;
+  }
+}
+
+.default-aboutMeContent {
+  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  font-size: 1.5rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsla(220, 5%, 11%, 0.8);
+  color: hsl(230, 36%, 84%);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Projects.js */
+.default-projectsTitle {
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+  color: hsl(230, 36%, 84%);
+  background-color: hsla(220, 5%, 11%, 0.7);
+  text-align: center;
+  border-bottom: 3px solid whitesmoke;
+  border-top: 3px solid whitesmoke;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.default-projectsTitle h2{
+    font-size: 1.75rem;
+    padding-bottom: 1rem;
+}
+
+.default-previous{
+  margin-right: 0.5rem;
+  padding: .5rem;
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+}
+
+.default-previous:active{
+    color: hsl(132, 100%, 50%);
+    background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 50%), hsl(0, 0%, 100%));
+}
+
+.default-next{
+  margin-left: 0.5rem;
+  padding: .5rem;
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+}
+
+.default-next:active{
+    color: hsl(132, 100%, 50%);
+    background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 50%), hsl(0, 0%, 100%));
+}
+
+.default-projects{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (min-width: 400px) {
+  .default-projects{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.default-projectsContent {
+    font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsla(220, 5%, 11%, .8);
+    color: hsl(230, 36%, 84%);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    backdrop-filter: blur(3px);
+}
+
+.default-projectsContent h3{
+    text-align: center;
+}
+
+.default-projectsContent p{
+    text-decoration: underline;
+    padding-top: 1rem;
+}
+
+.default-projectsContent ul{
+    padding-inline-start: 1rem;
+    padding-top: .75rem;
+}
+
+.default-link{
+    color: hsl(240, 100%, 50%);
+}
+
+.default-pagespeed{
+  width: 40%;
+  margin-top: 1.25rem
+}
+
+@media only screen and (min-width: 601px) {
+  /* tablet and larger screens */
+  .default-pagespeed{
+    width: 25%;
+  }
+}
+
+/* Contact.js */
+.default-contactTitle {
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+  color: hsl(230, 36%, 84%);
+  background-color: hsla(220, 5%, 11%, 0.7);
+  text-align: center;
+  border-bottom: 3px solid whitesmoke;
+  border-top: 3px solid whitesmoke;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.default-contactTitle h2 {
+  font-size: 1.75rem;
+}
+
+.default-contactBackground {
+  background-image: url("../Images/forhire.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.default-contact {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.default-contact p {
+  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  text-align: center;
+  color: hsl(230, 36%, 84%);
+  margin-bottom: 1rem;
+}
+
+.default-contact form {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: hsla(220, 5%, 11%, 0.55);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border: 2px solid whitesmoke;
+}
+
+.default-contact input {
+  text-align: center;
+  padding: 0.65rem;
+  margin-bottom: 1rem;
+  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+
+.default-contact textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+
+.default-contact button {
+  padding: 0.5rem;
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+}
+
+.default-contact button:active {
+  color: hsl(132, 100%, 50%);
+  background-image: linear-gradient(
+    hsl(0, 0%, 100%),
+    hsl(0, 0%, 50%),
+    hsl(0, 0%, 100%)
+  );
+}
+
+/* Footer.js */
+.default-footer {
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+  color: hsl(230, 36%, 84%);
+  background-color: hsla(220, 5%, 11%, 0.7);
+  text-align: center;
+  border-bottom: 3px solid whitesmoke;
+  border-top: 3px solid whitesmoke;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.default-footer a {
+  color: hsl(240, 100%, 50%);
+}

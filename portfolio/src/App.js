@@ -49,15 +49,19 @@ function App() {
             <div className={`${styling}-style`}>
               <h2>Choose A Style</h2>
               <nav>
-                <p onClick={defaultClick}>Creator's Pick (default)</p>
-                <p>
-                  8-Bit Bones <span onClick={bonesLightClick}>Light</span>{" "}
-                  <span onClick={bonesDarkClick}>Dark</span>
+                <p onClick={defaultClick}>
+                  Creator's Pick
+                  <br />(<span>default</span>)
                 </p>
                 <p>
-                  Modern Minimalist{" "}
-                  <span onClick={modernLightClick}>Light</span>{" "}
-                  <span onClick={modernDarkClick}>Dark</span>
+                  8-Bit Bones
+                  <br />(<span onClick={bonesLightClick}>Light</span> /{" "}
+                  <span onClick={bonesDarkClick}>Dark</span>)
+                </p>
+                <p>
+                  Modern Minimalist
+                  <br /> (<span onClick={modernLightClick}>Light</span> /{" "}
+                  <span onClick={modernDarkClick}>Dark</span>)
                 </p>
               </nav>
             </div>
@@ -74,14 +78,19 @@ function App() {
           <div className={`${styling}-style`}>
             <h2>Choose A Style</h2>
             <nav>
-              <p onClick={defaultClick}>Creator's Pick (default)</p>
-              <p>
-                8-Bit Bones <span onClick={bonesLightClick}>Light</span>{" "}
-                <span onClick={bonesDarkClick}>Dark</span>
+              <p onClick={defaultClick}>
+                Creator's Pick
+                <br />(<span>default</span>)
               </p>
               <p>
-                Modern Minimalist <span onClick={modernLightClick}>Light</span>{" "}
-                <span onClick={modernDarkClick}>Dark</span>
+                8-Bit Bones
+                <br />(<span onClick={bonesLightClick}>Light</span> /{" "}
+                <span onClick={bonesDarkClick}>Dark</span>)
+              </p>
+              <p>
+                Modern Minimalist
+                <br /> (<span onClick={modernLightClick}>Light</span> /{" "}
+                <span onClick={modernDarkClick}>Dark</span>)
               </p>
             </nav>
           </div>

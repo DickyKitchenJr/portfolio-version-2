@@ -1,11 +1,10 @@
 import React from "react";
-import '../Components/Header.css';
 
-function NewHeader() {
+function NewHeader({styling}) {
 
   return (
     <>
-      <h1 className="banner">DK's Portfolio</h1>
+      <h1 className={`${styling}-banner`}>DK's Portfolio</h1>
     </>
   );
 }

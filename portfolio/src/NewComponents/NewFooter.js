@@ -1,5 +1,4 @@
 import React from "react";
-import "../Components/Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -11,9 +10,9 @@ const GitHub = <FontAwesomeIcon icon={faGithub} />;
 const LinkedIn = <FontAwesomeIcon icon={faLinkedin} />;
 const Instagram = <FontAwesomeIcon icon={faInstagram} />;
 
-function NewFooter() {
+function NewFooter({styling}) {
   return (
-    <p className="footer">
+    <p className={`${styling}-footer`}>
       Find me on &nbsp;&nbsp;
       <a
         href="https://github.com/DickyKitchenJr"

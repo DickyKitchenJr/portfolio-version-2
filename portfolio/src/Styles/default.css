@@ -24,17 +24,35 @@ h1.default-banner{
 
 /* Style Nav Section */
 .default-style{
-    background-color: hsla(0, 0%, 83%, 0.5);
+    background-color: hsla(230, 36%, 84%, 0.8);
+  backdrop-filter: blur(3px);
     border-bottom: 3px solid whitesmoke;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .default-style h2{
     text-align: center;
+    font-family: 'Secular', Arial, Helvetica, sans-serif;
 }
 
 .default-style nav{
     display: flex;
     justify-content: space-evenly;
+    font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.default-style p{
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.default-style span{
+    color: hsl(240, 100%, 50%);
 }
 
 /* Skills.js */

@@ -7,7 +7,7 @@ import NewAboutMe from "./NewComponents/NewAboutMe";
 import NewSkills from "./NewComponents/NewSkills";
 import NewContact from "./NewComponents/NewContact";
 import NewFooter from "./NewComponents/NewFooter";
-import "./Components/StyleNav.css";
+import './Styles/default.css';
 
 // TODO: set up styling for each page using seperate css files for each ; After styling is complete erase unused files and remove the 'New' from the naming of each file along with verifying that all imports and references point to the appropriate components/files
 
@@ -45,13 +45,13 @@ function App() {
             contentClassName="main"
             strength={600}
           >
-            <NewHeader />
-            <div className="style">
+            <NewHeader styling={styling} />
+            <div className={`${styling}-style`}>
               <h2>Choose A Style</h2>
               <nav>
                 <p onClick={defaultClick}>Creator's Pick (default)</p>
                 <p>
-                  Bare Bones <span onClick={bonesLightClick}>Light</span>{" "}
+                  8-Bit Bones <span onClick={bonesLightClick}>Light</span>{" "}
                   <span onClick={bonesDarkClick}>Dark</span>
                 </p>
                 <p>
@@ -61,22 +61,22 @@ function App() {
                 </p>
               </nav>
             </div>
-            <NewSkills />
-            <NewAboutMe />
-            <NewProjects />
-            <NewContact />
-            <NewFooter />
+            <NewSkills styling={styling} />
+            <NewAboutMe styling={styling} />
+            <NewProjects styling={styling} />
+            <NewContact styling={styling} />
+            <NewFooter styling={styling} />
           </Parallax>
         </>
       ) : (
         <>
-          <NewHeader />
-          <div className="style">
+          <NewHeader styling={styling} />
+          <div className={`${styling}-style`}>
             <h2>Choose A Style</h2>
             <nav>
               <p onClick={defaultClick}>Creator's Pick (default)</p>
               <p>
-                Bare Bones <span onClick={bonesLightClick}>Light</span>{" "}
+                8-Bit Bones <span onClick={bonesLightClick}>Light</span>{" "}
                 <span onClick={bonesDarkClick}>Dark</span>
               </p>
               <p>
@@ -85,11 +85,11 @@ function App() {
               </p>
             </nav>
           </div>
-          <NewSkills />
-          <NewAboutMe />
-          <NewProjects />
-          <NewContact />
-          <NewFooter />
+          <NewSkills styling={styling} />
+          <NewAboutMe styling={styling} />
+          <NewProjects styling={styling} />
+          <NewContact styling={styling} />
+          <NewFooter styling={styling} />
         </>
       )}
     </>

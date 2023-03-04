@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../Components/Skills.css";
 import VSCode from "../Images/VSCode.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
@@ -9,20 +8,44 @@ import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faWordpress } from "@fortawesome/free-brands-svg-icons";
 
-const HTML = <FontAwesomeIcon icon={faHtml5} className="htmlIcon icon" />;
-const CSS = <FontAwesomeIcon icon={faCss3Alt} className="cssIcon icon" />;
-const JavaScript = (
-  <FontAwesomeIcon icon={faSquareJs} className="javascriptIcon icon" />
-);
-const react = <FontAwesomeIcon icon={faReact} className="reactIcon icon" />;
-const GitHub = <FontAwesomeIcon icon={faGithub} className="githubIcon icon" />;
-const WordPress = (
-  <FontAwesomeIcon icon={faWordpress} className="wordpressIcon icon" />
-);
-
-function NewSkills() {
+function NewSkills({ styling }) {
   const [hardSkillsHidden, setHardSkillsHidden] = useState(0);
   const [softSkillsHidden, setSoftSkillsHidden] = useState(1);
+
+  // Hard Skill Icons
+  const HTML = (
+    <FontAwesomeIcon icon={faHtml5} className={`${styling}-htmlIcon ${styling}-icon`} />
+  );
+  const CSS = (
+    <FontAwesomeIcon
+      icon={faCss3Alt}
+      className={`${styling}-cssIcon ${styling}-icon`}
+    />
+  );
+  const JavaScript = (
+    <FontAwesomeIcon
+      icon={faSquareJs}
+      className={`${styling}-javascriptIcon ${styling}-icon`}
+    />
+  );
+  const react = (
+    <FontAwesomeIcon
+      icon={faReact}
+      className={`${styling}-reactIcon ${styling}-icon`}
+    />
+  );
+  const GitHub = (
+    <FontAwesomeIcon
+      icon={faGithub}
+      className={`${styling}-githubIcon ${styling}-icon`}
+    />
+  );
+  const WordPress = (
+    <FontAwesomeIcon
+      icon={faWordpress}
+      className={`${styling}-wordpressIcon ${styling}-icon`}
+    />
+  );
 
   const hardHide = () => {
     setHardSkillsHidden(1);
@@ -48,54 +71,60 @@ function NewSkills() {
 
   return (
     <>
-      <div className="hero">
-        <p className="banner">Coding Makes Me Happy</p>
+      <div className={`${styling}-hero`}>
+        <p className={`${styling}-banner`}>Coding Makes Me Happy</p>
       </div>
-      <div className="skillsTitle">
+      <div className={`${styling}-skillsTitle`}>
         <h2>Skills</h2>
-        <button className="hardbutton" onClick={() => hardHandleClick()}>
+        <button
+          className={`${styling}-hardbutton`}
+          onClick={() => hardHandleClick()}
+        >
           Hard Skills
         </button>
-        <button className="softbutton" onClick={() => softHandleClick()}>
+        <button
+          className={`${styling}-softbutton`}
+          onClick={() => softHandleClick()}
+        >
           Soft Skills
         </button>
       </div>
-      <div className="skills">
-        <div className="hardskills" visibility={hardSkillsHidden}>
-          <h2 className="skillsh2">Hard Skills</h2>
-          <div className="skillsblock">
-            <figure className="skillIcon html">
+      <div className={`${styling}-skills`}>
+        <div className={`${styling}-hardskills`} visibility={hardSkillsHidden}>
+          <h2 className={`${styling}-skillsh2`}>Hard Skills</h2>
+          <div className={`${styling}-skillsblock`}>
+            <figure className={`${styling}-skillIcon html`}>
               {HTML}
-              <figcaption className="iconCaption">HTML</figcaption>
+              <figcaption className={`${styling}-iconCaption`}>HTML</figcaption>
             </figure>
-            <figure className="skillIcon css">
+            <figure className={`${styling}-skillIcon css`}>
               {CSS}
-              <figcaption className="iconCaption">CSS</figcaption>
+              <figcaption className={`${styling}-iconCaption`}>CSS</figcaption>
             </figure>
-            <figure className="skillIcon javascript">
+            <figure className={`${styling}-skillIcon javascript`}>
               {JavaScript}
-              <figcaption className="iconCaption">JavaScript</figcaption>
+              <figcaption className={`${styling}-iconCaption`}>JavaScript</figcaption>
             </figure>
-            <figure className="skillIcon react">
+            <figure className={`${styling}-skillIcon react`}>
               {react}
-              <figcaption className="iconCaption">React</figcaption>
+              <figcaption className={`${styling}-iconCaption`}>React</figcaption>
             </figure>
-            <figure className="skillIcon github">
+            <figure className={`${styling}-skillIcon github`}>
               {GitHub}
-              <figcaption className="iconCaption">GitHub</figcaption>
+              <figcaption className={`${styling}-iconCaption`}>GitHub</figcaption>
             </figure>
-            <figure className="skillIcon vscode">
-              <img src={VSCode} alt="VS Code icon" className="vscodeIcon" />
-              <figcaption className="iconCaption">VS Code</figcaption>
+            <figure className={`${styling}-skillIcon vscode`}>
+              <img src={VSCode} alt="VS Code icon" className={`${styling}-vscodeIcon`} />
+              <figcaption className={`${styling}-iconCaption`}>VS Code</figcaption>
             </figure>
-            <figure className="skillIcon wordpress">
+            <figure className={`${styling}-skillIcon wordpress`}>
               {WordPress}
-              <figcaption className="iconCaption">WordPress</figcaption>
+              <figcaption className={`${styling}-iconCaption`}>WordPress</figcaption>
             </figure>
           </div>
         </div>
-        <div className="softskills" visibility={softSkillsHidden}>
-          <h2 className="skillsh2">Soft Skills</h2>
+        <div className={`${styling}-softskills`} visibility={softSkillsHidden}>
+          <h2 className={`${styling}-skillsh2`}>Soft Skills</h2>
           <p>Verbal Communication</p>
           <p>Written Communication</p>
           <p>Team-oriented</p>

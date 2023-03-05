@@ -1,0 +1,424 @@
+/* Header.js */
+@font-face {
+  font-family: "PressStart2P";
+  src: url(../Fonts/PressStart2P.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VT323";
+  src: url(../Fonts/VT323.ttf);
+  font-display: swap;
+}
+
+h1.bonesLight-banner {
+  font-family: "PressStart2P", monospace;
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 3px solid black;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+  h1.bonesLight-banner {
+    font-size: 3rem;
+  }
+}
+
+/* Style Nav Section */
+.bonesLight-style {
+  border-bottom: 3px solid black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.bonesLight-style h2 {
+  text-align: center;
+  font-family: "PressStart2P", monospace;
+}
+
+.bonesLight-style nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "VT323", monospace;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding-top: 1rem;
+}
+
+.bonesLight-style p {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.bonesLight-style span {
+  color: hsl(240, 100%, 50%);
+}
+
+/* Skills.js */
+.bonesLight-hero {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-bottom: 3px solid black;
+}
+
+p.bonesLight-banner {
+  font-family: "VT323", monospace;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.bonesLight-skillsTitle {
+  font-family: "PressStart2P", monospace;
+  text-align: center;
+  border-bottom: 3px solid black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.bonesLight-skillsTitle h2 {
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+}
+
+.bonesLight-hardbutton {
+  margin-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-family: "PressStart2P", monospace;
+  font-size: 0.75rem;
+}
+
+.bonesLight-hardbutton:hover {
+  background-color: grey;
+}
+
+.bonesLight-hardbutton:active {
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+
+.bonesLight-softbutton {
+  margin-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-family: "PressStart2P", monospace;
+  font-size: 0.75rem;
+}
+
+.bonesLight-softbutton:hover {
+  background-color: grey;
+}
+
+.bonesLight-softbutton:active {
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+
+@media only screen and (min-width: 601px) {
+  .bonesLight-skills {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Hard Skills section */
+.bonesLight-hardskills {
+  background-color: hsl(0, 0%, 69%);
+  color: white;
+  display: inline-block;
+  width: 100vw;
+}
+
+.bonesLight-hardskills[visibility="1"] {
+  display: none;
+}
+
+@media only screen and (min-width: 601px) {
+  /* for desktop/tablet */
+  .bonesLight-hardskills {
+    width: 50vw;
+  }
+
+  .bonesLight-hardskills[visibility="1"] {
+    visibility: hidden;
+    display: inline-block;
+  }
+}
+
+.bonesLight-skillsh2 {
+  text-align: center;
+  padding: 1rem;
+  font-family: "PressStart2P", monospace;
+}
+
+.bonesLight-icon {
+  display: none;
+}
+
+.bonesLight-iconCaption {
+  padding: 0.2rem;
+}
+
+.bonesLight-skillIcon {
+  text-align: center;
+}
+
+.bonesLight-vscodeIcon {
+  display: none;
+}
+
+.bonesLight-iconCaption {
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+}
+
+/* Soft Skills section */
+
+.bonesLight-softskills p {
+  text-align: center;
+  padding: 0.2rem;
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+}
+
+.bonesLight-softskills {
+  background-color: hsl(0, 0%, 69%);
+  color: white;
+  width: 100vw;
+}
+
+.bonesLight-softskills[visibility="1"] {
+  display: none;
+}
+
+@media only screen and (min-width: 601px) {
+  /* for desktop/tablet */
+  .bonesLight-softskills {
+    width: 50vw;
+  }
+
+  .bonesLight-softskills[visibility="1"] {
+    visibility: hidden;
+    display: inline-block;
+  }
+}
+
+/* AboutMe.js */
+.bonesLight-aboutMeTitle {
+  font-family: "PressStart2P", monospace;
+  text-align: center;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.bonesLight-aboutMeTitle h2 {
+  font-size: 1.75rem;
+}
+
+.bonesLight-aboutMeContent {
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Projects.js */
+.bonesLight-projectsTitle {
+  font-family: "PressStart2P", monospace;
+  text-align: center;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.bonesLight-projectsTitle h2 {
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+}
+
+.bonesLight-previous {
+  margin-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-family: "PressStart2P", monospace;
+}
+
+.bonesLight-previous:hover {
+  background-color: grey;
+}
+
+.bonesLight-previous:active {
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+
+.bonesLight-next {
+  margin-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-family: "PressStart2P", monospace;
+}
+
+.bonesLight-next:hover {
+  background-color: grey;
+}
+
+.bonesLight-next:active {
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+
+.bonesLight-projectsContent {
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.bonesLight-projectsContent h3 {
+  text-align: center;
+}
+
+.bonesLight-projectsContent p {
+  text-decoration: underline;
+  padding-top: 1rem;
+}
+
+.bonesLight-projectsContent ul {
+  padding-inline-start: 1rem;
+  padding-top: 0.75rem;
+}
+
+.bonesLight-link {
+  color: hsl(240, 100%, 50%);
+}
+
+.bonesLight-pagespeed {
+  display: none;
+}
+
+/* Contact.js */
+.bonesLight-contactTitle {
+  font-family: "PressStart2P", monospace;
+  text-align: center;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.bonesLight-contactTitle h2 {
+  font-size: 1.75rem;
+}
+
+.bonesLight-contact {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.bonesLight-contact p {
+  font-family: "VT323", monospace;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.bonesLight-contact form {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 69%);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border: 2px solid black;
+}
+
+.bonesLight-contact input {
+  text-align: center;
+  padding: 0.65rem;
+  margin-bottom: 1rem;
+  font-family: "VT323", monospace;
+  font-size: 1rem;
+}
+
+.bonesLight-contact textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: "VT323", monospace;
+  font-size: 1rem;
+}
+
+.bonesLight-contact button {
+  padding: 0.5rem;
+  font-family: "PressStart2P", monospace;
+}
+
+.bonesLight-contact button:hover {
+  background-color: grey;
+}
+
+.bonesLight-contact button:active {
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+
+/* Footer.js */
+.bonesLight-footer {
+  font-family: "PressStart2P", monospace;
+  text-align: center;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.bonesLight-footerIcon {
+  display: none;
+}
+
+.bonesLight-footer a {
+  color: hsl(240, 100%, 50%);
+  margin-left: -2.5rem;
+  text-decoration: none;
+}

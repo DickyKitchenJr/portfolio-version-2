@@ -11,6 +11,10 @@
   font-display: swap;
 }
 
+.bonesLight {
+  background-color: whitesmoke;
+}
+
 h1.bonesLight-banner {
   font-family: "PressStart2P", monospace;
   text-align: center;

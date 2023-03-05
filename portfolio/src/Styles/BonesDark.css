@@ -1,0 +1,431 @@
+/* Header.js */
+@font-face {
+  font-family: "PressStart2P";
+  src: url(../Fonts/PressStart2P.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VT323";
+  src: url(../Fonts/VT323.ttf);
+  font-display: swap;
+}
+
+.bonesDark {
+  background-color: hsl(0, 0%, 6%);
+  color: whitesmoke;
+}
+
+h1.bonesDark-banner {
+  font-family: "PressStart2P", monospace;
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 3px solid whitesmoke;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+  h1.bonesDark-banner {
+    font-size: 3rem;
+  }
+}
+
+/* Style Nav Section */
+.bonesDark-style {
+  border-bottom: 3px solid whitesmoke;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.bonesDark-style h2 {
+  text-align: center;
+  font-family: "PressStart2P", monospace;
+}
+
+.bonesDark-style nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "VT323", monospace;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding-top: 1rem;
+}
+
+.bonesDark-style p {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.bonesDark-style span {
+  color: hsl(240, 97%, 44%);
+}
+
+/* Skills.js */
+.bonesDark-hero {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-bottom: 3px solid whitesmoke;
+}
+
+p.bonesDark-banner {
+  font-family: "VT323", monospace;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.bonesDark-skillsTitle {
+  font-family: "PressStart2P", monospace;
+  text-align: center;
+  border-bottom: 3px solid whitesmoke;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.bonesDark-skillsTitle h2 {
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+}
+
+.bonesDark-hardbutton {
+  margin-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-family: "PressStart2P", monospace;
+  font-size: 0.75rem;
+}
+
+.bonesDark-hardbutton:hover {
+  background-color: grey;
+}
+
+.bonesDark-hardbutton:active {
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: black;
+}
+
+.bonesDark-softbutton {
+  margin-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-family: "PressStart2P", monospace;
+  font-size: 0.75rem;
+}
+
+.bonesDark-softbutton:hover {
+  background-color: grey;
+}
+
+.bonesDark-softbutton:active {
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: black;
+}
+
+@media only screen and (min-width: 601px) {
+  .bonesDark-skills {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Hard Skills section */
+.bonesDark-hardskills {
+  background-color: hsl(0, 0%, 69%);
+  color: whitesmoke;
+  display: inline-block;
+  width: 100vw;
+}
+
+.bonesDark-hardskills[visibility="1"] {
+  display: none;
+}
+
+@media only screen and (min-width: 601px) {
+  /* for desktop/tablet */
+  .bonesDark-hardskills {
+    width: 50vw;
+  }
+
+  .bonesDark-hardskills[visibility="1"] {
+    visibility: hidden;
+    display: inline-block;
+  }
+}
+
+.bonesDark-skillsh2 {
+  text-align: center;
+  padding: 1rem;
+  font-family: "PressStart2P", monospace;
+}
+
+.bonesDark-icon {
+  display: none;
+}
+
+.bonesDark-iconCaption {
+  padding: 0.2rem;
+}
+
+.bonesDark-skillIcon {
+  text-align: center;
+}
+
+.bonesDark-vscodeIcon {
+  display: none;
+}
+
+.bonesDark-iconCaption {
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+}
+
+/* Soft Skills section */
+
+.bonesDark-softskills p {
+  text-align: center;
+  padding: 0.2rem;
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+}
+
+.bonesDark-softskills {
+  background-color: hsl(0, 0%, 69%);
+  color: whitesmoke;
+  width: 100vw;
+}
+
+.bonesDark-softskills[visibility="1"] {
+  display: none;
+}
+
+@media only screen and (min-width: 601px) {
+  /* for desktop/tablet */
+  .bonesDark-softskills {
+    width: 50vw;
+  }
+
+  .bonesDark-softskills[visibility="1"] {
+    visibility: hidden;
+    display: inline-block;
+  }
+}
+
+/* AboutMe.js */
+.bonesDark-aboutMeTitle {
+  font-family: "PressStart2P", monospace;
+  text-align: center;
+  border-bottom: 3px solid whitesmoke;
+  border-top: 3px solid whitesmoke;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.bonesDark-aboutMeTitle h2 {
+  font-size: 1.75rem;
+}
+
+.bonesDark-aboutMeContent {
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Projects.js */
+.bonesDark-projectsTitle {
+  font-family: "PressStart2P", monospace;
+  text-align: center;
+  border-bottom: 3px solid whitesmoke;
+  border-top: 3px solid whitesmoke;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.bonesDark-projectsTitle h2 {
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+}
+
+.bonesDark-previous {
+  margin-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-family: "PressStart2P", monospace;
+}
+
+.bonesDark-previous:hover {
+  background-color: grey;
+}
+
+.bonesDark-previous:active {
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: black;
+}
+
+.bonesDark-next {
+  margin-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-family: "PressStart2P", monospace;
+}
+
+.bonesDark-next:hover {
+  background-color: grey;
+}
+
+.bonesDark-next:active {
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: black;
+}
+
+.bonesDark-projectsContent {
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.bonesDark-projectsContent h3 {
+  text-align: center;
+}
+
+.bonesDark-projectsContent p {
+  text-decoration: underline;
+  padding-top: 1rem;
+}
+
+.bonesDark-projectsContent ul {
+  padding-inline-start: 1rem;
+  padding-top: 0.75rem;
+}
+
+.bonesDark-link {
+  color: hsl(240, 97%, 44%);
+}
+
+.bonesDark-pagespeed {
+  display: none;
+}
+
+/* Contact.js */
+.bonesDark-contactTitle {
+  font-family: "PressStart2P", monospace;
+  text-align: center;
+  border-bottom: 3px solid whitesmoke;
+  border-top: 3px solid whitesmoke;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.bonesDark-contactTitle h2 {
+  font-size: 1.75rem;
+}
+
+.bonesDark-contact {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.bonesDark-contact p {
+  font-family: "VT323", monospace;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.bonesDark-contact form {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 49%);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border: 2px solid whitesmoke;
+}
+
+.bonesDark-contact input {
+  text-align: center;
+  padding: 0.65rem;
+  margin-bottom: 1rem;
+  font-family: "VT323", monospace;
+  font-size: 1rem;
+  background-color: hsl(0, 0%, 6%);
+}
+
+.bonesDark-contact textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: "VT323", monospace;
+  font-size: 1rem;
+  background-color: hsl(0, 0%, 6%);
+}
+
+.bonesDark-contact button {
+  padding: 0.5rem;
+  font-family: "PressStart2P", monospace;
+}
+
+.bonesDark-contact button:hover {
+  background-color: grey;
+}
+
+.bonesDark-contact button:active {
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: black;
+}
+
+/* Footer.js */
+.bonesDark-footer {
+  font-family: "PressStart2P", monospace;
+  text-align: center;
+  border-bottom: 3px solid whitesmoke;
+  border-top: 3px solid whitesmoke;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.bonesDark-footerIcon {
+  display: none;
+}
+
+.bonesDark-footer a {
+  color: hsl(240, 97%, 44%);
+  margin-left: -2.5rem;
+  text-decoration: none;
+}

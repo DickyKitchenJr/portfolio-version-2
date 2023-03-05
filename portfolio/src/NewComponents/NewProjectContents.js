@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NewProjectEntries } from "./NewProjectEntries";
 
-function NewProjectContents({displayProject, styling}) {
+function NewProjectContents({ displayProject, styling }) {
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -21,23 +21,31 @@ function NewProjectContents({displayProject, styling}) {
     };
   }, [windowSize]);
 
-
   return (
     <>
       {NewProjectEntries.map((entry) => {
         return (
           <div
             key={NewProjectEntries.indexOf(entry)}
-            style={{
-              backgroundImage:
-                windowSize.width >= 600
-                  ? `url(${entry.backgroundImage})`
-                  : `url(${entry.backgroundImageSmall})`,
-              display:
-                displayProject !== NewProjectEntries.indexOf(entry)
-                  ? "none"
-                  : "block",
-            }}
+            style={
+              styling === "default"
+                ? {
+                    backgroundImage:
+                      windowSize.width >= 600
+                        ? `url(${entry.backgroundImage})`
+                        : `url(${entry.backgroundImageSmall})`,
+                    display:
+                      displayProject !== NewProjectEntries.indexOf(entry)
+                        ? "none"
+                        : "block",
+                  }
+                : {
+                    display:
+                      displayProject !== NewProjectEntries.indexOf(entry)
+                        ? "none"
+                        : "block",
+                  }
+            }
             className={`${styling}-projects`}
           >
             <div className={`${styling}-projectsContent`}>
@@ -48,12 +56,14 @@ function NewProjectContents({displayProject, styling}) {
                   return <li>{reason}</li>;
                 })}
               </ul>
-              {entry.ClientReview ? (<>
-              <p>Client Review:</p>
-              <ul>
-                <li>{entry.ClientReview}</li>
-              </ul>
-              </>) : null}
+              {entry.ClientReview ? (
+                <>
+                  <p>Client Review:</p>
+                  <ul>
+                    <li>{entry.ClientReview}</li>
+                  </ul>
+                </>
+              ) : null}
               <p>Resources Used:</p>
               <ul>
                 {entry.Resources.map((used) => {
@@ -73,12 +83,16 @@ function NewProjectContents({displayProject, styling}) {
                   className={`${styling}-pagespeed`}
                 />
               ) : null}
-              {entry.Improvements ? (<><p>Potential Future Improvements:</p>
-              <ul>
-                {entry.Improvements.map((improve) => {
-                  return <li>{improve}</li>;
-                })}
-              </ul></>): null}
+              {entry.Improvements ? (
+                <>
+                  <p>Potential Future Improvements:</p>
+                  <ul>
+                    {entry.Improvements.map((improve) => {
+                      return <li>{improve}</li>;
+                    })}
+                  </ul>
+                </>
+              ) : null}
               {entry.Source ? (
                 <>
                   <p>Source Code:</p>

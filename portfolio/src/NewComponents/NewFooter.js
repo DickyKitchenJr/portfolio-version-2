@@ -6,11 +6,17 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-const GitHub = <FontAwesomeIcon icon={faGithub} />;
-const LinkedIn = <FontAwesomeIcon icon={faLinkedin} />;
-const Instagram = <FontAwesomeIcon icon={faInstagram} />;
+function NewFooter({ styling }) {
+  const GitHub = (
+    <FontAwesomeIcon icon={faGithub} className={`${styling}-footerIcon`} />
+  );
+  const LinkedIn = (
+    <FontAwesomeIcon icon={faLinkedin} className={`${styling}-footerIcon`} />
+  );
+  const Instagram = (
+    <FontAwesomeIcon icon={faInstagram} className={`${styling}-footerIcon`} />
+  );
 
-function NewFooter({styling}) {
   return (
     <p className={`${styling}-footer`}>
       Find me on &nbsp;&nbsp;

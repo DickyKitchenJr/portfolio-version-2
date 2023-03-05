@@ -9,6 +9,7 @@ import NewContact from "./NewComponents/NewContact";
 import NewFooter from "./NewComponents/NewFooter";
 import "./Styles/default.css";
 import "./Styles/BonesLight.css";
+import "./Styles/BonesDark.css";
 
 // TODO: set up styling for each page using seperate css files for each ; After styling is complete erase unused files and remove the 'New' from the naming of each file along with verifying that all imports and references point to the appropriate components/files
 
@@ -75,6 +76,7 @@ function App() {
         </>
       ) : (
         <>
+        <div className={`${styling}`}>
           <NewHeader styling={styling} />
           <div className={`${styling}-style`}>
             <h2>Choose A Style</h2>
@@ -100,6 +102,7 @@ function App() {
           <NewProjects styling={styling} />
           <NewContact styling={styling} />
           <NewFooter styling={styling} />
+        </div>
         </>
       )}
     </>

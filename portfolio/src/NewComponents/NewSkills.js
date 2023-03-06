@@ -79,14 +79,16 @@ function NewSkills({ styling }) {
         <button
           className={`${styling}-hardbutton`}
           onClick={() => hardHandleClick()}
+          showing={hardSkillsHidden}
         >
-          Hard Skills
+          {styling === 'modernLight' || styling === 'modernDark' ? <span>◄</span>: null}Hard Skills
         </button>
         <button
           className={`${styling}-softbutton`}
           onClick={() => softHandleClick()}
+          showing={softSkillsHidden}
         >
-          Soft Skills
+          Soft Skills{styling === 'modernLight' || styling === 'modernDark' ? <span>►</span>: null}
         </button>
       </div>
       <div className={`${styling}-skills`}>

@@ -1,4 +1,3 @@
-/* Header.js */
 @font-face {
   font-family: "PressStart2P";
   src: url(../Fonts/PressStart2P.ttf);
@@ -15,6 +14,7 @@
   background-color: whitesmoke;
 }
 
+/* Header.js */
 h1.bonesLight-banner {
   font-family: "PressStart2P", monospace;
   text-align: center;

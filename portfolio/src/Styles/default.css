@@ -56,6 +56,10 @@ h1.default-banner{
     cursor: pointer;
 }
 
+.default-style span:hover{
+  color: hsl(132, 100%, 50%);
+}
+
 /* Skills.js */
 .default-hero{
     padding-top: 6rem;

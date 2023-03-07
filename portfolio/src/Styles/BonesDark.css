@@ -61,7 +61,7 @@ h1.bonesDark-banner {
 }
 
 .bonesDark-style span {
-  color: hsl(240, 97%, 44%);
+  color: hsl(121, 100%, 57%);
   cursor: pointer;
 }
 
@@ -334,7 +334,7 @@ p.bonesDark-banner {
 }
 
 .bonesDark-link {
-  color: hsl(240, 97%, 44%);
+  color: hsl(121, 100%, 57%);
   cursor: pointer;
 }
 
@@ -432,7 +432,7 @@ p.bonesDark-banner {
 }
 
 .bonesDark-footer a {
-  color: hsl(240, 97%, 44%);
+  color: hsl(121, 100%, 57%);
   margin-left: -2.5rem;
   text-decoration: none;
   cursor: pointer;

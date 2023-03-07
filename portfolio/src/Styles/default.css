@@ -295,8 +295,54 @@ p.default-banner{
   }
 }
 
+
+.default-jestIcon {
+  max-width: 40%;
+  margin-bottom: -0.3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  /* for tablet */
+  .default-jestIcon {
+    max-width: 33%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* for laptop */
+  .default-jestIcon {
+    max-width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* for desktop */
+  .default-jestIcon {
+    max-width: 20%;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  /* for 4k and large screens */
+  .default-jestIcon {
+    max-width: 15%;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  /* for Galaxy Fold phone */
+  .default-jestIcon {
+    max-width: 60%;
+  }
+}
+
+
 .default-wordpressIcon {
   color: hsl(195, 48%, 54%);
+}
+
+.default-yarnIcon{
+  color: hsl(217, 89%, 76%);
 }
 
 .default-iconCaption {

@@ -1,34 +1,10 @@
-import React, { useEffect, useState } from "react";
-import StyleNav from "./StyleNav";
-import "./Header.css";
+import React from "react";
 
-function Header() {
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
-
-  const detectWindowSize = () => {
-    setWindowSize({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    });
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", detectWindowSize);
-    return () => {
-      window.removeEventListener("resize", detectWindowSize);
-    };
-  }, [windowSize]);
+function Header({styling}) {
 
   return (
     <>
-      <h1 className="banner">DK's Portfolio</h1>
-      <StyleNav />
-        <div className="hero">
-          <p className="banner">Coding Makes Me Happy</p>
-        </div>
+      <h1 className={`${styling}-banner`}>DK's Portfolio</h1>
     </>
   );
 }

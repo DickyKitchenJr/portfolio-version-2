@@ -1,21 +1,20 @@
 import React, { useState } from "react";
 import ProjectContents from "./ProjectContents";
 import { ProjectEntries } from "./ProjectEntries";
-import "./Projects.css";
 
-function Projects() {
+function Projects({ styling }) {
   const [displayProject, setDisplayProject] = useState(0);
 
   const handleClickPrior = () => {
     if (displayProject === 0) {
-      setDisplayProject(ProjectEntries.length -1);
+      setDisplayProject(ProjectEntries.length - 1);
     } else {
       setDisplayProject(displayProject - 1);
     }
   };
 
   const handleClickNext = () => {
-    if (displayProject === ProjectEntries.length -1) {
+    if (displayProject === ProjectEntries.length - 1) {
       setDisplayProject(0);
     } else {
       setDisplayProject(displayProject + 1);
@@ -24,16 +23,22 @@ function Projects() {
 
   return (
     <>
-      <div className="projectsTitle">
+      <div className={`${styling}-projectsTitle`}>
         <h2>Projects</h2>
-        <button className="previous" onClick={handleClickPrior}>
+        <button className={`${styling}-previous`} onClick={handleClickPrior}>
+          {styling === "modernLight" || styling === "modernDark" ? (
+            <span>◄</span>
+          ) : null}
           Prior
         </button>
-        <button className="next" onClick={handleClickNext}>
+        <button className={`${styling}-next`} onClick={handleClickNext}>
           Next
+          {styling === "modernLight" || styling === "modernDark" ? (
+            <span>►</span>
+          ) : null}
         </button>
       </div>
-      <ProjectContents displayProject={displayProject} />
+      <ProjectContents displayProject={displayProject} styling={styling} />
     </>
   );
 }

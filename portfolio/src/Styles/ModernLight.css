@@ -65,7 +65,7 @@ h1.modernLight-banner {
 }
 
 .modernLight-style span {
-  color: hsl(188, 90%, 51%);
+  color: hsl(285, 100%, 50%);
 }
 
 .modernLight-style span:hover {
@@ -382,7 +382,7 @@ p.modernLight-banner {
 }
 
 .modernLight-link {
-  color: hsl(188, 90%, 51%);
+  color: hsl(285, 100%, 50%);
   text-decoration: none;
 }
 
@@ -497,7 +497,7 @@ p.modernLight-banner {
 }
 
 .modernLight-footer a {
-  color: hsl(188, 90%, 51%);
+  color: hsl(285, 100%, 50%);
   margin-left: -0.4rem;
   text-decoration: none;
 }

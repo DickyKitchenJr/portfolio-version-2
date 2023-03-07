@@ -66,6 +66,7 @@ h1.modernLight-banner {
 
 .modernLight-style span {
   color: hsl(285, 100%, 50%);
+  cursor: pointer;
 }
 
 .modernLight-style span:hover {
@@ -126,6 +127,7 @@ p.modernLight-banner {
   font-size: 1.5rem;
   background-color: hsla(0, 0%, 0%, 0);
   border: none;
+  cursor: pointer;
 }
 
 .modernLight-hardbutton[showing="0"] {
@@ -151,6 +153,7 @@ p.modernLight-banner {
   font-size: 1.5rem;
   background-color: hsla(0, 0%, 0%, 0);
   border: none;
+  cursor: pointer;
 }
 
 .modernLight-softbutton[showing="0"] {
@@ -319,6 +322,7 @@ p.modernLight-banner {
   font-size: 1.5rem;
   background-color: hsla(0, 0%, 0%, 0);
   border: none;
+  cursor: pointer;
 }
 
 .modernLight-previous:hover {
@@ -341,6 +345,7 @@ p.modernLight-banner {
   background-color: hsla(0, 0%, 0%, 0);
   border: none;
   color: black;
+  cursor: pointer;
 }
 
 .modernLight-next:hover {
@@ -384,6 +389,7 @@ p.modernLight-banner {
 .modernLight-link {
   color: hsl(285, 100%, 50%);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .modernLight-link:hover {
@@ -470,6 +476,7 @@ p.modernLight-banner {
   font-size: 1rem;
   border: 1px solid hsl(188, 85%, 26%);
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 .modernLight-contact button:hover {
@@ -500,6 +507,7 @@ p.modernLight-banner {
   color: hsl(285, 100%, 50%);
   margin-left: -0.4rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .modernLight-footer a:hover {

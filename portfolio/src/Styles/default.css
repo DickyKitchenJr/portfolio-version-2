@@ -53,6 +53,7 @@ h1.default-banner{
 
 .default-style span{
     color: hsl(240, 100%, 50%);
+    cursor: pointer;
 }
 
 /* Skills.js */
@@ -113,6 +114,7 @@ p.default-banner{
     hsl(150, 1%, 50%)
   );
   font-family: "Secular", Arial, Helvetica, sans-serif;
+  cursor: pointer;
 }
 
 .default-hardbutton:hover {
@@ -143,6 +145,7 @@ p.default-banner{
     hsl(0, 0%, 100%)
   );
   font-family: "Secular", Arial, Helvetica, sans-serif;
+  cursor: pointer;
 }
 
 .default-softbutton:hover {
@@ -467,6 +470,7 @@ p.default-banner{
   margin-right: 0.5rem;
   padding: .5rem;
   font-family: "Secular", Arial, Helvetica, sans-serif;
+  cursor: pointer;
 }
 
 .default-previous:active{
@@ -478,6 +482,7 @@ p.default-banner{
   margin-left: 0.5rem;
   padding: .5rem;
   font-family: "Secular", Arial, Helvetica, sans-serif;
+  cursor: pointer;
 }
 
 .default-next:active{
@@ -532,6 +537,7 @@ p.default-banner{
 
 .default-link{
     color: hsl(240, 100%, 50%);
+    cursor: pointer;
 }
 
 .default-pagespeed{
@@ -613,6 +619,7 @@ p.default-banner{
 .default-contact button {
   padding: 0.5rem;
   font-family: "Secular", Arial, Helvetica, sans-serif;
+  cursor: pointer;
 }
 
 .default-contact button:active {
@@ -640,4 +647,5 @@ p.default-banner{
 
 .default-footer a {
   color: hsl(240, 100%, 50%);
+  cursor: pointer;
 }

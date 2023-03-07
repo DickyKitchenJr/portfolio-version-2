@@ -66,6 +66,7 @@ h1.modernDark-banner {
 
 .modernDark-style span {
   color: hsl(188, 90%, 51%);
+  cursor: pointer;
 }
 
 .modernDark-style span:hover {
@@ -127,6 +128,7 @@ p.modernDark-banner {
   background-color: hsla(0, 0%, 0%, 0);
   color: hsl(57, 100%, 93%);
   border: none;
+  cursor: pointer;
 }
 
 .modernDark-hardbutton[showing="0"] {
@@ -153,6 +155,7 @@ p.modernDark-banner {
   background-color: hsla(0, 0%, 0%, 0);
   color: hsl(57, 100%, 93%);
   border: none;
+  cursor: pointer;
 }
 
 .modernDark-softbutton[showing="0"] {
@@ -322,6 +325,7 @@ p.modernDark-banner {
   background-color: hsla(0, 0%, 0%, 0);
   color: hsl(57, 100%, 93%);
   border: none;
+  cursor: pointer;
 }
 
 .modernDark-previous:hover {
@@ -343,7 +347,8 @@ p.modernDark-banner {
   font-size: 1.5rem;
   background-color: hsla(0, 0%, 0%, 0);
   border: none;
-  color: hsl(57, 100%, 93%)
+  color: hsl(57, 100%, 93%);
+  cursor: pointer;
 }
 
 .modernDark-next:hover {
@@ -387,6 +392,7 @@ p.modernDark-banner {
 .modernDark-link {
   color: hsl(188, 90%, 51%);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .modernDark-link:hover {
@@ -481,6 +487,7 @@ p.modernDark-banner {
   font-size: 1rem;
   border: 1px solid hsl(164, 37%, 45%);
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 .modernDark-contact button:hover {
@@ -511,6 +518,7 @@ p.modernDark-banner {
   color: hsl(188, 90%, 51%);
   margin-left: -0.4rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .modernDark-footer a:hover {

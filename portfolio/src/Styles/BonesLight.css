@@ -61,6 +61,7 @@ h1.bonesLight-banner {
 
 .bonesLight-style span {
   color: hsl(240, 100%, 50%);
+  cursor: pointer;
 }
 
 /* Skills.js */
@@ -107,6 +108,7 @@ p.bonesLight-banner {
   padding-right: 0.25rem;
   font-family: "PressStart2P", monospace;
   font-size: 0.75rem;
+  cursor: pointer;
 }
 
 .bonesLight-hardbutton:hover {
@@ -127,6 +129,7 @@ p.bonesLight-banner {
   padding-right: 0.25rem;
   font-family: "PressStart2P", monospace;
   font-size: 0.75rem;
+  cursor: pointer;
 }
 
 .bonesLight-softbutton:hover {
@@ -273,6 +276,7 @@ p.bonesLight-banner {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   font-family: "PressStart2P", monospace;
+  cursor: pointer;
 }
 
 .bonesLight-previous:hover {
@@ -292,6 +296,7 @@ p.bonesLight-banner {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   font-family: "PressStart2P", monospace;
+  cursor: pointer;
 }
 
 .bonesLight-next:hover {
@@ -329,6 +334,7 @@ p.bonesLight-banner {
 
 .bonesLight-link {
   color: hsl(240, 100%, 50%);
+  cursor: pointer;
 }
 
 .bonesLight-pagespeed {
@@ -393,6 +399,7 @@ p.bonesLight-banner {
 .bonesLight-contact button {
   padding: 0.5rem;
   font-family: "PressStart2P", monospace;
+  cursor: pointer;
 }
 
 .bonesLight-contact button:hover {
@@ -425,4 +432,5 @@ p.bonesLight-banner {
   color: hsl(240, 100%, 50%);
   margin-left: -2.5rem;
   text-decoration: none;
+  cursor: pointer;
 }

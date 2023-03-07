@@ -15,13 +15,15 @@ import MayhemTest from "../Images/mayhemTest.webp";
 import jsPlaygroundSmall from "../Images/jsplaygroundSmall.webp";
 import jsPlaygroundBig from "../Images/jsplaygroundBig.webp";
 import jsPlaygroundTest from "../Images/jsplaygroundTest.webp";
+import AuthorBig from '../Images/authorBig.webp';
+import AuthorSmall from '../Images/authorSmall.webp';
 
 export const ProjectEntries = [
   {
     backgroundImage: MayhemBig,
     backgroundImageSmall: MayhemSmall,
     Title: "MayhemMills.com",
-    Pupose: [
+    Purpose: [
       "to create a client website to meet the client's needs and aesthetic preferences",
     ],
     ClientReview:
@@ -48,10 +50,33 @@ export const ProjectEntries = [
     Live: "https://mayhemmills.com/",
   },
   {
+    backgroundImage: AuthorBig,
+    backgroundImageSmall: AuthorSmall,
+    Title: "Multi-page Author Site",
+    Purpose: [
+      "to create a multi-page site to advertise books I've published and give readers a place to see samples of those books, reviews of those books, and blogs which feature various topics, interviews, and snippets of writings and upcoming works",
+    ],
+    Resources: [
+      "React",
+      "CSS",
+      "HTML",
+      "JavaScript",
+      "Visual Studio Code",
+      "Corel PaintShop Pro for editing pictures used",
+      "GitHub",
+    ],
+    Challenges: [
+      "creating a cohesive style that worked with books in both the thriller and children's book genres",
+    ],
+    Improvements: ["continue to add new content as it becomes available"],
+    Source: "https://github.com/DickyKitchenJr/author-site-version-2",
+    Live: "https://dickykitchenjr.com/",
+  },
+  {
     backgroundImage: AmazonBig,
     backgroundImageSmall: AmazonSmall,
     Title: "Clone Amazon Thriller Books Best Sellers",
-    Pupose: [
+    Purpose: [
       "to create a site using visual references, similar to if a client were to give you a mockup of something they want you to build",
     ],
     Resources: [
@@ -82,7 +107,7 @@ export const ProjectEntries = [
     backgroundImage: PFetchBig,
     backgroundImageSmall: PFetchSmall,
     Title: "Picture Fetch",
-    Pupose: [
+    Purpose: [
       "to accept user input to update the user name and pictures",
       "to demonstrate successful use of the Unsplash API",
     ],
@@ -108,7 +133,7 @@ export const ProjectEntries = [
     backgroundImage: jsPlaygroundBig,
     backgroundImageSmall: jsPlaygroundSmall,
     Title: "JavaScript Playground",
-    Pupose: ["to provide a place to showcase small projects using JavaScript"],
+    Purpose: ["to provide a place to showcase small projects using JavaScript"],
     Resources: ["JavaScript", "CSS", "HTML", "Visual Studio Code", "GitHub"],
     Challenges: [
       "deciding what projects to build",
@@ -122,8 +147,8 @@ export const ProjectEntries = [
   {
     backgroundImage: ReactPicBig,
     backgroundImageSmall: ReactPicSmall,
-    Title: "React Sample Projects",
-    Pupose: [
+    Title: "React Sample Projects with Test",
+    Purpose: [
       "to provide a place to showcase small projects using differet React skills including the use of hooks",
     ],
     Resources: [
@@ -146,7 +171,7 @@ export const ProjectEntries = [
     backgroundImage: TAMBig,
     backgroundImageSmall: TAMSmall,
     Title: "WordPress Website",
-    Pupose: [
+    Purpose: [
       "to create a character inspired site to entice readers to look into the source book",
       "to demonstrate understanding of using WordPress to create a website",
     ],
@@ -163,7 +188,7 @@ export const ProjectEntries = [
     backgroundImage: PortfolioBig,
     backgroundImageSmall: PortfolioSmall,
     Title: "This Portfolio Site",
-    Pupose: [
+    Purpose: [
       "to create a place for potential clients and employers to view my portfolio",
     ],
     Resources: [

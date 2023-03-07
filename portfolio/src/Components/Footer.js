@@ -1,5 +1,4 @@
 import React from "react";
-import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -7,13 +6,19 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-const GitHub = <FontAwesomeIcon icon={faGithub} />;
-const LinkedIn = <FontAwesomeIcon icon={faLinkedin} />;
-const Instagram = <FontAwesomeIcon icon={faInstagram} />;
+function Footer({ styling }) {
+  const GitHub = (
+    <FontAwesomeIcon icon={faGithub} className={`${styling}-footerIcon`} />
+  );
+  const LinkedIn = (
+    <FontAwesomeIcon icon={faLinkedin} className={`${styling}-footerIcon`} />
+  );
+  const Instagram = (
+    <FontAwesomeIcon icon={faInstagram} className={`${styling}-footerIcon`} />
+  );
 
-function Footer() {
   return (
-    <p className="footer">
+    <p className={`${styling}-footer`}>
       Find me on &nbsp;&nbsp;
       <a
         href="https://github.com/DickyKitchenJr"

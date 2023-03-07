@@ -460,6 +460,7 @@ p.modernDark-banner {
   background-color: hsl(14, 20%, 29%);
   border: 1px solid hsl(164, 37%, 45%);
   border-radius: 1rem;
+  color: hsl(14, 100%, 88%);
 }
 
 .modernDark-contact input::placeholder{
@@ -474,6 +475,7 @@ p.modernDark-banner {
   background-color: hsl(14, 20%, 29%);
   border: 1px solid hsl(164, 37%, 45%);
   border-radius: 1rem;
+  color: hsl(14, 100%, 88%);
 }
 
 .modernDark-contact textarea::placeholder{

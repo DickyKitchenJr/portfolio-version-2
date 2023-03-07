@@ -389,6 +389,7 @@ p.bonesDark-banner {
   font-family: "VT323", monospace;
   font-size: 1rem;
   background-color: hsl(0, 0%, 6%);
+  color: whitesmoke;
 }
 
 .bonesDark-contact textarea {
@@ -397,6 +398,7 @@ p.bonesDark-banner {
   font-family: "VT323", monospace;
   font-size: 1rem;
   background-color: hsl(0, 0%, 6%);
+  color: whitesmoke;
 }
 
 .bonesDark-contact button {

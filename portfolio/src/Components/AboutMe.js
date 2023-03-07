@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "./AboutMe.css";
 import meCentered from "../Images/meCenteredBW.webp";
 import meWide from "../Images/meWideBW.webp";
 
-function AboutMe() {
+function AboutMe({styling}) {
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -42,11 +41,11 @@ function AboutMe() {
 
   return (
     <>
-      <div className="aboutMeTitle">
+      <div className={`${styling}-aboutMeTitle`}>
         <h2>About Me</h2>
       </div>
-      <div className="aboutMe" style={{ backgroundImage: `url(${picture})` }}>
-        <p className="aboutMeContent">
+      <div className={`${styling}-aboutMe`} style={styling === 'default' ? { backgroundImage: `url(${picture})` } : null}>
+        <p className={`${styling}-aboutMeContent`}>
           I'm a front end developer with the goal of concise, clean coding with
           user accessibility in mind.
           <br />

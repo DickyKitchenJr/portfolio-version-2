@@ -1,14 +1,13 @@
 import React from "react";
-import "./Contact.css";
 
-function Contact() {
+function Contact({styling}) {
   return (
     <>
-      <div className="contactTitle">
+      <div className={`${styling}-contactTitle`}>
         <h2>Contact Me</h2>
       </div>
-      <div className="contactBackground">
-        <div className="contact">
+      <div className={`${styling}-contactBackground`}>
+        <div className={`${styling}-contact`}>
           <form
             action="https://formsubmit.co/dkitchencodes@gmail.com"
             method="POST"

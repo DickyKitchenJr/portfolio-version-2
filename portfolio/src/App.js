@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { Parallax } from "react-parallax";
 import code from "./Images/codeBackground.webp";
-import NewProjects from "./NewComponents/NewProjects";
-import NewHeader from "./NewComponents/NewHeader";
-import NewAboutMe from "./NewComponents/NewAboutMe";
-import NewSkills from "./NewComponents/NewSkills";
-import NewContact from "./NewComponents/NewContact";
-import NewFooter from "./NewComponents/NewFooter";
-import "./Styles/default.css";
+import Projects from "./Components/Projects";
+import Header from "./Components/Header";
+import AboutMe from "./Components/AboutMe";
+import Skills from "./Components/Skills";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
+import "./Styles/Default.css";
 import "./Styles/BonesLight.css";
 import "./Styles/BonesDark.css";
 import "./Styles/ModernLight.css";
+import "./Styles/ModernDark.css";
 
-// TODO: set up styling for each page using seperate css files for each ; After styling is complete erase unused files and remove the 'New' from the naming of each file along with verifying that all imports and references point to the appropriate components/files
 
 function App() {
   const [styling, setStyling] = useState("default");
@@ -48,7 +48,7 @@ function App() {
             contentClassName="main"
             strength={600}
           >
-            <NewHeader styling={styling} />
+            <Header styling={styling} />
             <div className={`${styling}-style`}>
               <h2>Choose A Style</h2>
               <nav>
@@ -68,17 +68,17 @@ function App() {
                 </p>
               </nav>
             </div>
-            <NewSkills styling={styling} />
-            <NewAboutMe styling={styling} />
-            <NewProjects styling={styling} />
-            <NewContact styling={styling} />
-            <NewFooter styling={styling} />
+            <Skills styling={styling} />
+            <AboutMe styling={styling} />
+            <Projects styling={styling} />
+            <Contact styling={styling} />
+            <Footer styling={styling} />
           </Parallax>
         </>
       ) : (
         <>
         <div className={`${styling}`}>
-          <NewHeader styling={styling} />
+          <Header styling={styling} />
           <div className={`${styling}-style`}>
             <h2>Choose A Style</h2>
             <nav>
@@ -98,11 +98,11 @@ function App() {
               </p>
             </nav>
           </div>
-          <NewSkills styling={styling} />
-          <NewAboutMe styling={styling} />
-          <NewProjects styling={styling} />
-          <NewContact styling={styling} />
-          <NewFooter styling={styling} />
+          <Skills styling={styling} />
+          <AboutMe styling={styling} />
+          <Projects styling={styling} />
+          <Contact styling={styling} />
+          <Footer styling={styling} />
         </div>
         </>
       )}

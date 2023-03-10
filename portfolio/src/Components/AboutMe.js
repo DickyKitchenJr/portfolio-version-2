@@ -44,7 +44,12 @@ function AboutMe({styling}) {
       <div className={`${styling}-aboutMeTitle`}>
         <h2>About Me</h2>
       </div>
-      <div className={`${styling}-aboutMe`} style={styling === 'default' ? { backgroundImage: `url(${picture})` } : null}>
+      <div
+        className={`${styling}-aboutMe`}
+        style={
+          styling === "default" ? { backgroundImage: `url(${picture})` } : null
+        }
+      >
         <p className={`${styling}-aboutMeContent`}>
           I'm a front end developer with the goal of concise, clean coding with
           user accessibility in mind.
@@ -71,7 +76,17 @@ function AboutMe({styling}) {
           Whether I am creating a website, making an app, writing a new book, or
           building something with my hands, I approach every problem the same
           way; with a sense of curiosity and an excitement for the finished
-          product.
+          product. <br />
+          <br />
+          (if you are interested in seeing a list of certificates I have earned,
+          you can click{" "}
+          <a
+            className={`${styling}-link`}
+            href="https://certificates.dickykitchen.com/"
+          >
+            here
+          </a>
+          )
         </p>
       </div>
     </>

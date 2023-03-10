@@ -544,6 +544,10 @@ p.default-banner{
     cursor: pointer;
 }
 
+.default-link:hover{
+  color: hsl(132, 100%, 50%);
+}
+
 .default-pagespeed{
   width: 40%;
   margin-top: 1.25rem
@@ -652,4 +656,8 @@ p.default-banner{
 .default-footer a {
   color: hsl(240, 100%, 50%);
   cursor: pointer;
+}
+
+.default-footer a:hover{
+  color: hsl(132, 100%, 50%);
 }

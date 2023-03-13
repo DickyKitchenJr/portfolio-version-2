@@ -51,32 +51,33 @@ function AboutMe({styling}) {
         }
       >
         <p className={`${styling}-aboutMeContent`}>
-          I'm a front end developer with the goal of concise, clean coding with
-          user accessibility in mind.
+          As a front-end developer, I bring a unique perspective to my work that
+          is informed by my experience as a Physical Therapist Assistant. Over
+          my 13-year career in healthcare, I developed valuable skills in clear
+          communication, attention to detail, and a commitment to providing
+          high-quality care. These skills have translated seamlessly into my
+          coding career, where I'm dedicated to creating websites and
+          applications that make a positive impact on people's lives.
           <br />
           <br />
-          I started learning to code in 2019 with a Python Course on
-          CodeCademy.com, and while I changed direction to front-end coding,
-          those first lessons helped kick-start my interest in coding and the
-          decision to build towards a career as a developer.
+          With a solid foundation in HTML, CSS, JavaScript, and React, I'm able
+          to approach every project with a sense of curiosity and excitement,
+          just as I approached every patient with a desire to help them achieve
+          their goals. In addition to my technical skills, I bring a range of
+          soft skills to my work, including effective verbal and written
+          communication, a team-oriented mindset, problem-solving ability,
+          creativity, and adaptability. I'm always eager to learn and improve,
+          and I value constructive feedback as an opportunity to grow and
+          develop my skills further.
           <br />
           <br />
-          Since then, I have used a variety of online resources to expand my
-          knowledge and skill set, all with a focus on building projects as I
-          grow.
+          Whether I'm working independently or collaborating with a team, I
+          approach every project with an open-minded, teachable attitude and a
+          commitment to delivering results that exceed expectations. I'm excited
+          about the opportunity to leverage my skills and experience to make a
+          positive impact in the front-end development space and to contribute
+          to innovative, user-centered solutions for clients and users alike.
           <br />
-          <br />
-          At first, I did most of my coding on the CodeCademy platform, but
-          recently I have performed more coding in my GitHub repositories to
-          better let others see my activity and growth. <br />
-          <br />
-          Moving forward, my goal is to find a company I can grow at and a team
-          that creates great things. <br />
-          <br />
-          Whether I am creating a website, making an app, writing a new book, or
-          building something with my hands, I approach every problem the same
-          way; with a sense of curiosity and an excitement for the finished
-          product. <br />
           <br />
           (if you are interested in seeing a list of certificates I have earned,
           you can click{" "}

@@ -160,6 +160,7 @@ export const ProjectEntries = [
       "Visual Studio Code",
       "Corel PaintShop Pro for editing picture used",
       "GitHub",
+      "Jest",
     ],
     Challenges: ["deciding what projects to build"],
     Improvements: ["add new projects as inspiration occurs"],

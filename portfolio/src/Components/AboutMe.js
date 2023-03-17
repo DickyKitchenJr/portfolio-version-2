@@ -53,11 +53,12 @@ function AboutMe({styling}) {
         <p className={`${styling}-aboutMeContent`}>
           As a front-end developer, I bring a unique perspective to my work that
           is informed by my experience as a Physical Therapist Assistant. Over
-          my 13-year career in healthcare, I developed valuable skills in clear
-          communication, attention to detail, and a commitment to providing
-          high-quality care. These skills have translated seamlessly into my
-          coding career, where I'm dedicated to creating websites and
-          applications that make a positive impact on people's lives.
+          my 15-year career in healthcare (2 as a PT Tech and 13 as a LPTA), I
+          developed valuable skills in clear communication, attention to detail,
+          and a commitment to providing high-quality care. These skills have
+          translated seamlessly into my coding career, where I'm dedicated to
+          creating websites and applications that make a positive impact on
+          people's lives.
           <br />
           <br />
           With a solid foundation in HTML, CSS, JavaScript, and React, I'm able
@@ -88,6 +89,12 @@ function AboutMe({styling}) {
             here
           </a>
           )
+          <br />
+          <br />
+          In addition to my years of experience in health care and time I've
+          taken to learn front-end coding, I'm also a published author of 2
+          thriller books and 1 children's book, as well as a loving husband and
+          father.
         </p>
       </div>
     </>

@@ -1,7 +1,5 @@
 import AmazonBig from "../Images/amazonsite.webp";
 import AmazonSmall from "../Images/amazonSmall.webp";
-import PFetchBig from "../Images/picturefetch.webp";
-import PFetchSmall from "../Images/pictureFetchSmall.webp";
 import ReactPicBig from "../Images/reactexperiments.webp";
 import ReactPicSmall from "../Images/reactExperimentsSmall.webp";
 import TAMBig from "../Images/theaverageman.webp";
@@ -17,6 +15,8 @@ import jsPlaygroundBig from "../Images/jsplaygroundBig.webp";
 import jsPlaygroundTest from "../Images/jsplaygroundTest.webp";
 import AuthorBig from '../Images/authorBig.webp';
 import AuthorSmall from '../Images/authorSmall.webp';
+import MarvelBig from '../Images/marvelSearchBig.webp';
+import MarvelSmall from '../Images/marvelSearchSmall.webp';
 
 export const ProjectEntries = [
   {
@@ -104,30 +104,28 @@ export const ProjectEntries = [
     Live: "https://mock-amazon-best-seller.netlify.app/",
   },
   {
-    backgroundImage: PFetchBig,
-    backgroundImageSmall: PFetchSmall,
-    Title: "Picture Fetch",
+    backgroundImage: MarvelBig,
+    backgroundImageSmall: MarvelSmall,
+    Title: "Next.js Marvel Character Serach",
     Purpose: [
-      "to accept user input to update the user name and pictures",
-      "to demonstrate successful use of the Unsplash API",
+      "to create a site using Next.js and the Marvel API",
+      "show ability return requested information based on user input",
     ],
     Resources: [
-      "React",
-      "CSS",
+      "Nextjs",
+      "official Marvel API",
       "Visual Studio Code",
-      "Unsplash API",
+      "Vercel to simplify deployment",
       "GitHub",
-      "HTML",
-      "JavaScript",
     ],
     Challenges: [
-      "intial attempt to request data using different parameters from the Unsplash API resulted in slightly different presentation of the json data returned, requiring different treatment of the data when using different parameters for request",
+      "used default information to account for Marvel API not being up to date with character bios, images, etc.",
     ],
     Improvements: [
-      "allowing user to specify search query vs using pre-assigned radio buttons",
+      "if this project was to move forward beyond being used strictly for a portfolio piece, I would either have to go with a different API or try to build one myself as the amount of information missing from the official Marvel API is too substantial ",
     ],
-    Source: "https://github.com/DickyKitchenJr/picture-fetch",
-    Live: "https://api-picture-results.netlify.app/",
+    Source: "https://github.com/DickyKitchenJr/nextjs-marvel-character-search",
+    Live: "https://nextjs-marvel-character-search.vercel.app/",
   },
   {
     backgroundImage: jsPlaygroundBig,

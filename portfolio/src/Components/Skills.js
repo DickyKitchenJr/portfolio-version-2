@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import VSCode from "../Images/VSCode.webp";
 import Jest from '../Images/jest.webp';
+import Nextjs from '../Images/nextjs.webp';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
@@ -153,9 +154,7 @@ function Skills({ styling }) {
             </figure>
             <figure className={`${styling}-skillIcon yarn`}>
               {Yarn}
-              <figcaption className={`${styling}-iconCaption`}>
-                Yarn
-              </figcaption>
+              <figcaption className={`${styling}-iconCaption`}>Yarn</figcaption>
             </figure>
             <figure className={`${styling}-skillIcon jest`}>
               <img
@@ -163,9 +162,15 @@ function Skills({ styling }) {
                 alt="jest icon"
                 className={`${styling}-vscodeIcon`}
               />
-              <figcaption className={`${styling}-iconCaption`}>
-                Jest
-              </figcaption>
+              <figcaption className={`${styling}-iconCaption`}>Jest</figcaption>
+            </figure>
+            <figure className={`${styling}-skillIcon jest`}>
+              <img
+                src={Nextjs}
+                alt="nextjs icon"
+                className={`${styling}-vscodeIcon`}
+              />
+              <figcaption className={`${styling}-iconCaption`}>Next.js</figcaption>
             </figure>
           </div>
         </div>

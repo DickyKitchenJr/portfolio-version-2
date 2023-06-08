@@ -2,8 +2,6 @@ import AmazonBig from "../Images/amazonsite.webp";
 import AmazonSmall from "../Images/amazonSmall.webp";
 import ReactPicBig from "../Images/reactexperiments.webp";
 import ReactPicSmall from "../Images/reactExperimentsSmall.webp";
-import TAMBig from "../Images/theaverageman.webp";
-import TAMSmall from "../Images/theAverageManSmall.webp";
 import PortfolioBig from "../Images/portfolio.webp";
 import PortfolioSmall from "../Images/portfolioSmall.webp";
 import PageSpeed from "../Images/pagespeed.webp";
@@ -13,12 +11,46 @@ import MayhemTest from "../Images/mayhemTest.webp";
 import jsPlaygroundSmall from "../Images/jsplaygroundSmall.webp";
 import jsPlaygroundBig from "../Images/jsplaygroundBig.webp";
 import jsPlaygroundTest from "../Images/jsplaygroundTest.webp";
-import AuthorBig from '../Images/authorBig.webp';
-import AuthorSmall from '../Images/authorSmall.webp';
-import MarvelBig from '../Images/marvelSearchBig.webp';
-import MarvelSmall from '../Images/marvelSearchSmall.webp';
+import AuthorBig from "../Images/authorBig.webp";
+import AuthorSmall from "../Images/authorSmall.webp";
+import MarvelBig from "../Images/marvelSearchBig.webp";
+import MarvelSmall from "../Images/marvelSearchSmall.webp";
+import IndieBookVaultBig from "../Images/indiebookvault.webp";
+import IndieBookVaultSmall from "../Images/indiebookvaultSmall.webp";
 
 export const ProjectEntries = [
+  {
+    backgroundImage: IndieBookVaultBig,
+    backgroundImageSmall: IndieBookVaultSmall,
+    Title: "Indie Book Vault",
+    Purpose: [
+      "to create a website for indie authors that will help improve marketing ability by providing a central location for readers to locate indie and self-published authors and find links to the authors individual pages",
+      "to have authors listed at random to provide a fair and equal chance of each author being show as the first author in their specific genre page",
+      "to create a form within the Contact section of the site to act as an application for authors to join while directing them to provide specific information and not allowing them to submit without filling out required sections",
+    ],
+    Resources: [
+      "Vite",
+      "React",
+      "react-router-dom",
+      "JavaScript",
+      "CSS",
+      "HTML",
+      "formsubmit.io to handle backend submission of the author application form",
+      "Visual Studio Code",
+      "Github",
+      "Corel PaintShop Pro for editing pictures used",
+    ],
+    Challenges: [
+      "using the Fisher-Yates shuffle algorithm to handle shuffling the list of authors on page load after the main authors list has been divided into genre specific list so that the user is shown the authors in a random order every time the page is loaded",
+    ],
+    Improvements: [
+      "continue to add authors as they apply",
+      "add more genre pages as demand increases",
+      "change handling of author application to be all backend coding vs being handled by a human",
+    ],
+    Source: "https://github.com/DickyKitchenJr/indie-book-vault",
+    Live: "https://indiebookvault.com/",
+  },
   {
     backgroundImage: MayhemBig,
     backgroundImageSmall: MayhemSmall,
@@ -165,23 +197,6 @@ export const ProjectEntries = [
     Source:
       "https://github.com/DickyKitchenJr/React-sample-project/tree/main/sample-project1",
     Live: "https://react-sample-projects.netlify.app/",
-  },
-  {
-    backgroundImage: TAMBig,
-    backgroundImageSmall: TAMSmall,
-    Title: "WordPress Website",
-    Purpose: [
-      "to create a character inspired site to entice readers to look into the source book",
-      "to demonstrate understanding of using WordPress to create a website",
-    ],
-    Resources: ["WordPress Version 6.0.2 "],
-    Challenges: ["choosing the layout", "creating information for the site"],
-    Improvements: [
-      "continue to build out the blog section",
-      "add more details throughout the site to further entice readers",
-    ],
-    Source: null,
-    Live: "https://theaverageman.dickykitchen.com/",
   },
   {
     backgroundImage: PortfolioBig,

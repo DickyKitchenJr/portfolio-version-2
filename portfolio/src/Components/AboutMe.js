@@ -51,7 +51,7 @@ function AboutMe({styling}) {
         }
       >
         <p className={`${styling}-aboutMeContent`}>
-          As a front-end developer, I bring a unique perspective to my work that
+          As a software developer, I bring a unique perspective to my work that
           is informed by my experience as a Physical Therapist Assistant. Over
           my 15-year career in healthcare (2 as a PT Tech and 13 as a LPTA), I
           developed valuable skills in clear communication, attention to detail,
@@ -76,7 +76,7 @@ function AboutMe({styling}) {
           approach every project with an open-minded, teachable attitude and a
           commitment to delivering results that exceed expectations. I'm excited
           about the opportunity to leverage my skills and experience to make a
-          positive impact in the front-end development space and to contribute
+          positive impact in the software development space and to contribute
           to innovative, user-centered solutions for clients and users alike.
           <br />
           <br />
@@ -92,7 +92,7 @@ function AboutMe({styling}) {
           <br />
           <br />
           In addition to my years of experience in health care and time I've
-          taken to learn front-end coding, I'm also a published author of 2
+          taken to learn coding, I'm also a published author of 2
           thriller books and 1 children's book, as well as a loving husband and
           father.
         </p>

@@ -44,12 +44,12 @@ export const ProjectEntries = [
     ],
     Challenges: [
       "using the Fisher-Yates shuffle algorithm to handle shuffling the list of authors on page load after the main authors list has been divided into genre specific list so that the user is shown the authors in a random order every time the page is loaded",
-      "implementing server side and form side validation to ensure the user submits the information appropriately and without duplication in the database"
+      "implementing server side and form side validation to ensure the user submits the information appropriately and without duplication in the database",
     ],
     Improvements: [
-      "continue to modify and add to the site based off user feedback"
+      "continue to modify and add to the site based off user feedback",
     ],
-    Source: "https://github.com/DickyKitchenJr/indie-book-vault",
+    Source: "https://github.com/DickyKitchenJr/Indie-Book-Vault-Full-Project",
     Live: "https://indiebookvault.com/",
   },
   {

@@ -24,29 +24,30 @@ export const ProjectEntries = [
     backgroundImageSmall: IndieBookVaultSmall,
     Title: "Indie Book Vault",
     Purpose: [
-      "to create a website for indie authors that will help improve marketing ability by providing a central location for readers to locate indie and self-published authors and find links to the authors individual pages",
+      "to create a full-stack website for indie authors that will help improve marketing ability by providing a central location for readers to locate indie and self-published authors and find links to the authors individual pages",
       "to have authors listed at random to provide a fair and equal chance of each author being show as the first author in their specific genre page",
       "to create a form within the Contact section of the site to act as an application for authors to join while directing them to provide specific information and not allowing them to submit without filling out required sections",
     ],
     Resources: [
-      "Vite",
+      "Node.js",
+      "Express.js",
+      "MySQL",
       "React",
+      "Vite",
       "react-router-dom",
       "JavaScript",
       "CSS",
       "HTML",
-      "formsubmit.io to handle backend submission of the author application form",
       "Visual Studio Code",
       "Github",
       "Corel PaintShop Pro for editing pictures used",
     ],
     Challenges: [
       "using the Fisher-Yates shuffle algorithm to handle shuffling the list of authors on page load after the main authors list has been divided into genre specific list so that the user is shown the authors in a random order every time the page is loaded",
+      "implementing server side and form side validation to ensure the user submits the information appropriately and without duplication in the database"
     ],
     Improvements: [
-      "continue to add authors as they apply",
-      "add more genre pages as demand increases",
-      "change handling of author application to be all backend coding vs being handled by a human",
+      "continue to modify and add to the site based off user feedback"
     ],
     Source: "https://github.com/DickyKitchenJr/indie-book-vault",
     Live: "https://indiebookvault.com/",

@@ -3,6 +3,8 @@ import VSCode from "../Images/VSCode.webp";
 import Jest from "../Images/jest.webp";
 import Nextjs from "../Images/nextjs.webp";
 import Vite from "../Images/vite.webp";
+import Express from "../Images/express.webp";
+import Mysql from "../Images/mysql.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
@@ -12,6 +14,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faWordpress } from "@fortawesome/free-brands-svg-icons";
 import { faYarn } from "@fortawesome/free-brands-svg-icons";
 import { faNpm } from "@fortawesome/free-brands-svg-icons";
+import { faNodeJs } from "@fortawesome/free-brands-svg-icons";
 
 function Skills({ styling }) {
   const [hardSkillsHidden, setHardSkillsHidden] = useState(0);
@@ -64,6 +67,12 @@ function Skills({ styling }) {
     <FontAwesomeIcon
       icon={faNpm}
       className={`${styling}-npmIcon ${styling}-icon`}
+    />
+  );
+  const node = (
+    <FontAwesomeIcon
+      icon={faNodeJs}
+      className={`${styling}-nodeIcon ${styling}-icon`}
     />
   );
 
@@ -175,7 +184,7 @@ function Skills({ styling }) {
               />
               <figcaption className={`${styling}-iconCaption`}>Jest</figcaption>
             </figure>
-            <figure className={`${styling}-skillIcon jest`}>
+            <figure className={`${styling}-skillIcon nextjs`}>
               <img
                 src={Nextjs}
                 alt="nextjs icon"
@@ -195,8 +204,30 @@ function Skills({ styling }) {
                 alt="vite icon"
                 className={`${styling}-vscodeIcon`}
               />
+              <figcaption className={`${styling}-iconCaption`}>Vite</figcaption>
+            </figure>
+            <figure className={`${styling}-skillIcon node`}>
+              {node}
+              <figcaption className={`${styling}-iconCaption`}>Node</figcaption>
+            </figure>
+            <figure className={`${styling}-skillIcon expressjs`}>
+              <img
+                src={Express}
+                alt="expressjs icon"
+                className={`${styling}-vscodeIcon`}
+              />
               <figcaption className={`${styling}-iconCaption`}>
-                Vite
+                Express.js
+              </figcaption>
+            </figure>
+            <figure className={`${styling}-skillIcon mysql`}>
+              <img
+                src={Mysql}
+                alt="mysql icon"
+                className={`${styling}-vscodeIcon`}
+              />
+              <figcaption className={`${styling}-iconCaption`}>
+                MySQL
               </figcaption>
             </figure>
           </div>

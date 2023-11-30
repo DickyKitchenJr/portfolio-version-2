@@ -262,6 +262,10 @@ p.default-banner{
   color: hsl(0, 0%, 100%);
 }
 
+.default-nodeIcon {
+  color: hsl(160, 59%, 55%);
+}
+
 .default-vscodeIcon {
   max-width: 40%;
   margin-bottom: -0.3rem;

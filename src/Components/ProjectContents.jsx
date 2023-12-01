@@ -70,10 +70,10 @@ function ProjectContents({ displayProject, styling }) {
                   return <li>{used}</li>;
                 })}
               </ul>
-              <p>Challenges:</p>
+              <p>Achievements:</p>
               <ul>
-                {entry.Challenges.map((challenge) => {
-                  return <li>{challenge}</li>;
+                {entry.Achievements.map((achievement) => {
+                  return <li>{achievement}</li>;
                 })}
               </ul>
               {entry.Test ? (

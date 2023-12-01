@@ -42,9 +42,10 @@ export const ProjectEntries = [
       "Github",
       "Corel PaintShop Pro for editing pictures used",
     ],
-    Challenges: [
-      "using the Fisher-Yates shuffle algorithm to handle shuffling the list of authors on page load after the main authors list has been divided into genre specific list so that the user is shown the authors in a random order every time the page is loaded",
-      "implementing server side and form side validation to ensure the user submits the information appropriately and without duplication in the database",
+    Achievements: [
+      "implemented a dynamic author listing feature using the Fisher-Yates shuffle algorithm, ensuring a randomized display for users on every site visit",
+      "implemented server side and form side validation to ensure the user submits the information appropriately and without duplication in the database",
+      "demonstrated proficiency in MySQL database management, optimizing queries and operations for efficient data storage and retrieval",
     ],
     Improvements: [
       "continue to modify and add to the site based off user feedback",
@@ -70,11 +71,11 @@ export const ProjectEntries = [
       "Corel PaintShop Pro for editing pictures used",
       "GitHub",
     ],
-    Challenges: [
-      "keeping the client informed of progress",
-      "helping to educate the client in what impacts website performance",
-      "helping to educate the client in what impacts user experience on websites",
-      "achieving a near perfect score on PageSpeed Insights",
+    Achievements: [
+      "proactively communicated with the client throughout the project, ensuring alignment with their vision and goals",
+      "provided insights to the client on factors influencing website performance, fostering an informed decision-making process for design and functionality choices",
+      "provided insights to the client in what impacts user experience, including contrast choices between text and background",
+      "achieved high score on PageSpeed Insights",
     ],
     Test: MayhemTest,
     Improvement: null,
@@ -98,19 +99,50 @@ export const ProjectEntries = [
       "Corel PaintShop Pro for editing pictures used",
       "GitHub",
     ],
-    Challenges: [
-      "creating a cohesive style that worked with books in both the thriller and children's book genres",
+    Achievements: [
+      "created a cohesive style that worked with books in both the thriller and children's book genres",
+      "utilized responsive design to ensure good user experience across multiple devices by adapting the layouts to various devices",
+      "developed a dynamic author website using React, incorporating multiple pages to provide an engaging and informative user experience",
+      "integrated book reviews, blurbs, and PDF samples to enhance user experience when researching what I've written",
     ],
     Improvements: ["continue to add new content as it becomes available"],
     Source: "https://github.com/DickyKitchenJr/author-site-version-2",
     Live: "https://dickykitchenjr.com/",
   },
   {
+    backgroundImage: ReactPicBig,
+    backgroundImageSmall: ReactPicSmall,
+    Title: "React Sample Projects with Test",
+    Purpose: [
+      "to provide a place to showcase small projects using differet React skills including the use of hooks",
+    ],
+    Resources: [
+      "React",
+      "Font Awesome",
+      "CSS",
+      "HTML",
+      "JavaScript",
+      "Visual Studio Code",
+      "Corel PaintShop Pro for editing picture used",
+      "GitHub",
+      "Jest",
+    ],
+    Achievements: [
+      "implemented test using Jest to ensure projects operate within expected ways",
+      "utilized various hooks and custom functions to provide an engaging experience for the user while demonstrating understanding of implementing React for page manipulation through user input",
+      "utilized a modular approach to present multiple smaller projects in a centralized way",
+    ],
+    Improvements: ["add new projects as inspiration occurs"],
+    Source:
+      "https://github.com/DickyKitchenJr/React-sample-project/tree/main/sample-project1",
+    Live: "https://react-sample-projects.netlify.app/",
+  },
+  {
     backgroundImage: AmazonBig,
     backgroundImageSmall: AmazonSmall,
     Title: "Clone Amazon Thriller Books Best Sellers",
     Purpose: [
-      "to create a site using visual references, similar to if a client were to give you a mockup of something they want you to build",
+      "to create a site using visual references, similar to if a client were to give you a mock-up of something they want you to build",
     ],
     Resources: [
       "React",
@@ -124,9 +156,8 @@ export const ProjectEntries = [
       "image links of various books shown",
       "GitHub",
     ],
-    Challenges: [
-      "icons used were changed to free versions largely found on FontAwesome as the original icons were either Amazon property or required payment to get access to them",
-      "colors were set by visual comparison vs looking at the exact colors used on the Amazon site as I did not want to copy code from their source code, as a result colors may not match the Amazon site completely",
+    Achievements: [
+      "demonstrated the ability to create a front-end site from a mock-up; in this case using the 2022 Amazon site as the mock-up",
     ],
     Improvements: [
       "adding ability for user to click other genres to recieve different best seller list",
@@ -151,8 +182,8 @@ export const ProjectEntries = [
       "Vercel to simplify deployment",
       "GitHub",
     ],
-    Challenges: [
-      "used default information to account for Marvel API not being up to date with character bios, images, etc.",
+    Achievements: [
+      "included a message to the users to account for when data is missing from the Marvel API, improving user experience",
     ],
     Improvements: [
       "if this project was to move forward beyond being used strictly for a portfolio piece, I would either have to go with a different API or try to build one myself as the amount of information missing from the official Marvel API is too substantial ",
@@ -166,38 +197,16 @@ export const ProjectEntries = [
     Title: "JavaScript Playground",
     Purpose: ["to provide a place to showcase small projects using JavaScript"],
     Resources: ["JavaScript", "CSS", "HTML", "Visual Studio Code", "GitHub"],
-    Challenges: [
-      "deciding what projects to build",
-      "achieving a perfect score on PageSpeed Insights",
+    Achievements: [
+      "utilized  HTML, CSS, and vanilla JavaScript to craft a collection of interactive and entertaining web applications",
+      "demonstrated proficiency in handling arrays, randomization, and DOM manipulation",
+      "demonstrated algorithmic thinking by systematically breaking down what is required to create a name and randomly assembling letters that mimic those requirements ",
+      "achieved a high score on PageSpeed Insights",
     ],
     Test: jsPlaygroundTest,
     Improvements: ["continue to add more projects"],
     Source: "https://github.com/DickyKitchenJr/JavaScript-Playground",
     Live: "https://jsplayground.dickykitchen.com/",
-  },
-  {
-    backgroundImage: ReactPicBig,
-    backgroundImageSmall: ReactPicSmall,
-    Title: "React Sample Projects with Test",
-    Purpose: [
-      "to provide a place to showcase small projects using differet React skills including the use of hooks",
-    ],
-    Resources: [
-      "React",
-      "Font Awesome",
-      "CSS",
-      "HTML",
-      "JavaScript",
-      "Visual Studio Code",
-      "Corel PaintShop Pro for editing picture used",
-      "GitHub",
-      "Jest",
-    ],
-    Challenges: ["deciding what projects to build"],
-    Improvements: ["add new projects as inspiration occurs"],
-    Source:
-      "https://github.com/DickyKitchenJr/React-sample-project/tree/main/sample-project1",
-    Live: "https://react-sample-projects.netlify.app/",
   },
   {
     backgroundImage: PortfolioBig,
@@ -215,11 +224,10 @@ export const ProjectEntries = [
       "Corel PaintShop Pro for editing picture used",
       "GitHub",
     ],
-    Challenges: [
-      "choosing a color scheme",
-      "deciding on background pictures to use",
-      "making adjustments for a 'mobile first' build",
-      "achieving a near perfect score on PageSpeed Insights",
+    Achievements: [
+      "successfully migrated project from create-react-app to Vite, optimizing performance and build processes for a more efficient development workflow",
+      "implemented a 'mobile first' approach, prioritizing user experience across various devices while ensuring responsive design and functionality",
+      "achieved high scores on PageSpeed Insights",
     ],
     Test: PageSpeed,
     Improvements: [

@@ -88,7 +88,7 @@ export const ProjectEntries = [
     backgroundImageSmall: AuthorSmall,
     Title: "Multi-page Author Site",
     Purpose: [
-      "to create a multi-page site to advertise books I've published and give readers a place to see samples of those books, reviews of those books, and blogs which feature various topics, interviews, and snippets of writings and upcoming works",
+      "to create a multi-page site to advertise books I've published and give readers a place to see samples and reviews of those books, as well as blogs which feature various topics, interviews, and snippets of writings and upcoming works",
     ],
     Resources: [
       "React",

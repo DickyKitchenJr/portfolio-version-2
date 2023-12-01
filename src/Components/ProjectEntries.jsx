@@ -114,7 +114,7 @@ export const ProjectEntries = [
     backgroundImageSmall: ReactPicSmall,
     Title: "React Sample Projects with Test",
     Purpose: [
-      "to provide a place to showcase small projects using differet React skills including the use of hooks",
+      "to provide a place to showcase small projects using different React skills including the use of hooks and state",
     ],
     Resources: [
       "React",

@@ -67,9 +67,11 @@ export const ProjectEntries = [
       "CSS",
       "HTML",
       "JavaScript",
+      "Ecwid store plugin",
+      "react-router-dom",
       "Visual Studio Code",
       "Corel PaintShop Pro for editing pictures used",
-      "GitHub",
+      "GitHub"
     ],
     Achievements: [
       "proactively communicated with the client throughout the project, ensuring alignment with their vision and goals",
@@ -79,8 +81,7 @@ export const ProjectEntries = [
     ],
     Test: MayhemTest,
     Improvement: null,
-    Source:
-      "https://github.com/DickyKitchenJr/sites-for-others/tree/main/mayhems-site",
+    Source: "https://github.com/DickyKitchenJr/Mayhem-Mills-Site",
     Live: "https://mayhemmills.com/",
   },
   {

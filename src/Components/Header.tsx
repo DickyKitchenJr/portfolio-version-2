@@ -1,7 +1,8 @@
-import React from "react";
+interface HeaderProps {
+  styling: string;
+}
 
-function Header({styling}) {
-
+function Header({ styling }: HeaderProps) {
   return (
     <>
       <h1 className={`${styling}-banner`}>DK's Portfolio</h1>

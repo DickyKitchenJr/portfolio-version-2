@@ -1,26 +1,30 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-function Contact({ styling }) {
-  const form = useRef();
+interface ContactProps {
+  styling: string;
+}
+
+function Contact({ styling }: ContactProps) {
+  const form = useRef<HTMLFormElement>(null);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [honey, setHoney] = useState(false)
 
-  const handleNameChange = (e) => {
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     let input = e.target.value;
 
     setName(input);
   };
 
-  const handleEmailChange = (e) => {
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     let input = e.target.value;
 
     setEmail(input);
   };
 
-  const handleMessageChange = (e) => {
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     let input = e.target.value;
 
     setMessage(input);
@@ -30,10 +34,11 @@ function Contact({ styling }) {
     setHoney(true)
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs
+    if(form.current){
+      emailjs
       .sendForm("contact_service", "template_18nwxbn", form.current, {
         publicKey: "iX7305v5_CCdTLK2r",
       })
@@ -49,6 +54,7 @@ function Contact({ styling }) {
           console.log(error);
         }
       );
+    }
   };
 
   return (
@@ -76,12 +82,12 @@ function Contact({ styling }) {
               value={email}
               required
             />
-            <input type="checkbox" value={honey} onChange={handleHoneyChange} name="_honey" style={{ display: "none" }} />
+            <input type="checkbox" checked={honey} onChange={handleHoneyChange} name="_honey" style={{ display: "none" }} />
             <textarea
               placeholder="Your Message"
               name="message"
-              rows="10"
-              cols="30"
+              rows={10}
+              cols={30}
               onChange={handleMessageChange}
               value={message}
               required

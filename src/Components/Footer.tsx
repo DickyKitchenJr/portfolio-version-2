@@ -1,4 +1,3 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -6,7 +5,11 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-function Footer({ styling }) {
+interface FooterProps {
+  styling: string;
+}
+
+function Footer({ styling }: FooterProps) {
   const GitHub = (
     <FontAwesomeIcon icon={faGithub} className={`${styling}-footerIcon`} />
   );

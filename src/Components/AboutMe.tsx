@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import meCentered from "../Images/meCenteredBW.webp";
 import meWide from "../Images/meWideBW.webp";
 
-function AboutMe({styling}) {
+interface AboutMeProps {
+  styling: string;
+}
+
+function AboutMe({ styling }: AboutMeProps) {
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -33,9 +37,10 @@ function AboutMe({styling}) {
       }
     };
 
-    window.addEventListener("resize", backgroundImage());
+    window.addEventListener("resize", backgroundImage);
+    backgroundImage();
     return () => {
-      window.removeEventListener("resize", backgroundImage());
+      window.removeEventListener("resize", backgroundImage);
     };
   }, [windowSize]);
 
@@ -47,7 +52,7 @@ function AboutMe({styling}) {
       <div
         className={`${styling}-aboutMe`}
         style={
-          styling === "default" ? { backgroundImage: `url(${picture})` } : null
+          styling === "default" ? { backgroundImage: `url(${picture})` } : undefined
         }
       >
         <p className={`${styling}-aboutMeContent`}>
@@ -76,8 +81,8 @@ function AboutMe({styling}) {
           approach every project with an open-minded, teachable attitude and a
           commitment to delivering results that exceed expectations. I'm excited
           about the opportunity to leverage my skills and experience to make a
-          positive impact in the software development space and to contribute
-          to innovative, user-centered solutions for clients and users alike.
+          positive impact in the software development space and to contribute to
+          innovative, user-centered solutions for clients and users alike.
           <br />
           <br />
           (if you are interested in seeing a list of certificates I have earned,
@@ -92,9 +97,8 @@ function AboutMe({styling}) {
           <br />
           <br />
           In addition to my years of experience in health care and time I've
-          taken to learn coding, I'm also a published author of 2
-          thriller books and 1 children's book, as well as a loving husband and
-          father.
+          taken to learn coding, I'm also a published author of 2 thriller books
+          and 1 children's book, as well as a loving husband and father.
         </p>
       </div>
     </>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ProjectContents from "./ProjectContents";
 import { ProjectEntries } from "./ProjectEntries";
 

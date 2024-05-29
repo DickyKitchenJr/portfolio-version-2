@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import ProjectContents from "./ProjectContents";
 import { ProjectEntries } from "./ProjectEntries";
 
-function Projects({ styling }) {
-  const [displayProject, setDisplayProject] = useState(0);
+interface ProjectsProps {
+  styling: string;
+}
+
+function Projects({ styling }: ProjectsProps) {
+  const [displayProject, setDisplayProject] = useState<number>(0);
 
   const handleClickPrior = () => {
     if (displayProject === 0) {

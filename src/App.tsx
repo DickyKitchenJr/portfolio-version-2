@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Parallax } from "react-parallax";
 import code from "./Images/codeBackground.webp";
 import Projects from "./Components/Projects";

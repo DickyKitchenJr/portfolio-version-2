@@ -1,7 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ProjectEntries } from "./ProjectEntries";
 
-function ProjectContents({ displayProject, styling }) {
+interface ProjectContentsProps {
+  styling: string, 
+  displayProject: number;
+}
+
+function ProjectContents({ displayProject, styling }: ProjectContentsProps) {
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,

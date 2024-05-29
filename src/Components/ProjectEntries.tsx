@@ -18,7 +18,21 @@ import MarvelSmall from "../Images/marvelSearchSmall.webp";
 import IndieBookVaultBig from "../Images/indiebookvault.webp";
 import IndieBookVaultSmall from "../Images/indiebookvaultSmall.webp";
 
-export const ProjectEntries = [
+type Projects = {
+  backgroundImage: string;
+  backgroundImageSmall: string;
+  Title: string;
+  Purpose: string[];
+  Resources: string[];
+  Achievements: string[];
+  Improvements?: string[];
+  Source: string;
+  Live?: string;
+  ClientReview?: string;
+  Test?:string;
+}
+
+export const ProjectEntries: Projects[] = [
   {
     backgroundImage: IndieBookVaultBig,
     backgroundImageSmall: IndieBookVaultSmall,
@@ -80,7 +94,6 @@ export const ProjectEntries = [
       "achieved high score on PageSpeed Insights",
     ],
     Test: MayhemTest,
-    Improvement: null,
     Source: "https://github.com/DickyKitchenJr/Mayhem-Mills-Site",
     Live: "https://mayhemmills.com/",
   },
@@ -161,7 +174,7 @@ export const ProjectEntries = [
       "demonstrated the ability to create a front-end site from a mock-up; in this case using the 2022 Amazon site as the mock-up",
     ],
     Improvements: [
-      "adding ability for user to click other genres to recieve different best seller list",
+      "adding ability for user to click other genres to receive different best seller list",
       "add ability for user to input book information and picture link to place book of their choosing in first place spot",
     ],
     Source:
@@ -235,6 +248,5 @@ export const ProjectEntries = [
       "continue to add more projects as skills continue to advance",
     ],
     Source: "https://github.com/DickyKitchenJr/portfolio-version-2",
-    Live: null,
   },
 ];

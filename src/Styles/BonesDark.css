@@ -158,7 +158,7 @@ p.bonesDark-banner {
   width: 100vw;
 }
 
-.bonesDark-hardskills[visibility="1"] {
+.bonesDark-hardskills[data-visibility="1"] {
   display: none;
 }
 
@@ -168,7 +168,7 @@ p.bonesDark-banner {
     width: 50vw;
   }
 
-  .bonesDark-hardskills[visibility="1"] {
+  .bonesDark-hardskills[data-visibility="1"] {
     visibility: hidden;
     display: inline-block;
   }
@@ -216,7 +216,7 @@ p.bonesDark-banner {
   width: 100vw;
 }
 
-.bonesDark-softskills[visibility="1"] {
+.bonesDark-softskills[data-visibility="1"] {
   display: none;
 }
 
@@ -226,7 +226,7 @@ p.bonesDark-banner {
     width: 50vw;
   }
 
-  .bonesDark-softskills[visibility="1"] {
+  .bonesDark-softskills[data-visibility="1"] {
     visibility: hidden;
     display: inline-block;
   }

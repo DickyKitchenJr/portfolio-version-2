@@ -131,7 +131,7 @@ p.modernDark-banner {
   cursor: pointer;
 }
 
-.modernDark-hardbutton[showing="0"] {
+.modernDark-hardbutton[data-showing="0"] {
   color: darkgrey;
 }
 
@@ -158,7 +158,7 @@ p.modernDark-banner {
   cursor: pointer;
 }
 
-.modernDark-softbutton[showing="0"] {
+.modernDark-softbutton[data-showing="0"] {
   color: darkgrey;
 }
 
@@ -187,7 +187,7 @@ p.modernDark-banner {
   border-radius: 2rem;
 }
 
-.modernDark-hardskills[visibility="1"] {
+.modernDark-hardskills[data-visibility="1"] {
   display: none;
 }
 
@@ -197,7 +197,7 @@ p.modernDark-banner {
     width: 50vw;
   }
 
-  .modernDark-hardskills[visibility="1"] {
+  .modernDark-hardskills[data-visibility="1"] {
     visibility: hidden;
     display: inline-block;
   }
@@ -247,7 +247,7 @@ p.modernDark-banner {
   width: 100vw;
 }
 
-.modernDark-softskills[visibility="1"] {
+.modernDark-softskills[data-visibility="1"] {
   display: none;
 }
 
@@ -257,7 +257,7 @@ p.modernDark-banner {
     width: 50vw;
   }
 
-  .modernDark-softskills[visibility="1"] {
+  .modernDark-softskills[data-visibility="1"] {
     visibility: hidden;
     display: inline-block;
   }

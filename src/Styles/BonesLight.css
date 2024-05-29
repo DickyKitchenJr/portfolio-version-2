@@ -157,7 +157,7 @@ p.bonesLight-banner {
   width: 100vw;
 }
 
-.bonesLight-hardskills[visibility="1"] {
+.bonesLight-hardskills[data-visibility="1"] {
   display: none;
 }
 
@@ -167,7 +167,7 @@ p.bonesLight-banner {
     width: 50vw;
   }
 
-  .bonesLight-hardskills[visibility="1"] {
+  .bonesLight-hardskills[data-visibility="1"] {
     visibility: hidden;
     display: inline-block;
   }
@@ -215,7 +215,7 @@ p.bonesLight-banner {
   width: 100vw;
 }
 
-.bonesLight-softskills[visibility="1"] {
+.bonesLight-softskills[data-visibility="1"] {
   display: none;
 }
 
@@ -225,7 +225,7 @@ p.bonesLight-banner {
     width: 50vw;
   }
 
-  .bonesLight-softskills[visibility="1"] {
+  .bonesLight-softskills[data-visibility="1"] {
     visibility: hidden;
     display: inline-block;
   }

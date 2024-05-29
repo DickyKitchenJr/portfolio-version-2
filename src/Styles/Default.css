@@ -192,7 +192,7 @@ p.default-banner{
   width: 100vw;
 }
 
-.default-hardskills[visibility="1"] {
+.default-hardskills[data-visibility="1"] {
   display: none;
 }
 
@@ -202,7 +202,7 @@ p.default-banner{
     width: 50vw;
   }
 
-  .default-hardskills[visibility="1"] {
+  .default-hardskills[data-visibility="1"] {
     visibility: hidden;
     display: inline-block;
   }
@@ -378,7 +378,7 @@ p.default-banner{
   backdrop-filter: blur(2px);
 }
 
-.default-softskills[visibility="1"] {
+.default-softskills[data-visibility="1"] {
   display: none;
 }
 
@@ -388,7 +388,7 @@ p.default-banner{
     width: 50vw;
   }
 
-  .default-softskills[visibility="1"] {
+  .default-softskills[data-visibility="1"] {
     visibility: hidden;
     display: inline-block;
   }

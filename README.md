@@ -10,6 +10,7 @@
 - CSS
 - HTML
 - JavaScript
+- TypeScript
 - Visual Studio Code
 - Corel PaintShop Pro for editing pictures used
 - GitHub

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import VSCode from "../Images/VSCode.webp";
 import Jest from "../Images/jest.webp";
 import Nextjs from "../Images/nextjs.webp";
@@ -16,7 +16,11 @@ import { faYarn } from "@fortawesome/free-brands-svg-icons";
 import { faNpm } from "@fortawesome/free-brands-svg-icons";
 import { faNodeJs } from "@fortawesome/free-brands-svg-icons";
 
-function Skills({ styling }) {
+interface SkillsProps {
+  styling: string;
+}
+
+function Skills({ styling }: SkillsProps) {
   const [hardSkillsHidden, setHardSkillsHidden] = useState(0);
   const [softSkillsHidden, setSoftSkillsHidden] = useState(1);
 
@@ -108,7 +112,7 @@ function Skills({ styling }) {
         <button
           className={`${styling}-hardbutton`}
           onClick={() => hardHandleClick()}
-          showing={hardSkillsHidden}
+          data-showing={hardSkillsHidden}
         >
           {styling === "modernLight" || styling === "modernDark" ? (
             <span>◄</span>
@@ -118,7 +122,7 @@ function Skills({ styling }) {
         <button
           className={`${styling}-softbutton`}
           onClick={() => softHandleClick()}
-          showing={softSkillsHidden}
+          data-showing={softSkillsHidden}
         >
           Soft Skills
           {styling === "modernLight" || styling === "modernDark" ? (
@@ -127,7 +131,7 @@ function Skills({ styling }) {
         </button>
       </div>
       <div className={`${styling}-skills`}>
-        <div className={`${styling}-hardskills`} visibility={hardSkillsHidden}>
+        <div className={`${styling}-hardskills`} data-visibility={hardSkillsHidden}>
           <h2 className={`${styling}-skillsh2`}>Hard Skills</h2>
           <div className={`${styling}-skillsblock`}>
             <figure className={`${styling}-skillIcon html`}>
@@ -232,7 +236,7 @@ function Skills({ styling }) {
             </figure>
           </div>
         </div>
-        <div className={`${styling}-softskills`} visibility={softSkillsHidden}>
+        <div className={`${styling}-softskills`} data-visibility={softSkillsHidden}>
           <h2 className={`${styling}-skillsh2`}>Soft Skills</h2>
           <p>Verbal Communication</p>
           <p>Written Communication</p>

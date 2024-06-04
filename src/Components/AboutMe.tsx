@@ -1,60 +1,15 @@
-import { useEffect, useState } from "react";
-import meCentered from "../Images/meCenteredBW.webp";
-import meWide from "../Images/meWideBW.webp";
-
 interface AboutMeProps {
   styling: string;
 }
 
 function AboutMe({ styling }: AboutMeProps) {
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
-
-  const [picture, setPicture] = useState();
-
-  const detectWindowSize = () => {
-    setWindowSize({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    });
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", detectWindowSize);
-    return () => {
-      window.removeEventListener("resize", detectWindowSize);
-    };
-  }, [windowSize]);
-
-  useEffect(() => {
-    const backgroundImage = () => {
-      if (windowSize.width <= 1020) {
-        setPicture(meCentered);
-      } else {
-        setPicture(meWide);
-      }
-    };
-
-    window.addEventListener("resize", backgroundImage);
-    backgroundImage();
-    return () => {
-      window.removeEventListener("resize", backgroundImage);
-    };
-  }, [windowSize]);
 
   return (
     <>
       <div className={`${styling}-aboutMeTitle`}>
         <h2>About Me</h2>
       </div>
-      <div
-        className={`${styling}-aboutMe`}
-        style={
-          styling === "default" ? { backgroundImage: `url(${picture})` } : undefined
-        }
-      >
+      <div className={`${styling}-aboutMe`}>
         <p className={`${styling}-aboutMeContent`}>
           As a software developer, I bring a unique perspective to my work that
           is informed by my experience as a Physical Therapist Assistant. Over

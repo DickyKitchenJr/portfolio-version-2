@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { Parallax } from "react-parallax";
-import code from "./Images/codeBackground.webp";
 import Projects from "./Components/Projects";
 import Header from "./Components/Header";
 import AboutMe from "./Components/AboutMe";
@@ -37,13 +35,6 @@ function App() {
     <>
       {styling === "default" ? (
         <>
-          <Parallax
-            blur={0}
-            bgImage={code}
-            bgImageAlt="various lines of code"
-            contentClassName="main"
-            strength={600}
-          >
             <Header styling={styling} />
             <div className={`${styling}-style`}>
               <h2>Choose A Style</h2>
@@ -69,7 +60,6 @@ function App() {
             <Projects styling={styling} />
             <Contact styling={styling} />
             <Footer styling={styling} />
-          </Parallax>
         </>
       ) : (
         <>

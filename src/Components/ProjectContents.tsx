@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { ProjectEntries } from "./ProjectEntries";
 
 interface ProjectContentsProps {
@@ -7,24 +6,6 @@ interface ProjectContentsProps {
 }
 
 function ProjectContents({ displayProject, styling }: ProjectContentsProps) {
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
-
-  const detectWindowSize = () => {
-    setWindowSize({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    });
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", detectWindowSize);
-    return () => {
-      window.removeEventListener("resize", detectWindowSize);
-    };
-  }, [windowSize]);
 
   return (
     <>
@@ -35,10 +16,6 @@ function ProjectContents({ displayProject, styling }: ProjectContentsProps) {
             style={
               styling === "default"
                 ? {
-                    backgroundImage:
-                      windowSize.width >= 600
-                        ? `url(${entry.backgroundImage})`
-                        : `url(${entry.backgroundImageSmall})`,
                     display:
                       displayProject !== ProjectEntries.indexOf(entry)
                         ? "none"

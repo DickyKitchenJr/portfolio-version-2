@@ -8,10 +8,6 @@ import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import "./Styles/Default.css";
-import "./Styles/BonesLight.css";
-import "./Styles/BonesDark.css";
-import "./Styles/ModernLight.css";
-import "./Styles/ModernDark.css";
 
 
 function App() {

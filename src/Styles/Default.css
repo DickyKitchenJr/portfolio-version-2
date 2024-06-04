@@ -68,9 +68,6 @@ h1.default-banner{
     padding-right: 1.5rem;
     color: hsl(230, 36%, 84%);
     border-bottom: 3px solid whitesmoke;
-    background-image: url('../Images/smileEggBW.webp');
-    background-size: 160%;
-    background-position: center;
 }
 
 @media only screen and (min-width: 601px) {
@@ -169,11 +166,6 @@ p.default-banner{
     hsl(240, 87%, 80%),
     hsl(0, 3%, 78%)
   );
-}
-
-.default-skills {
-  background-image: url("../Images/skillsBW.webp");
-  background-size: cover;
 }
 
 @media only screen and (min-width: 601px) {
@@ -578,12 +570,6 @@ p.default-banner{
 
 .default-contactTitle h2 {
   font-size: 1.75rem;
-}
-
-.default-contactBackground {
-  background-image: url("../Images/forhire.webp");
-  background-size: cover;
-  background-position: center;
 }
 
 .default-contact {

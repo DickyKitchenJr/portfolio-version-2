@@ -11,7 +11,7 @@
 }
 
 /* Header.js */
-h1.default-banner{
+h1.banner{
     font-family: 'Secular', Arial, Helvetica, sans-serif;
     color: hsl(230, 36%, 84%);
     background-color: hsla(220, 5%, 11%, .7);
@@ -23,7 +23,7 @@ h1.default-banner{
 }
 
 /* Style Nav Section */
-.default-style{
+.style{
     background-color: hsla(230, 36%, 84%, 0.8);
   backdrop-filter: blur(3px);
     border-bottom: 3px solid whitesmoke;
@@ -33,12 +33,12 @@ h1.default-banner{
     padding-left: 1rem;
 }
 
-.default-style h2{
+.style h2{
     text-align: center;
     font-family: 'Secular', Arial, Helvetica, sans-serif;
 }
 
-.default-style nav{
+.style nav{
     display: flex;
     justify-content: space-evenly;
     font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -46,22 +46,22 @@ h1.default-banner{
     font-weight: bold;
 }
 
-.default-style p{
+.style p{
     padding-right: .5rem;
     padding-left: .5rem;
 }
 
-.default-style span{
+.style span{
     color: hsl(240, 100%, 50%);
     cursor: pointer;
 }
 
-.default-style span:hover{
+.style span:hover{
   color: hsl(132, 100%, 50%);
 }
 
 /* Skills.js */
-.default-hero{
+.hero{
     padding-top: 6rem;
     padding-bottom: 6rem;
     padding-left: 1.5rem;
@@ -71,13 +71,13 @@ h1.default-banner{
 }
 
 @media only screen and (min-width: 601px) {
-    .default-hero{
+    .hero{
         background-size: cover;
         background-position: center;
     }
 }
 
-p.default-banner{
+p.banner{
     font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-size: 1.5rem;
@@ -91,7 +91,7 @@ p.default-banner{
     padding-right: 2rem;
 }
 
-.default-skillsTitle {
+.skillsTitle {
   font-family: "Secular", Arial, Helvetica, sans-serif;
   color: hsl(230, 36%, 84%);
   background-color: hsla(220, 5%, 11%, 0.7);
@@ -101,12 +101,12 @@ p.default-banner{
   padding-bottom: 1rem;
 }
 
-.default-skillsTitle h2 {
+.skillsTitle h2 {
   font-size: 1.75rem;
   padding-bottom: 1rem;
 }
 
-.default-hardbutton {
+.hardbutton {
   margin-right: 0.5rem;
   padding: 0.5rem;
   background-image: linear-gradient(
@@ -118,7 +118,7 @@ p.default-banner{
   cursor: pointer;
 }
 
-.default-hardbutton:hover {
+.hardbutton:hover {
   background-image: linear-gradient(
     hsl(210, 25%, 97%),
     hsl(150, 1%, 50%),
@@ -126,7 +126,7 @@ p.default-banner{
   );
 }
 
-.default-hardbutton:active {
+.hardbutton:active {
   background-image: none;
   font-weight: bold;
   color: hsl(0, 100%, 54%);
@@ -137,7 +137,7 @@ p.default-banner{
   );
 }
 
-.default-softbutton {
+.softbutton {
   margin-left: 0.5rem;
   padding: 0.5rem;
   background-image: linear-gradient(
@@ -149,7 +149,7 @@ p.default-banner{
   cursor: pointer;
 }
 
-.default-softbutton:hover {
+.softbutton:hover {
   background-image: linear-gradient(
     hsl(240, 100%, 88%),
     hsl(0, 0%, 100%),
@@ -157,7 +157,7 @@ p.default-banner{
   );
 }
 
-.default-softbutton:active {
+.softbutton:active {
   background-image: none;
   font-weight: bold;
   color: hsl(180, 100%, 65%);
@@ -169,14 +169,14 @@ p.default-banner{
 }
 
 @media only screen and (min-width: 601px) {
-  .default-skills {
+  .skills {
     display: flex;
     justify-content: space-between;
   }
 }
 
 /* Hard Skills section */
-.default-hardskills {
+.hardskills {
   background-color: hsla(220, 5%, 11%, 0.8);
   backdrop-filter: blur(3px);
   display: inline-block;
@@ -184,44 +184,44 @@ p.default-banner{
   width: 100vw;
 }
 
-.default-hardskills[data-visibility="1"] {
+.hardskills[data-visibility="1"] {
   display: none;
 }
 
 @media only screen and (min-width: 601px) {
   /* for desktop/tablet */
-  .default-hardskills {
+  .hardskills {
     width: 50vw;
   }
 
-  .default-hardskills[data-visibility="1"] {
+  .hardskills[data-visibility="1"] {
     visibility: hidden;
     display: inline-block;
   }
 }
 
-.default-skillsh2 {
+.skillsh2 {
   text-align: center;
   padding: 1rem;
   font-family: "Secular", Arial, Helvetica, sans-serif;
 }
 
-.default-skillsblock {
+.skillsblock {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto auto auto;
 }
 
-.default-wordpress {
+.wordpress {
   grid-column-start: 2;
 }
 
-.default-skillIcon {
+.skillIcon {
   text-align: center;
   padding: 1rem;
 }
 
-.default-icon {
+.icon {
   margin-left: auto;
   margin-right: auto;
   font-size: 250%;
@@ -229,133 +229,133 @@ p.default-banner{
 
 @media only screen and (min-width: 601px) {
   /* for desktop/tablet */
-  .default-icon {
+  .icon {
     font-size: 210%;
   }
 }
 
-.default-htmlIcon {
+.htmlIcon {
   color: hsl(30, 100%, 50%);
 }
 
-.default-cssIcon {
+.cssIcon {
   color: hsl(210, 100%, 50%);
 }
 
-.default-javascriptIcon {
+.javascriptIcon {
   color: hsl(60, 100%, 50%);
 }
 
-.default-reactIcon {
+.reactIcon {
   color: hsl(195, 91%, 69%);
 }
 
-.default-githubIcon {
+.githubIcon {
   color: hsl(0, 0%, 100%);
 }
 
-.default-nodeIcon {
+.nodeIcon {
   color: hsl(160, 59%, 55%);
 }
 
-.default-vscodeIcon {
+.vscodeIcon {
   max-width: 40%;
   margin-bottom: -0.3rem;
 }
 
 @media only screen and (min-width: 768px) {
   /* for tablet */
-  .default-vscodeIcon {
+  .vscodeIcon {
     max-width: 33%;
   }
 }
 
 @media only screen and (min-width: 900px) {
   /* for laptop */
-  .default-vscodeIcon {
+  .vscodeIcon {
     max-width: 30%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   /* for desktop */
-  .default-vscodeIcon {
+  .vscodeIcon {
     max-width: 20%;
   }
 }
 
 @media only screen and (min-width: 1900px) {
   /* for 4k and large screens */
-  .default-vscodeIcon {
+  .vscodeIcon {
     max-width: 15%;
   }
 }
 
 @media only screen and (max-width: 280px) {
   /* for Galaxy Fold phone */
-  .default-vscodeIcon {
+  .vscodeIcon {
     max-width: 60%;
   }
 }
 
 
-.default-jestIcon {
+.jestIcon {
   max-width: 40%;
   margin-bottom: -0.3rem;
 }
 
 @media only screen and (min-width: 768px) {
   /* for tablet */
-  .default-jestIcon {
+  .jestIcon {
     max-width: 33%;
   }
 }
 
 @media only screen and (min-width: 900px) {
   /* for laptop */
-  .default-jestIcon {
+  .jestIcon {
     max-width: 30%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   /* for desktop */
-  .default-jestIcon {
+  .jestIcon {
     max-width: 20%;
   }
 }
 
 @media only screen and (min-width: 1900px) {
   /* for 4k and large screens */
-  .default-jestIcon {
+  .jestIcon {
     max-width: 15%;
   }
 }
 
 @media only screen and (max-width: 280px) {
   /* for Galaxy Fold phone */
-  .default-jestIcon {
+  .jestIcon {
     max-width: 60%;
   }
 }
 
 
-.default-wordpressIcon {
+.wordpressIcon {
   color: hsl(195, 48%, 54%);
 }
 
-.default-yarnIcon{
+.yarnIcon{
   color: hsl(217, 89%, 76%);
 }
 
-.default-iconCaption {
+.iconCaption {
   font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
 }
 
 /* Soft Skills section */
 
-.default-softskills p {
+.softskills p {
   text-align: center;
   padding: 0.2rem;
   font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
@@ -363,31 +363,31 @@ p.default-banner{
   font-weight: bold;
 }
 
-.default-softskills {
+.softskills {
   background-color: hsla(230, 36%, 84%, 0.8);
   color: hsl(220, 5%, 11%);
   width: 100vw;
   backdrop-filter: blur(2px);
 }
 
-.default-softskills[data-visibility="1"] {
+.softskills[data-visibility="1"] {
   display: none;
 }
 
 @media only screen and (min-width: 601px) {
   /* for desktop/tablet */
-  .default-softskills {
+  .softskills {
     width: 50vw;
   }
 
-  .default-softskills[data-visibility="1"] {
+  .softskills[data-visibility="1"] {
     visibility: hidden;
     display: inline-block;
   }
 }
 
 /* AboutMe.js */
-.default-aboutMeTitle {
+.aboutMeTitle {
   font-family: "Secular", Arial, Helvetica, sans-serif;
   color: hsl(230, 36%, 84%);
   background-color: hsla(220, 5%, 11%, 0.7);
@@ -398,11 +398,11 @@ p.default-banner{
   padding-bottom: 1rem;
 }
 
-.default-aboutMeTitle h2 {
+.aboutMeTitle h2 {
   font-size: 1.75rem;
 }
 
-.default-aboutMe {
+.aboutMe {
   background-size: contain;
   background-position: center;
   padding-top: 2rem;
@@ -412,7 +412,7 @@ p.default-banner{
 }
 
 @media only screen and (min-width: 400px) {
-  .default-aboutMe {
+  .aboutMe {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -420,7 +420,7 @@ p.default-banner{
 
 @media only screen and (min-width: 980px) {
   /* desktops and laptops */
-  .default-aboutMe {
+  .aboutMe {
     background-size: cover;
     background-position: top;
   }
@@ -428,13 +428,13 @@ p.default-banner{
 
 @media only screen and (min-width: 1800px) {
   /* large screen desktops */
-  .default-aboutMe {
+  .aboutMe {
     background-size: contain;
     background-position: none;
   }
 }
 
-.default-aboutMeContent {
+.aboutMeContent {
   font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
   font-size: 1.5rem;
@@ -450,7 +450,7 @@ p.default-banner{
 }
 
 /* Projects.js */
-.default-projectsTitle {
+.projectsTitle {
   font-family: "Secular", Arial, Helvetica, sans-serif;
   color: hsl(230, 36%, 84%);
   background-color: hsla(220, 5%, 11%, 0.7);
@@ -461,36 +461,36 @@ p.default-banner{
   padding-bottom: 1rem;
 }
 
-.default-projectsTitle h2{
+.projectsTitle h2{
     font-size: 1.75rem;
     padding-bottom: 1rem;
 }
 
-.default-previous{
+.previous{
   margin-right: 0.5rem;
   padding: .5rem;
   font-family: "Secular", Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
 
-.default-previous:active{
+.previous:active{
     color: hsl(132, 100%, 50%);
     background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 50%), hsl(0, 0%, 100%));
 }
 
-.default-next{
+.next{
   margin-left: 0.5rem;
   padding: .5rem;
   font-family: "Secular", Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
 
-.default-next:active{
+.next:active{
     color: hsl(132, 100%, 50%);
     background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 50%), hsl(0, 0%, 100%));
 }
 
-.default-projects{
+.projects{
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 1.2rem;
@@ -500,13 +500,13 @@ p.default-banner{
 }
 
 @media only screen and (min-width: 400px) {
-  .default-projects{
+  .projects{
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
-.default-projectsContent {
+.projectsContent {
     font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
     width: fit-content;
@@ -521,43 +521,43 @@ p.default-banner{
     backdrop-filter: blur(3px);
 }
 
-.default-projectsContent h3{
+.projectsContent h3{
     text-align: center;
 }
 
-.default-projectsContent p{
+.projectsContent p{
     text-decoration: underline;
     padding-top: 1rem;
 }
 
-.default-projectsContent ul{
+.projectsContent ul{
     padding-inline-start: 1rem;
     padding-top: .75rem;
 }
 
-.default-link{
+.link{
     color: hsl(240, 100%, 50%);
     cursor: pointer;
 }
 
-.default-link:hover{
+.link:hover{
   color: hsl(132, 100%, 50%);
 }
 
-.default-pagespeed{
+.pagespeed{
   width: 40%;
   margin-top: 1.25rem
 }
 
 @media only screen and (min-width: 601px) {
   /* tablet and larger screens */
-  .default-pagespeed{
+  .pagespeed{
     width: 25%;
   }
 }
 
 /* Contact.js */
-.default-contactTitle {
+.contactTitle {
   font-family: "Secular", Arial, Helvetica, sans-serif;
   color: hsl(230, 36%, 84%);
   background-color: hsla(220, 5%, 11%, 0.7);
@@ -568,11 +568,11 @@ p.default-banner{
   padding-bottom: 1rem;
 }
 
-.default-contactTitle h2 {
+.contactTitle h2 {
   font-size: 1.75rem;
 }
 
-.default-contact {
+.contact {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
@@ -580,7 +580,7 @@ p.default-banner{
   padding-bottom: 2rem;
 }
 
-.default-contact p {
+.contact p {
   font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
   text-align: center;
@@ -588,7 +588,7 @@ p.default-banner{
   margin-bottom: 1rem;
 }
 
-.default-contact form {
+.contact form {
   display: inline-flex;
   flex-direction: column;
   background-color: hsla(220, 5%, 11%, 0.55);
@@ -599,7 +599,7 @@ p.default-banner{
   border: 2px solid whitesmoke;
 }
 
-.default-contact input {
+.contact input {
   text-align: center;
   padding: 0.65rem;
   margin-bottom: 1rem;
@@ -607,20 +607,20 @@ p.default-banner{
     sans-serif;
 }
 
-.default-contact textarea {
+.contact textarea {
   padding: 0.5rem;
   margin-bottom: 1rem;
   font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
 }
 
-.default-contact button {
+.contact button {
   padding: 0.5rem;
   font-family: "Secular", Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
 
-.default-contact button:active {
+.contact button:active {
   color: hsl(132, 100%, 50%);
   background-image: linear-gradient(
     hsl(0, 0%, 100%),
@@ -630,7 +630,7 @@ p.default-banner{
 }
 
 /* Footer.js */
-.default-footer {
+.footer {
   font-family: "Secular", Arial, Helvetica, sans-serif;
   color: hsl(230, 36%, 84%);
   background-color: hsla(220, 5%, 11%, 0.7);
@@ -643,11 +643,11 @@ p.default-banner{
   padding-right: 1rem;
 }
 
-.default-footer a {
+.footer a {
   color: hsl(240, 100%, 50%);
   cursor: pointer;
 }
 
-.default-footer a:hover{
+.footer a:hover{
   color: hsl(132, 100%, 50%);
 }

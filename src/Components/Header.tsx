@@ -1,11 +1,7 @@
-interface HeaderProps {
-  styling: string;
-}
-
-function Header({ styling }: HeaderProps) {
+function Header() {
   return (
     <>
-      <h1 className={`${styling}-banner`}>DK's Portfolio</h1>
+      <h1 className="banner">DK's Portfolio</h1>
     </>
   );
 }

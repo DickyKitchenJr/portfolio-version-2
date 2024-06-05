@@ -1,16 +1,12 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-interface ContactProps {
-  styling: string;
-}
-
-function Contact({ styling }: ContactProps) {
+function Contact() {
   const form = useRef<HTMLFormElement>(null);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [honey, setHoney] = useState(false)
+  const [honey, setHoney] = useState(false);
 
   const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     let input = e.target.value;
@@ -31,39 +27,39 @@ function Contact({ styling }: ContactProps) {
   };
 
   const handleHoneyChange = () => {
-    setHoney(true)
-  }
+    setHoney(true);
+  };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if(form.current){
+    if (form.current) {
       emailjs
-      .sendForm("contact_service", "template_18nwxbn", form.current, {
-        publicKey: "iX7305v5_CCdTLK2r",
-      })
-      .then(
-        () => {
-          alert("Message Sent!");
-          setName("");
-          setEmail("");
-          setMessage("");
-        },
-        (error) => {
-          alert(`Message failed. Error: ${error}`);
-          console.log(error);
-        }
-      );
+        .sendForm("contact_service", "template_18nwxbn", form.current, {
+          publicKey: "iX7305v5_CCdTLK2r",
+        })
+        .then(
+          () => {
+            alert("Message Sent!");
+            setName("");
+            setEmail("");
+            setMessage("");
+          },
+          (error) => {
+            alert(`Message failed. Error: ${error}`);
+            console.log(error);
+          }
+        );
     }
   };
 
   return (
     <>
-      <div className={`${styling}-contactTitle`}>
+      <div className="contactTitle">
         <h2>Contact Me</h2>
       </div>
-      <div className={`${styling}-contactBackground`}>
-        <div className={`${styling}-contact`}>
+      <div className="contactBackground">
+        <div className="contact">
           <form onSubmit={handleSubmit} ref={form}>
             <p>Have a job or a question for me?</p>
             <input
@@ -82,7 +78,13 @@ function Contact({ styling }: ContactProps) {
               value={email}
               required
             />
-            <input type="checkbox" checked={honey} onChange={handleHoneyChange} name="_honey" style={{ display: "none" }} />
+            <input
+              type="checkbox"
+              checked={honey}
+              onChange={handleHoneyChange}
+              name="_honey"
+              style={{ display: "none" }}
+            />
             <textarea
               placeholder="Your Message"
               name="message"

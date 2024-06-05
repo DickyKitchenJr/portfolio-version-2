@@ -5,23 +5,15 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-interface FooterProps {
-  styling: string;
-}
-
-function Footer({ styling }: FooterProps) {
-  const GitHub = (
-    <FontAwesomeIcon icon={faGithub} className={`${styling}-footerIcon`} />
-  );
-  const LinkedIn = (
-    <FontAwesomeIcon icon={faLinkedin} className={`${styling}-footerIcon`} />
-  );
+function Footer() {
+  const GitHub = <FontAwesomeIcon icon={faGithub} className="footerIcon" />;
+  const LinkedIn = <FontAwesomeIcon icon={faLinkedin} className="footerIcon" />;
   const Instagram = (
-    <FontAwesomeIcon icon={faInstagram} className={`${styling}-footerIcon`} />
+    <FontAwesomeIcon icon={faInstagram} className="footerIcon" />
   );
 
   return (
-    <p className={`${styling}-footer`}>
+    <p className="footer">
       Find me on &nbsp;&nbsp;
       <a
         href="https://github.com/DickyKitchenJr"

@@ -1,36 +1,25 @@
 import { ProjectEntries } from "./ProjectEntries";
 
 interface ProjectContentsProps {
-  styling: string, 
   displayProject: number;
 }
 
-function ProjectContents({ displayProject, styling }: ProjectContentsProps) {
-
+function ProjectContents({ displayProject }: ProjectContentsProps) {
   return (
     <>
       {ProjectEntries.map((entry) => {
         return (
           <div
             key={ProjectEntries.indexOf(entry)}
-            style={
-              styling === "default"
-                ? {
-                    display:
-                      displayProject !== ProjectEntries.indexOf(entry)
-                        ? "none"
-                        : "block",
-                  }
-                : {
-                    display:
-                      displayProject !== ProjectEntries.indexOf(entry)
-                        ? "none"
-                        : "block",
-                  }
-            }
-            className={`${styling}-projects`}
+            style={{
+              display:
+                displayProject !== ProjectEntries.indexOf(entry)
+                  ? "none"
+                  : "block",
+            }}
+            className="projects"
           >
-            <div className={`${styling}-projectsContent`}>
+            <div className="projectsContent">
               <h3>{entry.Title}</h3>
               <p>Purpose:</p>
               <ul>
@@ -62,7 +51,7 @@ function ProjectContents({ displayProject, styling }: ProjectContentsProps) {
                 <img
                   src={entry.Test}
                   alt="score from page speed insight"
-                  className={`${styling}-pagespeed`}
+                  className="pagespeed"
                 />
               ) : null}
               {entry.Improvements ? (
@@ -81,7 +70,7 @@ function ProjectContents({ displayProject, styling }: ProjectContentsProps) {
                   <ul>
                     <li>
                       <a
-                        className={`${styling}-link`}
+                        className="link"
                         href={entry.Source}
                         target="_blank"
                         rel="noreferrer"
@@ -99,7 +88,7 @@ function ProjectContents({ displayProject, styling }: ProjectContentsProps) {
                   <ul>
                     <li>
                       <a
-                        className={`${styling}-link`}
+                        className="link"
                         href={entry.Live}
                         target="_blank"
                         rel="noreferrer"

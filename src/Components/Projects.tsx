@@ -2,11 +2,7 @@ import { useState } from "react";
 import ProjectContents from "./ProjectContents";
 import { ProjectEntries } from "./ProjectEntries";
 
-interface ProjectsProps {
-  styling: string;
-}
-
-function Projects({ styling }: ProjectsProps) {
+function Projects() {
   const [displayProject, setDisplayProject] = useState<number>(0);
 
   const handleClickPrior = () => {
@@ -27,22 +23,16 @@ function Projects({ styling }: ProjectsProps) {
 
   return (
     <>
-      <div className={`${styling}-projectsTitle`}>
+      <div className="projectsTitle">
         <h2>Projects</h2>
-        <button className={`${styling}-previous`} onClick={handleClickPrior}>
-          {styling === "modernLight" || styling === "modernDark" ? (
-            <span>◄</span>
-          ) : null}
-          Prior
+        <button className="previous" onClick={handleClickPrior}>
+          ◄ Prior
         </button>
-        <button className={`${styling}-next`} onClick={handleClickNext}>
-          Next
-          {styling === "modernLight" || styling === "modernDark" ? (
-            <span>►</span>
-          ) : null}
+        <button className="next" onClick={handleClickNext}>
+          Next ►
         </button>
       </div>
-      <ProjectContents displayProject={displayProject} styling={styling} />
+      <ProjectContents displayProject={displayProject} />
     </>
   );
 }

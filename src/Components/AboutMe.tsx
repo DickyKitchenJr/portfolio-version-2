@@ -1,16 +1,11 @@
-interface AboutMeProps {
-  styling: string;
-}
-
-function AboutMe({ styling }: AboutMeProps) {
-
+function AboutMe() {
   return (
     <>
-      <div className={`${styling}-aboutMeTitle`}>
+      <div className="aboutMeTitle">
         <h2>About Me</h2>
       </div>
-      <div className={`${styling}-aboutMe`}>
-        <p className={`${styling}-aboutMeContent`}>
+      <div className="aboutMe">
+        <p className="aboutMeContent">
           As a software developer, I bring a unique perspective to my work that
           is informed by my experience as a Physical Therapist Assistant. Over
           my 15-year career in healthcare (2 as a PT Tech and 13 as a LPTA), I
@@ -42,10 +37,7 @@ function AboutMe({ styling }: AboutMeProps) {
           <br />
           (if you are interested in seeing a list of certificates I have earned,
           you can click{" "}
-          <a
-            className={`${styling}-link`}
-            href="https://certificates.dickykitchen.com/"
-          >
+          <a className="link" href="https://certificates.dickykitchen.com/">
             here
           </a>
           )

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Projects from "./Components/Projects";
 import Header from "./Components/Header";
 import AboutMe from "./Components/AboutMe";
@@ -7,91 +6,32 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import "./Styles/Default.css";
 
-
 function App() {
-  const [styling, setStyling] = useState("default");
-
-  const defaultClick = () => {
-    setStyling("default");
-  };
-
-  const bonesLightClick = () => {
-    setStyling("bonesLight");
-  };
-
-  const bonesDarkClick = () => {
-    setStyling("bonesDark");
-  };
-
-  const modernLightClick = () => {
-    setStyling("modernLight");
-  };
-
-  const modernDarkClick = () => {
-    setStyling("modernDark");
-  };
-
   return (
     <>
-      {styling === "default" ? (
-        <>
-            <Header styling={styling} />
-            <div className={`${styling}-style`}>
-              <h2>Choose A Style</h2>
-              <nav>
-                <p onClick={defaultClick}>
-                  Creator's Pick
-                  <br />(<span>default</span>)
-                </p>
-                <p>
-                  8-Bit Bones
-                  <br />(<span onClick={bonesLightClick}>Light</span> /{" "}
-                  <span onClick={bonesDarkClick}>Dark</span>)
-                </p>
-                <p>
-                  Modern Minimalist
-                  <br /> (<span onClick={modernLightClick}>Light</span> /{" "}
-                  <span onClick={modernDarkClick}>Dark</span>)
-                </p>
-              </nav>
-            </div>
-            <Skills styling={styling} />
-            <AboutMe styling={styling} />
-            <Projects styling={styling} />
-            <Contact styling={styling} />
-            <Footer styling={styling} />
-        </>
-      ) : (
-        <>
-        <div className={`${styling}`}>
-          <Header styling={styling} />
-          <div className={`${styling}-style`}>
-            <h2>Choose A Style</h2>
-            <nav>
-              <p onClick={defaultClick}>
-                Creator's Pick
-                <br />(<span>default</span>)
-              </p>
-              <p>
-                8-Bit Bones
-                <br />(<span onClick={bonesLightClick}>Light</span> /{" "}
-                <span onClick={bonesDarkClick}>Dark</span>)
-              </p>
-              <p>
-                Modern Minimalist
-                <br /> (<span onClick={modernLightClick}>Light</span> /{" "}
-                <span onClick={modernDarkClick}>Dark</span>)
-              </p>
-            </nav>
-          </div>
-          <Skills styling={styling} />
-          <AboutMe styling={styling} />
-          <Projects styling={styling} />
-          <Contact styling={styling} />
-          <Footer styling={styling} />
-        </div>
-        </>
-      )}
+      <Header />
+      <div className="style">
+        <h2>Choose A Style</h2>
+        <nav>
+          <p>
+            Creator's Pick
+            <br />(<span>default</span>)
+          </p>
+          <p>
+            8-Bit Bones
+            <br />(<span>Light</span> / <span>Dark</span>)
+          </p>
+          <p>
+            Modern Minimalist
+            <br /> (<span>Light</span> / <span>Dark</span>)
+          </p>
+        </nav>
+      </div>
+      <Skills />
+      <AboutMe />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
   );
 }

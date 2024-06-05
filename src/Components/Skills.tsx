@@ -16,11 +16,7 @@ import { faYarn } from "@fortawesome/free-brands-svg-icons";
 import { faNpm } from "@fortawesome/free-brands-svg-icons";
 import { faNodeJs } from "@fortawesome/free-brands-svg-icons";
 
-interface SkillsProps {
-  styling: string;
-}
-
-function Skills({ styling }: SkillsProps) {
+function Skills() {
   const [hardSkillsHidden, setHardSkillsHidden] = useState(0);
   const [softSkillsHidden, setSoftSkillsHidden] = useState(1);
 
@@ -28,55 +24,55 @@ function Skills({ styling }: SkillsProps) {
   const HTML = (
     <FontAwesomeIcon
       icon={faHtml5}
-      className={`${styling}-htmlIcon ${styling}-icon`}
+      className="htmlIcon icon"
     />
   );
   const CSS = (
     <FontAwesomeIcon
       icon={faCss3Alt}
-      className={`${styling}-cssIcon ${styling}-icon`}
+      className="cssIcon icon"
     />
   );
   const JavaScript = (
     <FontAwesomeIcon
       icon={faSquareJs}
-      className={`${styling}-javascriptIcon ${styling}-icon`}
+      className="javascriptIcon icon"
     />
   );
   const react = (
     <FontAwesomeIcon
       icon={faReact}
-      className={`${styling}-reactIcon ${styling}-icon`}
+      className="reactIcon icon"
     />
   );
   const GitHub = (
     <FontAwesomeIcon
       icon={faGithub}
-      className={`${styling}-githubIcon ${styling}-icon`}
+      className="githubIcon icon"
     />
   );
   const WordPress = (
     <FontAwesomeIcon
       icon={faWordpress}
-      className={`${styling}-wordpressIcon ${styling}-icon`}
+      className="wordpressIcon icon"
     />
   );
   const Yarn = (
     <FontAwesomeIcon
       icon={faYarn}
-      className={`${styling}-yarnIcon ${styling}-icon`}
+      className="yarnIcon icon"
     />
   );
   const npm = (
     <FontAwesomeIcon
       icon={faNpm}
-      className={`${styling}-npmIcon ${styling}-icon`}
+      className="npmIcon icon"
     />
   );
   const node = (
     <FontAwesomeIcon
       icon={faNodeJs}
-      className={`${styling}-nodeIcon ${styling}-icon`}
+      className="nodeIcon icon"
     />
   );
 
@@ -104,140 +100,134 @@ function Skills({ styling }: SkillsProps) {
 
   return (
     <>
-      <div className={`${styling}-hero`}>
-        <p className={`${styling}-banner`}>Coding Makes Me Happy</p>
+      <div className="hero">
+        <p className="banner">Coding Makes Me Happy</p>
       </div>
-      <div className={`${styling}-skillsTitle`}>
+      <div className="skillsTitle">
         <h2>Skills</h2>
         <button
-          className={`${styling}-hardbutton`}
+          className="hardbutton"
           onClick={() => hardHandleClick()}
           data-showing={hardSkillsHidden}
         >
-          {styling === "modernLight" || styling === "modernDark" ? (
-            <span>◄</span>
-          ) : null}
-          Hard Skills
+          ◄ Hard Skills
         </button>
         <button
-          className={`${styling}-softbutton`}
+          className="softbutton"
           onClick={() => softHandleClick()}
           data-showing={softSkillsHidden}
         >
-          Soft Skills
-          {styling === "modernLight" || styling === "modernDark" ? (
-            <span>►</span>
-          ) : null}
+          Soft Skills ►
         </button>
       </div>
-      <div className={`${styling}-skills`}>
-        <div className={`${styling}-hardskills`} data-visibility={hardSkillsHidden}>
-          <h2 className={`${styling}-skillsh2`}>Hard Skills</h2>
-          <div className={`${styling}-skillsblock`}>
-            <figure className={`${styling}-skillIcon html`}>
+      <div className="skills">
+        <div className="hardskills" data-visibility={hardSkillsHidden}>
+          <h2 className="skillsh2">Hard Skills</h2>
+          <div className="skillsblock">
+            <figure className="skillIcon html">
               {HTML}
-              <figcaption className={`${styling}-iconCaption`}>HTML</figcaption>
+              <figcaption className="iconCaption">HTML</figcaption>
             </figure>
-            <figure className={`${styling}-skillIcon css`}>
+            <figure className="skillIcon css">
               {CSS}
-              <figcaption className={`${styling}-iconCaption`}>CSS</figcaption>
+              <figcaption className="iconCaption">CSS</figcaption>
             </figure>
-            <figure className={`${styling}-skillIcon javascript`}>
+            <figure className="skillIcon javascript">
               {JavaScript}
-              <figcaption className={`${styling}-iconCaption`}>
+              <figcaption className="iconCaption">
                 JavaScript
               </figcaption>
             </figure>
-            <figure className={`${styling}-skillIcon react`}>
+            <figure className="skillIcon react">
               {react}
-              <figcaption className={`${styling}-iconCaption`}>
+              <figcaption className="iconCaption">
                 React
               </figcaption>
             </figure>
-            <figure className={`${styling}-skillIcon github`}>
+            <figure className="skillIcon github">
               {GitHub}
-              <figcaption className={`${styling}-iconCaption`}>
+              <figcaption className="iconCaption">
                 GitHub
               </figcaption>
             </figure>
-            <figure className={`${styling}-skillIcon vscode`}>
+            <figure className="skillIcon vscode">
               <img
                 src={VSCode}
                 alt="VS Code icon"
-                className={`${styling}-vscodeIcon`}
+                className="vscodeIcon"
               />
-              <figcaption className={`${styling}-iconCaption`}>
+              <figcaption className="iconCaption">
                 VS Code
               </figcaption>
             </figure>
-            <figure className={`${styling}-skillIcon wordpress`}>
+            <figure className="skillIcon wordpress">
               {WordPress}
-              <figcaption className={`${styling}-iconCaption`}>
+              <figcaption className="iconCaption">
                 WordPress
               </figcaption>
             </figure>
-            <figure className={`${styling}-skillIcon yarn`}>
+            <figure className="skillIcon yarn">
               {Yarn}
-              <figcaption className={`${styling}-iconCaption`}>Yarn</figcaption>
+              <figcaption className="iconCaption">Yarn</figcaption>
             </figure>
-            <figure className={`${styling}-skillIcon jest`}>
+            <figure className="skillIcon jest">
               <img
                 src={Jest}
                 alt="jest icon"
-                className={`${styling}-vscodeIcon`}
+                className="vscodeIcon"
               />
-              <figcaption className={`${styling}-iconCaption`}>Jest</figcaption>
+              <figcaption className="iconCaption">Jest</figcaption>
             </figure>
-            <figure className={`${styling}-skillIcon nextjs`}>
+            <figure className="skillIcon nextjs">
               <img
                 src={Nextjs}
                 alt="nextjs icon"
-                className={`${styling}-vscodeIcon`}
+                className="vscodeIcon"
               />
-              <figcaption className={`${styling}-iconCaption`}>
+              <figcaption className="iconCaption">
                 Next.js
               </figcaption>
             </figure>
-            <figure className={`${styling}-skillIcon npm`}>
+            <figure className="skillIcon npm">
               {npm}
-              <figcaption className={`${styling}-iconCaption`}>NPM</figcaption>
+              <figcaption className="iconCaption">NPM</figcaption>
             </figure>
-            <figure className={`${styling}-skillIcon jest`}>
+            <figure className="skillIcon jest">
               <img
                 src={Vite}
                 alt="vite icon"
-                className={`${styling}-vscodeIcon`}
+                className="vscodeIcon"
               />
-              <figcaption className={`${styling}-iconCaption`}>Vite</figcaption>
+              <figcaption className="iconCaption">Vite</figcaption>
             </figure>
-            <figure className={`${styling}-skillIcon node`}>
+            <figure className="skillIcon node">
               {node}
-              <figcaption className={`${styling}-iconCaption`}>Node</figcaption>
+              <figcaption className="iconCaption">Node</figcaption>
             </figure>
-            <figure className={`${styling}-skillIcon expressjs`}>
+            <figure className="skillIcon expressjs">
               <img
                 src={Express}
                 alt="expressjs icon"
-                className={`${styling}-vscodeIcon`}
+                className="vscodeIcon"
               />
-              <figcaption className={`${styling}-iconCaption`}>
+              <figcaption className="iconCaption">
                 Express.js
               </figcaption>
             </figure>
-            <figure className={`${styling}-skillIcon mysql`}>
+            <figure className="skillIcon mysql">
               <img
                 src={Mysql}
                 alt="mysql icon"
-                className={`${styling}-vscodeIcon`}
+                className="vscodeIcon"
               />
-              <figcaption className={`${styling}-iconCaption`}>
+              <figcaption className="iconCaption">
                 MySQL
               </figcaption>
             </figure>
           </div>
         </div>
-        <div className={`${styling}-softskills`} data-visibility={softSkillsHidden}>
-          <h2 className={`${styling}-skillsh2`}>Soft Skills</h2>
+        <div className="softskills" data-visibility={softSkillsHidden}>
+          <h2 className="skillsh2">Soft Skills</h2>
           <p>Verbal Communication</p>
           <p>Written Communication</p>
           <p>Team-oriented</p>

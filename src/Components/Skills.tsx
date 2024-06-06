@@ -100,9 +100,9 @@ function Skills() {
 
   return (
     <>
-      <div className="hero">
+      {/* <div className="hero">
         <p className="banner">Coding Makes Me Happy</p>
-      </div>
+      </div> */}
       <div className="skillsTitle">
         <h2>Skills</h2>
         <button
@@ -124,33 +124,33 @@ function Skills() {
         <div className="hardskills" data-visibility={hardSkillsHidden}>
           <h2 className="skillsh2">Hard Skills</h2>
           <div className="skillsblock">
-            <figure className="skillIcon html">
+            <figure className="skillIcon">
               {HTML}
               <figcaption className="iconCaption">HTML</figcaption>
             </figure>
-            <figure className="skillIcon css">
+            <figure className="skillIcon">
               {CSS}
               <figcaption className="iconCaption">CSS</figcaption>
             </figure>
-            <figure className="skillIcon javascript">
+            <figure className="skillIcon">
               {JavaScript}
               <figcaption className="iconCaption">
                 JavaScript
               </figcaption>
             </figure>
-            <figure className="skillIcon react">
+            <figure className="skillIcon">
               {react}
               <figcaption className="iconCaption">
                 React
               </figcaption>
             </figure>
-            <figure className="skillIcon github">
+            <figure className="skillIcon">
               {GitHub}
               <figcaption className="iconCaption">
                 GitHub
               </figcaption>
             </figure>
-            <figure className="skillIcon vscode">
+            <figure className="skillIcon">
               <img
                 src={VSCode}
                 alt="VS Code icon"
@@ -160,17 +160,17 @@ function Skills() {
                 VS Code
               </figcaption>
             </figure>
-            <figure className="skillIcon wordpress">
+            <figure className="skillIcon">
               {WordPress}
               <figcaption className="iconCaption">
                 WordPress
               </figcaption>
             </figure>
-            <figure className="skillIcon yarn">
+            <figure className="skillIcon">
               {Yarn}
               <figcaption className="iconCaption">Yarn</figcaption>
             </figure>
-            <figure className="skillIcon jest">
+            <figure className="skillIcon">
               <img
                 src={Jest}
                 alt="jest icon"
@@ -178,7 +178,7 @@ function Skills() {
               />
               <figcaption className="iconCaption">Jest</figcaption>
             </figure>
-            <figure className="skillIcon nextjs">
+            <figure className="skillIcon">
               <img
                 src={Nextjs}
                 alt="nextjs icon"
@@ -188,11 +188,11 @@ function Skills() {
                 Next.js
               </figcaption>
             </figure>
-            <figure className="skillIcon npm">
+            <figure className="skillIcon">
               {npm}
               <figcaption className="iconCaption">NPM</figcaption>
             </figure>
-            <figure className="skillIcon jest">
+            <figure className="skillIcon">
               <img
                 src={Vite}
                 alt="vite icon"
@@ -200,11 +200,11 @@ function Skills() {
               />
               <figcaption className="iconCaption">Vite</figcaption>
             </figure>
-            <figure className="skillIcon node">
+            <figure className="skillIcon">
               {node}
               <figcaption className="iconCaption">Node</figcaption>
             </figure>
-            <figure className="skillIcon expressjs">
+            <figure className="skillIcon">
               <img
                 src={Express}
                 alt="expressjs icon"
@@ -214,7 +214,7 @@ function Skills() {
                 Express.js
               </figcaption>
             </figure>
-            <figure className="skillIcon mysql">
+            <figure className="skillIcon">
               <img
                 src={Mysql}
                 alt="mysql icon"

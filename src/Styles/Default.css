@@ -10,6 +10,11 @@
     font-display: swap;
 }
 
+body {
+  background-image: url("../Images/new/landscape-portfolio-bg.webp");
+  background-size: contain;
+}
+
 /* Header.js */
 h1.banner{
     font-family: 'Secular', Arial, Helvetica, sans-serif;

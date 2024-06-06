@@ -212,10 +212,6 @@ p.banner{
   grid-template-rows: auto auto auto;
 }
 
-.wordpress {
-  grid-column-start: 2;
-}
-
 .skillIcon {
   text-align: center;
   padding: 1rem;

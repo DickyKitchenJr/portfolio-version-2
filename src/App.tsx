@@ -1,5 +1,6 @@
 import Projects from "./Components/Projects";
 import Header from "./Components/Header";
+import TLDR from "./Components/TLDR";
 import AboutMe from "./Components/AboutMe";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
@@ -10,23 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="style">
-        <h2>Choose A Style</h2>
-        <nav>
-          <p>
-            Creator's Pick
-            <br />(<span>default</span>)
-          </p>
-          <p>
-            8-Bit Bones
-            <br />(<span>Light</span> / <span>Dark</span>)
-          </p>
-          <p>
-            Modern Minimalist
-            <br /> (<span>Light</span> / <span>Dark</span>)
-          </p>
-        </nav>
-      </div>
+      <TLDR />
       <Skills />
       <AboutMe />
       <Projects />

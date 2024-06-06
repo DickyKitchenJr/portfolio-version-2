@@ -1,7 +1,7 @@
 function Header() {
   return (
     <>
-      <h1 className="banner">DK's Portfolio</h1>
+      <h1 className="banner">Dicky Kitchen Jr</h1>
     </>
   );
 }

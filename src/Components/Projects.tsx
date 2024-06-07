@@ -23,9 +23,9 @@ function Projects() {
 
   return (
     <>
-      <div className="projectsTitle">
-        <h2>Projects</h2>
-        <button className="previous" onClick={handleClickPrior}>
+      <h2>Projects</h2>
+      <div className="project-buttons">
+        <button className="prior" onClick={handleClickPrior}>
           ◄ Prior
         </button>
         <button className="next" onClick={handleClickNext}>

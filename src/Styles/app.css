@@ -54,7 +54,7 @@ ul {
 }
 
 @media only screen and (min-width: 600px) {
-  ul{
+  ul {
     margin-left: 4rem;
     margin-right: 4rem;
   }
@@ -65,7 +65,7 @@ p {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-left: 2rem;
   margin-right: 2rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -176,8 +176,8 @@ h1.banner {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-left: 2rem;
   margin-right: 2rem;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -187,7 +187,7 @@ h1.banner {
   }
 }
 
-.project h4{
+.project h4 {
   border-bottom: 3px solid whitesmoke;
   font-family: "Secular", Arial, Helvetica, sans-serif;
   width: fit-content;
@@ -195,55 +195,33 @@ h1.banner {
   padding-right: 0.25rem;
 }
 
-.project ul{
+.project ul {
   margin-top: 0;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
   margin-left: 0;
   margin-right: 0;
   background: none;
 }
 
-/* Contact.js */
-.contactTitle {
-  font-family: "Secular", Arial, Helvetica, sans-serif;
-  color: hsl(230, 36%, 84%);
-  background-color: hsla(220, 5%, 11%, 0.7);
-  text-align: center;
-  border-bottom: 3px solid whitesmoke;
-  border-top: 3px solid whitesmoke;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.contactTitle h2 {
-  font-size: 1.75rem;
-}
-
+/* Contact Section */
 .contact {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .contact p {
-  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
-  text-align: center;
-  color: hsl(230, 36%, 84%);
-  margin-bottom: 1rem;
+  background: none;
 }
 
 .contact form {
   display: inline-flex;
   flex-direction: column;
-  background-color: hsla(220, 5%, 11%, 0.55);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  background-color: hsla(220, 5%, 11%, 0.7);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  border: 2px solid whitesmoke;
 }
 
 .contact input {
@@ -262,18 +240,18 @@ h1.banner {
 }
 
 .contact button {
+  color: hsl(174, 100%, 62%);
+  background-color: hsla(220, 5%, 11%, 0.8);
+  border: 1px inset whitesmoke;
+  margin-right: 0.5rem;
   padding: 0.5rem;
   font-family: "Secular", Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
 
-.contact button:active {
-  color: hsl(132, 100%, 50%);
-  background-image: linear-gradient(
-    hsl(0, 0%, 100%),
-    hsl(0, 0%, 50%),
-    hsl(0, 0%, 100%)
-  );
+.contact button:hover {
+  color: hsl(142, 100%, 50%);
+  background-color: hsl(210, 11%, 22%);
 }
 
 /* Footer.js */

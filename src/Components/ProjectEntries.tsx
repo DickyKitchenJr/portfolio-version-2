@@ -3,7 +3,6 @@ type Projects = {
   Purpose: string[];
   Resources: string[];
   Achievements: string[];
-  Improvements?: string[];
   Source: string;
   Live?: string;
   ClientReview?: string;
@@ -35,9 +34,6 @@ export const ProjectEntries: Projects[] = [
       "implemented a dynamic author listing feature using the Fisher-Yates shuffle algorithm, ensuring a randomized display for users on every site visit",
       "implemented server side and form side validation to ensure the user submits the information appropriately and without duplication in the database",
       "demonstrated proficiency in MySQL database management, optimizing queries and operations for efficient data storage and retrieval",
-    ],
-    Improvements: [
-      "continue to modify and add to the site based off user feedback",
     ],
     Source: "https://github.com/DickyKitchenJr/Indie-Book-Vault-Full-Project",
     Live: "https://indiebookvault.com/",
@@ -89,7 +85,6 @@ export const ProjectEntries: Projects[] = [
       "developed a dynamic author website using React, incorporating multiple pages to provide an engaging and informative user experience",
       "integrated book reviews, blurbs, and PDF samples to enhance user experience when researching what I've written",
     ],
-    Improvements: ["continue to add new content as it becomes available"],
     Source: "https://github.com/DickyKitchenJr/author-site-version-2",
     Live: "https://dickykitchenjr.com/",
   },
@@ -114,7 +109,6 @@ export const ProjectEntries: Projects[] = [
       "utilized various hooks and custom functions to provide an engaging experience for the user while demonstrating understanding of implementing React for page manipulation through user input",
       "utilized a modular approach to present multiple smaller projects in a centralized way",
     ],
-    Improvements: ["add new projects as inspiration occurs"],
     Source:
       "https://github.com/DickyKitchenJr/React-sample-project/tree/main/sample-project1",
     Live: "https://react-sample-projects.netlify.app/",
@@ -139,10 +133,6 @@ export const ProjectEntries: Projects[] = [
     Achievements: [
       "demonstrated the ability to create a front-end site from a mock-up; in this case using the 2022 Amazon site as the mock-up",
     ],
-    Improvements: [
-      "adding ability for user to click other genres to receive different best seller list",
-      "add ability for user to input book information and picture link to place book of their choosing in first place spot",
-    ],
     Source:
       "https://github.com/DickyKitchenJr/React-sample-project/tree/main/amazon-best-seller",
     Live: "https://mock-amazon-best-seller.netlify.app/",
@@ -157,7 +147,6 @@ export const ProjectEntries: Projects[] = [
       "demonstrated algorithmic thinking by systematically breaking down what is required to create a name and randomly assembling letters that mimic those requirements ",
       "achieved a high score on PageSpeed Insights",
     ],
-    Improvements: ["continue to add more projects"],
     Source: "https://github.com/DickyKitchenJr/JavaScript-Playground",
     Live: "https://jsplayground.dickykitchen.com/",
   },
@@ -176,9 +165,6 @@ export const ProjectEntries: Projects[] = [
     ],
     Achievements: [
       "included a message to the users to account for when data is missing from the Marvel API, improving user experience",
-    ],
-    Improvements: [
-      "if this project was to move forward beyond being used strictly for a portfolio piece, I would either have to go with a different API or try to build one myself as the amount of information missing from the official Marvel API is too substantial ",
     ],
     Source: "https://github.com/DickyKitchenJr/nextjs-marvel-character-search",
     Live: "https://nextjs-marvel-character-search.vercel.app/",
@@ -201,9 +187,6 @@ export const ProjectEntries: Projects[] = [
       "successfully migrated project from create-react-app to Vite, optimizing performance and build processes for a more efficient development workflow",
       "implemented a 'mobile first' approach, prioritizing user experience across various devices while ensuring responsive design and functionality",
       "achieved high scores on PageSpeed Insights",
-    ],
-    Improvements: [
-      "continue to add more projects as skills continue to advance",
     ],
     Source: "https://github.com/DickyKitchenJr/portfolio-version-2",
   },

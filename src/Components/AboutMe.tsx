@@ -1,9 +1,7 @@
 function AboutMe() {
   return (
     <>
-      <div className="aboutMeTitle">
-        <h2>About Me</h2>
-      </div>
+      <h2>About Me</h2>
       <div className="aboutMe">
         <p className="aboutMeContent">
           As a software developer, I bring a unique perspective to my work that

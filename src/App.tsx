@@ -5,7 +5,7 @@ import AboutMe from "./Components/AboutMe";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import "./Styles/Default.css";
+import "./Styles/app.css";
 
 function App() {
   return (

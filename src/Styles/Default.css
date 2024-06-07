@@ -1,13 +1,13 @@
 @font-face {
-    font-family: "Inconsolata";
-    src: url(../Fonts/InconsolataVariable.ttf);
-    font-display: swap;
+  font-family: "Inconsolata";
+  src: url(../Fonts/InconsolataVariable.ttf);
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Secular';
-    src: url(../Fonts/SecularOne.ttf);
-    font-display: swap;
+  font-family: "Secular";
+  src: url(../Fonts/SecularOne.ttf);
+  font-display: swap;
 }
 
 body {
@@ -16,96 +16,90 @@ body {
 }
 
 /* Header.js */
-h1.banner{
-    font-family: 'Secular', Arial, Helvetica, sans-serif;
-    color:white;
-    background-color: hsla(220, 5%, 11%, .7);
-    font-size: 3rem;
-    text-align: center;
-    padding: .25rem;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: .75rem;
-    margin-bottom: .75rem;
+h1.banner {
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: hsla(220, 5%, 11%, 0.7);
+  font-size: 3rem;
+  text-align: center;
+  padding: 0.5rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 @media only screen and (min-width: 600px) {
-  h1.banner{
-    padding:0;
+  h1.banner {
+    padding: 0;
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 4rem;
   }
 }
 
-/* Style Nav Section */
-.style{
-    background-color: hsla(230, 36%, 84%, 0.8);
-  backdrop-filter: blur(3px);
-    border-bottom: 3px solid whitesmoke;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+/* TLDR Section */
+.tldr {
+  color: white;
 }
 
-.style h2{
-    text-align: center;
-    font-family: 'Secular', Arial, Helvetica, sans-serif;
+.tldr h2 {
+  background-color: hsla(220, 5%, 11%, 0.7);
+  text-align: center;
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding: 0.25rem;
 }
 
-.style nav{
-    display: flex;
-    justify-content: space-evenly;
-    font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    font-weight: bold;
+.tldr p {
+  background-color: hsla(220, 5%, 11%, 0.7);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-.style p{
-    padding-right: .5rem;
-    padding-left: .5rem;
-}
-
-.style span{
-    color: hsl(240, 100%, 50%);
-    cursor: pointer;
-}
-
-.style span:hover{
-  color: hsl(132, 100%, 50%);
+@media only screen and (min-width: 600px) {
+  .tldr p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
 }
 
 /* Skills.js */
-.hero{
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    color: hsl(230, 36%, 84%);
-    border-bottom: 3px solid whitesmoke;
+.hero {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  color: hsl(230, 36%, 84%);
+  border-bottom: 3px solid whitesmoke;
 }
 
 @media only screen and (min-width: 601px) {
-    .hero{
-        background-size: cover;
-        background-position: center;
-    }
+  .hero {
+    background-size: cover;
+    background-position: center;
+  }
 }
 
-p.banner{
-    font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    font-size: 1.5rem;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: hsla(220, 5%, 11%, .65);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+p.banner {
+  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsla(220, 5%, 11%, 0.65);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .skillsTitle {
@@ -311,7 +305,6 @@ p.banner{
   }
 }
 
-
 .jestIcon {
   max-width: 40%;
   margin-bottom: -0.3rem;
@@ -352,12 +345,11 @@ p.banner{
   }
 }
 
-
 .wordpressIcon {
   color: hsl(195, 48%, 54%);
 }
 
-.yarnIcon{
+.yarnIcon {
   color: hsl(217, 89%, 76%);
 }
 
@@ -474,97 +466,106 @@ p.banner{
   padding-bottom: 1rem;
 }
 
-.projectsTitle h2{
-    font-size: 1.75rem;
-    padding-bottom: 1rem;
+.projectsTitle h2 {
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
 }
 
-.previous{
+.previous {
   margin-right: 0.5rem;
-  padding: .5rem;
+  padding: 0.5rem;
   font-family: "Secular", Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
 
-.previous:active{
-    color: hsl(132, 100%, 50%);
-    background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 50%), hsl(0, 0%, 100%));
+.previous:active {
+  color: hsl(132, 100%, 50%);
+  background-image: linear-gradient(
+    hsl(0, 0%, 100%),
+    hsl(0, 0%, 50%),
+    hsl(0, 0%, 100%)
+  );
 }
 
-.next{
+.next {
   margin-left: 0.5rem;
-  padding: .5rem;
+  padding: 0.5rem;
   font-family: "Secular", Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
 
-.next:active{
-    color: hsl(132, 100%, 50%);
-    background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 50%), hsl(0, 0%, 100%));
+.next:active {
+  color: hsl(132, 100%, 50%);
+  background-image: linear-gradient(
+    hsl(0, 0%, 100%),
+    hsl(0, 0%, 50%),
+    hsl(0, 0%, 100%)
+  );
 }
 
-.projects{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-    background-size: cover;
-    background-position: center;
+.projects {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  background-size: cover;
+  background-position: center;
 }
 
 @media only screen and (min-width: 400px) {
-  .projects{
+  .projects {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
 .projectsContent {
-    font-family: 'Inconsolata' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: hsla(220, 5%, 11%, .8);
-    color: hsl(230, 36%, 84%);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    backdrop-filter: blur(3px);
+  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  font-size: 1.5rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsla(220, 5%, 11%, 0.8);
+  color: hsl(230, 36%, 84%);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  backdrop-filter: blur(3px);
 }
 
-.projectsContent h3{
-    text-align: center;
+.projectsContent h3 {
+  text-align: center;
 }
 
-.projectsContent p{
-    text-decoration: underline;
-    padding-top: 1rem;
+.projectsContent p {
+  text-decoration: underline;
+  padding-top: 1rem;
 }
 
-.projectsContent ul{
-    padding-inline-start: 1rem;
-    padding-top: .75rem;
+.projectsContent ul {
+  padding-inline-start: 1rem;
+  padding-top: 0.75rem;
 }
 
-.link{
-    color: hsl(240, 100%, 50%);
-    cursor: pointer;
+.link {
+  color: hsl(240, 100%, 50%);
+  cursor: pointer;
 }
 
-.link:hover{
+.link:hover {
   color: hsl(132, 100%, 50%);
 }
 
-.pagespeed{
+.pagespeed {
   width: 40%;
-  margin-top: 1.25rem
+  margin-top: 1.25rem;
 }
 
 @media only screen and (min-width: 601px) {
   /* tablet and larger screens */
-  .pagespeed{
+  .pagespeed {
     width: 25%;
   }
 }
@@ -661,6 +662,6 @@ p.banner{
   cursor: pointer;
 }
 
-.footer a:hover{
+.footer a:hover {
   color: hsl(132, 100%, 50%);
 }

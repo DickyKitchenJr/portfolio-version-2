@@ -46,6 +46,7 @@ h1.banner {
 
 .tldr h2 {
   background-color: hsla(220, 5%, 11%, 0.7);
+  border: 3px solid whitesmoke;
   text-align: center;
   font-family: "Secular", Arial, Helvetica, sans-serif;
   width: fit-content;
@@ -70,113 +71,23 @@ h1.banner {
   }
 }
 
-/* Skills.js */
-.hero {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  color: hsl(230, 36%, 84%);
-  border-bottom: 3px solid whitesmoke;
-}
-
-@media only screen and (min-width: 601px) {
-  .hero {
-    background-size: cover;
-    background-position: center;
-  }
-}
-
-p.banner {
-  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
+/* Skills Section */
+.skillsTitle h2 {
+  color: white;
+  background-color: hsla(220, 5%, 11%, 0.7);
+  border: 3px solid whitesmoke;
   text-align: center;
-  font-size: 1.5rem;
+  font-family: "Secular", Arial, Helvetica, sans-serif;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  background-color: hsla(220, 5%, 11%, 0.65);
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding: 0.25rem;
 }
 
-.skillsTitle {
-  font-family: "Secular", Arial, Helvetica, sans-serif;
-  color: hsl(230, 36%, 84%);
-  background-color: hsla(220, 5%, 11%, 0.7);
-  text-align: center;
-  border-bottom: 3px solid whitesmoke;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.skillsTitle h2 {
-  font-size: 1.75rem;
-  padding-bottom: 1rem;
-}
-
-.hardbutton {
-  margin-right: 0.5rem;
-  padding: 0.5rem;
-  background-image: linear-gradient(
-    hsl(150, 1%, 50%),
-    hsl(210, 25%, 97%) 50%,
-    hsl(150, 1%, 50%)
-  );
-  font-family: "Secular", Arial, Helvetica, sans-serif;
-  cursor: pointer;
-}
-
-.hardbutton:hover {
-  background-image: linear-gradient(
-    hsl(210, 25%, 97%),
-    hsl(150, 1%, 50%),
-    hsl(210, 25%, 97%)
-  );
-}
-
-.hardbutton:active {
-  background-image: none;
-  font-weight: bold;
-  color: hsl(0, 100%, 54%);
-  background-image: linear-gradient(
-    hsl(150, 1%, 50%),
-    hsl(0, 0%, 29%),
-    hsl(150, 1%, 50%)
-  );
-}
-
-.softbutton {
-  margin-left: 0.5rem;
-  padding: 0.5rem;
-  background-image: linear-gradient(
-    hsl(0, 0%, 100%),
-    hsl(240, 100%, 88%),
-    hsl(0, 0%, 100%)
-  );
-  font-family: "Secular", Arial, Helvetica, sans-serif;
-  cursor: pointer;
-}
-
-.softbutton:hover {
-  background-image: linear-gradient(
-    hsl(240, 100%, 88%),
-    hsl(0, 0%, 100%),
-    hsl(240, 100%, 88%)
-  );
-}
-
-.softbutton:active {
-  background-image: none;
-  font-weight: bold;
-  color: hsl(180, 100%, 65%);
-  background-image: linear-gradient(
-    hsl(0, 3%, 78%),
-    hsl(240, 87%, 80%),
-    hsl(0, 3%, 78%)
-  );
+.skills {
+  color: white;
 }
 
 @media only screen and (min-width: 601px) {
@@ -186,208 +97,54 @@ p.banner {
   }
 }
 
-/* Hard Skills section */
-.hardskills {
+.skills h3 {
   background-color: hsla(220, 5%, 11%, 0.8);
-  backdrop-filter: blur(3px);
-  display: inline-block;
-  color: hsl(230, 36%, 84%);
+  border-bottom: 3px solid whitesmoke;
+  text-align: center;
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding: 0.25rem;
+}
+
+.skills ul {
+  background-color: hsla(220, 5%, 11%, 0.7);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+@media only screen and (min-width: 600px) {
+  .skills ul{
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+.hardskills {
   width: 100vw;
 }
 
-.hardskills[data-visibility="1"] {
-  display: none;
-}
-
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 600px) {
   /* for desktop/tablet */
   .hardskills {
     width: 50vw;
   }
-
-  .hardskills[data-visibility="1"] {
-    visibility: hidden;
-    display: inline-block;
-  }
-}
-
-.skillsh2 {
-  text-align: center;
-  padding: 1rem;
-  font-family: "Secular", Arial, Helvetica, sans-serif;
-}
-
-.skillsblock {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: auto auto auto;
-}
-
-.skillIcon {
-  text-align: center;
-  padding: 1rem;
-}
-
-.icon {
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 250%;
-}
-
-@media only screen and (min-width: 601px) {
-  /* for desktop/tablet */
-  .icon {
-    font-size: 210%;
-  }
-}
-
-.htmlIcon {
-  color: hsl(30, 100%, 50%);
-}
-
-.cssIcon {
-  color: hsl(210, 100%, 50%);
-}
-
-.javascriptIcon {
-  color: hsl(60, 100%, 50%);
-}
-
-.reactIcon {
-  color: hsl(195, 91%, 69%);
-}
-
-.githubIcon {
-  color: hsl(0, 0%, 100%);
-}
-
-.nodeIcon {
-  color: hsl(160, 59%, 55%);
-}
-
-.vscodeIcon {
-  max-width: 40%;
-  margin-bottom: -0.3rem;
-}
-
-@media only screen and (min-width: 768px) {
-  /* for tablet */
-  .vscodeIcon {
-    max-width: 33%;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  /* for laptop */
-  .vscodeIcon {
-    max-width: 30%;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  /* for desktop */
-  .vscodeIcon {
-    max-width: 20%;
-  }
-}
-
-@media only screen and (min-width: 1900px) {
-  /* for 4k and large screens */
-  .vscodeIcon {
-    max-width: 15%;
-  }
-}
-
-@media only screen and (max-width: 280px) {
-  /* for Galaxy Fold phone */
-  .vscodeIcon {
-    max-width: 60%;
-  }
-}
-
-.jestIcon {
-  max-width: 40%;
-  margin-bottom: -0.3rem;
-}
-
-@media only screen and (min-width: 768px) {
-  /* for tablet */
-  .jestIcon {
-    max-width: 33%;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  /* for laptop */
-  .jestIcon {
-    max-width: 30%;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  /* for desktop */
-  .jestIcon {
-    max-width: 20%;
-  }
-}
-
-@media only screen and (min-width: 1900px) {
-  /* for 4k and large screens */
-  .jestIcon {
-    max-width: 15%;
-  }
-}
-
-@media only screen and (max-width: 280px) {
-  /* for Galaxy Fold phone */
-  .jestIcon {
-    max-width: 60%;
-  }
-}
-
-.wordpressIcon {
-  color: hsl(195, 48%, 54%);
-}
-
-.yarnIcon {
-  color: hsl(217, 89%, 76%);
-}
-
-.iconCaption {
-  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
-}
-
-/* Soft Skills section */
-
-.softskills p {
-  text-align: center;
-  padding: 0.2rem;
-  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
-  font-weight: bold;
 }
 
 .softskills {
-  background-color: hsla(230, 36%, 84%, 0.8);
-  color: hsl(220, 5%, 11%);
   width: 100vw;
-  backdrop-filter: blur(2px);
-}
-
-.softskills[data-visibility="1"] {
-  display: none;
 }
 
 @media only screen and (min-width: 601px) {
   /* for desktop/tablet */
   .softskills {
     width: 50vw;
-  }
-
-  .softskills[data-visibility="1"] {
-    visibility: hidden;
-    display: inline-block;
   }
 }
 

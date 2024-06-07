@@ -10,12 +10,43 @@
   font-display: swap;
 }
 
+/* Global Styling */
+
 body {
   background-image: url("../Images/new/landscape-portfolio-bg.webp");
   background-size: contain;
 }
 
-/* Header.js */
+h2 {
+  color: white;
+  background-color: hsla(220, 5%, 11%, 0.7);
+  border: 3px solid whitesmoke;
+  text-align: center;
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  padding: 0.25rem;
+}
+
+p {
+  color: white;
+  background-color: hsla(220, 5%, 11%, 0.7);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
+/* Header Section*/
 h1.banner {
   font-family: "Secular", Arial, Helvetica, sans-serif;
   color: white;
@@ -39,53 +70,7 @@ h1.banner {
   }
 }
 
-/* TLDR Section */
-.tldr {
-  color: white;
-}
-
-.tldr h2 {
-  background-color: hsla(220, 5%, 11%, 0.7);
-  border: 3px solid whitesmoke;
-  text-align: center;
-  font-family: "Secular", Arial, Helvetica, sans-serif;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-  padding: 0.25rem;
-}
-
-.tldr p {
-  background-color: hsla(220, 5%, 11%, 0.7);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-@media only screen and (min-width: 600px) {
-  .tldr p {
-    margin-left: 6rem;
-    margin-right: 6rem;
-  }
-}
-
 /* Skills Section */
-.skillsTitle h2 {
-  color: white;
-  background-color: hsla(220, 5%, 11%, 0.7);
-  border: 3px solid whitesmoke;
-  text-align: center;
-  font-family: "Secular", Arial, Helvetica, sans-serif;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-  padding: 0.25rem;
-}
-
 .skills {
   color: white;
 }
@@ -148,22 +133,7 @@ h1.banner {
   }
 }
 
-/* AboutMe.js */
-.aboutMeTitle {
-  font-family: "Secular", Arial, Helvetica, sans-serif;
-  color: hsl(230, 36%, 84%);
-  background-color: hsla(220, 5%, 11%, 0.7);
-  text-align: center;
-  border-bottom: 3px solid whitesmoke;
-  border-top: 3px solid whitesmoke;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.aboutMeTitle h2 {
-  font-size: 1.75rem;
-}
-
+/* AboutMe Section */
 .aboutMe {
   background-size: contain;
   background-position: center;

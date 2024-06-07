@@ -15,10 +15,10 @@
 body {
   background-image: url("../Images/new/landscape-portfolio-bg.webp");
   background-size: contain;
+  color: white;
 }
 
 h2 {
-  color: white;
   background-color: hsla(220, 5%, 11%, 0.7);
   border: 3px solid whitesmoke;
   text-align: center;
@@ -28,6 +28,19 @@ h2 {
   margin-right: auto;
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
+  padding: 0.25rem;
+}
+
+h3 {
+  background-color: hsla(220, 5%, 11%, 0.8);
+  border-bottom: 3px solid whitesmoke;
+  text-align: center;
+  font-family: "Secular", Arial, Helvetica, sans-serif;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   padding: 0.25rem;
 }
 
@@ -48,7 +61,6 @@ ul {
 }
 
 p {
-  color: white;
   background-color: hsla(220, 5%, 11%, 0.7);
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-left: 2rem;
@@ -75,7 +87,6 @@ p {
 /* Header Section*/
 h1.banner {
   font-family: "Secular", Arial, Helvetica, sans-serif;
-  color: white;
   background-color: hsla(220, 5%, 11%, 0.7);
   font-size: 3rem;
   text-align: center;
@@ -97,28 +108,10 @@ h1.banner {
 }
 
 /* Skills Section */
-.skills {
-  color: white;
-}
-
 @media only screen and (min-width: 601px) {
   .skills {
     display: flex;
-    justify-content: space-between;
   }
-}
-
-.skills h3 {
-  background-color: hsla(220, 5%, 11%, 0.8);
-  border-bottom: 3px solid whitesmoke;
-  text-align: center;
-  font-family: "Secular", Arial, Helvetica, sans-serif;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-  padding: 0.25rem;
 }
 
 .hardskills {
@@ -143,113 +136,71 @@ h1.banner {
   }
 }
 
-/* AboutMe Section */
-
-/* Projects.js */
-.projectsTitle {
-  font-family: "Secular", Arial, Helvetica, sans-serif;
-  color: hsl(230, 36%, 84%);
-  background-color: hsla(220, 5%, 11%, 0.7);
+/* Projects Section */
+.project-buttons {
   text-align: center;
-  border-bottom: 3px solid whitesmoke;
-  border-top: 3px solid whitesmoke;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
-.projectsTitle h2 {
-  font-size: 1.75rem;
-  padding-bottom: 1rem;
-}
-
-.previous {
+.prior {
+  color: hsl(174, 100%, 62%);
+  background-color: hsla(220, 5%, 11%, 0.8);
+  border: 1px inset whitesmoke;
   margin-right: 0.5rem;
   padding: 0.5rem;
   font-family: "Secular", Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
 
-.previous:active {
-  color: hsl(132, 100%, 50%);
-  background-image: linear-gradient(
-    hsl(0, 0%, 100%),
-    hsl(0, 0%, 50%),
-    hsl(0, 0%, 100%)
-  );
+.prior:hover {
+  color: hsl(142, 100%, 50%);
+  background-color: hsl(210, 11%, 22%);
 }
 
 .next {
-  margin-left: 0.5rem;
+  color: hsl(174, 100%, 62%);
+  background-color: hsla(220, 5%, 11%, 0.8);
+  border: 1px inset whitesmoke;
+  margin-right: 0.5rem;
   padding: 0.5rem;
   font-family: "Secular", Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
 
-.next:active {
-  color: hsl(132, 100%, 50%);
-  background-image: linear-gradient(
-    hsl(0, 0%, 100%),
-    hsl(0, 0%, 50%),
-    hsl(0, 0%, 100%)
-  );
+.next:hover {
+  color: hsl(142, 100%, 50%);
+  background-color: hsl(210, 11%, 22%);
 }
 
-.projects {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-  background-size: cover;
-  background-position: center;
+.project {
+  background-color: hsla(220, 5%, 11%, 0.7);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
-@media only screen and (min-width: 400px) {
-  .projects {
-    padding-left: 2rem;
-    padding-right: 2rem;
+@media only screen and (min-width: 600px) {
+  .project {
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 }
 
-.projectsContent {
-  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
-  font-size: 1.5rem;
+.project h4{
+  border-bottom: 3px solid whitesmoke;
+  font-family: "Secular", Arial, Helvetica, sans-serif;
   width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: hsla(220, 5%, 11%, 0.8);
-  color: hsl(230, 36%, 84%);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  backdrop-filter: blur(3px);
+  margin-bottom: 0.5rem;
+  padding-right: 0.25rem;
 }
 
-.projectsContent h3 {
-  text-align: center;
-}
-
-.projectsContent p {
-  text-decoration: underline;
-  padding-top: 1rem;
-}
-
-.projectsContent ul {
-  padding-inline-start: 1rem;
-  padding-top: 0.75rem;
-}
-
-.pagespeed {
-  width: 40%;
-  margin-top: 1.25rem;
-}
-
-@media only screen and (min-width: 601px) {
-  /* tablet and larger screens */
-  .pagespeed {
-    width: 25%;
-  }
+.project ul{
+  margin-top: 0;
+  margin-bottom: .75rem;
+  margin-left: 0;
+  margin-right: 0;
+  background: none;
 }
 
 /* Contact.js */

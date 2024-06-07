@@ -55,48 +55,44 @@ function Contact() {
 
   return (
     <>
-      <div className="contactTitle">
-        <h2>Contact Me</h2>
-      </div>
-      <div className="contactBackground">
-        <div className="contact">
-          <form onSubmit={handleSubmit} ref={form}>
-            <p>Have a job or a question for me?</p>
-            <input
-              type="text"
-              name="user_name"
-              placeholder="Your Name"
-              onChange={handleNameChange}
-              value={name}
-              required
-            />
-            <input
-              type="email"
-              name="user_email"
-              placeholder="Your Email"
-              onChange={handleEmailChange}
-              value={email}
-              required
-            />
-            <input
-              type="checkbox"
-              checked={honey}
-              onChange={handleHoneyChange}
-              name="_honey"
-              style={{ display: "none" }}
-            />
-            <textarea
-              placeholder="Your Message"
-              name="message"
-              rows={10}
-              cols={30}
-              onChange={handleMessageChange}
-              value={message}
-              required
-            ></textarea>
-            <button type="submit">Send</button>
-          </form>
-        </div>
+      <h2>Contact Me</h2>
+      <div className="contact">
+        <form onSubmit={handleSubmit} ref={form}>
+          <p>Have a job or a question for me?</p>
+          <input
+            type="text"
+            name="user_name"
+            placeholder="Your Name"
+            onChange={handleNameChange}
+            value={name}
+            required
+          />
+          <input
+            type="email"
+            name="user_email"
+            placeholder="Your Email"
+            onChange={handleEmailChange}
+            value={email}
+            required
+          />
+          <input
+            type="checkbox"
+            checked={honey}
+            onChange={handleHoneyChange}
+            name="_honey"
+            style={{ display: "none" }}
+          />
+          <textarea
+            placeholder="Your Message"
+            name="message"
+            rows={10}
+            cols={30}
+            onChange={handleMessageChange}
+            value={message}
+            required
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
       </div>
     </>
   );

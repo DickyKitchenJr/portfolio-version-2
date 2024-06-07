@@ -1,7 +1,7 @@
 function TLDR() {
   return (
     <>
-      <div className="style">
+      <div className="tldr">
         <h2>TL;DR</h2>
         <p>
           I am a software developer in Virginia Beach VA who specializes in

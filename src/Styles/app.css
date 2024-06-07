@@ -222,6 +222,7 @@ h1.banner {
   padding-bottom: 0.25rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .contact input {
@@ -254,25 +255,8 @@ h1.banner {
   background-color: hsl(210, 11%, 22%);
 }
 
-/* Footer.js */
-.footer {
-  font-family: "Secular", Arial, Helvetica, sans-serif;
-  color: hsl(230, 36%, 84%);
-  background-color: hsla(220, 5%, 11%, 0.7);
-  text-align: center;
-  border-bottom: 3px solid whitesmoke;
-  border-top: 3px solid whitesmoke;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.footer a {
-  color: hsl(240, 100%, 50%);
-  cursor: pointer;
-}
-
-.footer a:hover {
-  color: hsl(132, 100%, 50%);
+/* Footer Section */
+.footer{
+  width: fit-content;
+  margin-bottom: 1rem;
 }

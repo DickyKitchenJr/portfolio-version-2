@@ -1,26 +1,4 @@
-import AmazonBig from "../Images/amazonsite.webp";
-import AmazonSmall from "../Images/amazonSmall.webp";
-import ReactPicBig from "../Images/reactexperiments.webp";
-import ReactPicSmall from "../Images/reactExperimentsSmall.webp";
-import PortfolioBig from "../Images/portfolio.webp";
-import PortfolioSmall from "../Images/portfolioSmall.webp";
-import PageSpeed from "../Images/pagespeed.webp";
-import MayhemBig from "../Images/mayhemBig.webp";
-import MayhemSmall from "../Images/mayhemSmall.webp";
-import MayhemTest from "../Images/mayhemTest.webp";
-import jsPlaygroundSmall from "../Images/jsplaygroundSmall.webp";
-import jsPlaygroundBig from "../Images/jsplaygroundBig.webp";
-import jsPlaygroundTest from "../Images/jsplaygroundTest.webp";
-import AuthorBig from "../Images/authorBig.webp";
-import AuthorSmall from "../Images/authorSmall.webp";
-import MarvelBig from "../Images/marvelSearchBig.webp";
-import MarvelSmall from "../Images/marvelSearchSmall.webp";
-import IndieBookVaultBig from "../Images/indiebookvault.webp";
-import IndieBookVaultSmall from "../Images/indiebookvaultSmall.webp";
-
 type Projects = {
-  backgroundImage: string;
-  backgroundImageSmall: string;
   Title: string;
   Purpose: string[];
   Resources: string[];
@@ -29,13 +7,10 @@ type Projects = {
   Source: string;
   Live?: string;
   ClientReview?: string;
-  Test?:string;
-}
+};
 
 export const ProjectEntries: Projects[] = [
   {
-    backgroundImage: IndieBookVaultBig,
-    backgroundImageSmall: IndieBookVaultSmall,
     Title: "Indie Book Vault",
     Purpose: [
       "to create a full-stack website for indie authors that will help improve marketing ability by providing a central location for readers to locate indie and self-published authors and find links to the authors individual pages",
@@ -68,8 +43,6 @@ export const ProjectEntries: Projects[] = [
     Live: "https://indiebookvault.com/",
   },
   {
-    backgroundImage: MayhemBig,
-    backgroundImageSmall: MayhemSmall,
     Title: "MayhemMills.com",
     Purpose: [
       "to create a client website to meet the client's needs and aesthetic preferences",
@@ -85,7 +58,7 @@ export const ProjectEntries: Projects[] = [
       "react-router-dom",
       "Visual Studio Code",
       "Corel PaintShop Pro for editing pictures used",
-      "GitHub"
+      "GitHub",
     ],
     Achievements: [
       "proactively communicated with the client throughout the project, ensuring alignment with their vision and goals",
@@ -93,13 +66,10 @@ export const ProjectEntries: Projects[] = [
       "provided insights to the client in what impacts user experience, including contrast choices between text and background",
       "achieved high score on PageSpeed Insights",
     ],
-    Test: MayhemTest,
     Source: "https://github.com/DickyKitchenJr/Mayhem-Mills-Site",
     Live: "https://mayhemmills.com/",
   },
   {
-    backgroundImage: AuthorBig,
-    backgroundImageSmall: AuthorSmall,
     Title: "Multi-page Author Site",
     Purpose: [
       "to create a multi-page site to advertise books I've published and give readers a place to see samples and reviews of those books, as well as blogs which feature various topics, interviews, and snippets of writings and upcoming works",
@@ -124,8 +94,6 @@ export const ProjectEntries: Projects[] = [
     Live: "https://dickykitchenjr.com/",
   },
   {
-    backgroundImage: ReactPicBig,
-    backgroundImageSmall: ReactPicSmall,
     Title: "React Sample Projects with Test",
     Purpose: [
       "to provide a place to showcase small projects using different React skills including the use of hooks and state",
@@ -152,8 +120,6 @@ export const ProjectEntries: Projects[] = [
     Live: "https://react-sample-projects.netlify.app/",
   },
   {
-    backgroundImage: AmazonBig,
-    backgroundImageSmall: AmazonSmall,
     Title: "Clone Amazon Thriller Books Best Sellers",
     Purpose: [
       "to create a site using visual references, similar to if a client were to give you a mock-up of something they want you to build",
@@ -182,8 +148,6 @@ export const ProjectEntries: Projects[] = [
     Live: "https://mock-amazon-best-seller.netlify.app/",
   },
   {
-    backgroundImage: jsPlaygroundBig,
-    backgroundImageSmall: jsPlaygroundSmall,
     Title: "JavaScript Playground",
     Purpose: ["to provide a place to showcase small projects using JavaScript"],
     Resources: ["JavaScript", "CSS", "HTML", "Visual Studio Code", "GitHub"],
@@ -193,15 +157,12 @@ export const ProjectEntries: Projects[] = [
       "demonstrated algorithmic thinking by systematically breaking down what is required to create a name and randomly assembling letters that mimic those requirements ",
       "achieved a high score on PageSpeed Insights",
     ],
-    Test: jsPlaygroundTest,
     Improvements: ["continue to add more projects"],
     Source: "https://github.com/DickyKitchenJr/JavaScript-Playground",
     Live: "https://jsplayground.dickykitchen.com/",
   },
   {
-    backgroundImage: MarvelBig,
-    backgroundImageSmall: MarvelSmall,
-    Title: "Next.js Marvel Character Serach",
+    Title: "Next.js Marvel Character Search",
     Purpose: [
       "to create a site using Next.js and the Marvel API",
       "show ability return requested information based on user input",
@@ -223,8 +184,6 @@ export const ProjectEntries: Projects[] = [
     Live: "https://nextjs-marvel-character-search.vercel.app/",
   },
   {
-    backgroundImage: PortfolioBig,
-    backgroundImageSmall: PortfolioSmall,
     Title: "This Portfolio Site",
     Purpose: [
       "to create a place for potential clients and employers to view my portfolio",
@@ -243,7 +202,6 @@ export const ProjectEntries: Projects[] = [
       "implemented a 'mobile first' approach, prioritizing user experience across various devices while ensuring responsive design and functionality",
       "achieved high scores on PageSpeed Insights",
     ],
-    Test: PageSpeed,
     Improvements: [
       "continue to add more projects as skills continue to advance",
     ],

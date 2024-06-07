@@ -6,10 +6,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
-  const GitHub = <FontAwesomeIcon icon={faGithub} className="footerIcon" />;
-  const LinkedIn = <FontAwesomeIcon icon={faLinkedin} className="footerIcon" />;
+  const GitHub = <FontAwesomeIcon icon={faGithub} />;
+  const LinkedIn = <FontAwesomeIcon icon={faLinkedin} />;
   const Instagram = (
-    <FontAwesomeIcon icon={faInstagram} className="footerIcon" />
+    <FontAwesomeIcon icon={faInstagram} />
   );
 
   return (
@@ -19,6 +19,7 @@ function Footer() {
         href="https://github.com/DickyKitchenJr"
         target="_blank"
         rel="noreferrer"
+        className="link"
       >
         {GitHub} GitHub
       </a>
@@ -27,6 +28,7 @@ function Footer() {
         href="https://www.linkedin.com/in/dicky-kitchen-jr-89727b240/"
         target="_blank"
         rel="noreferrer"
+        className="link"
       >
         {LinkedIn} LinkedIn
       </a>
@@ -35,6 +37,7 @@ function Footer() {
         href="https://www.instagram.com/oldguylearnscoding/"
         target="_blank"
         rel="noreferrer"
+        className="link"
       >
         {Instagram} Instagram
       </a>

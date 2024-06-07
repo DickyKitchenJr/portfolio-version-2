@@ -31,12 +31,29 @@ h2 {
   padding: 0.25rem;
 }
 
+ul {
+  background-color: hsla(220, 5%, 11%, 0.7);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+@media only screen and (min-width: 600px) {
+  ul{
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
 p {
   color: white;
   background-color: hsla(220, 5%, 11%, 0.7);
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-left: 2rem;
   margin-right: 2rem;
+  padding: .5rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -44,6 +61,15 @@ p {
     margin-left: 6rem;
     margin-right: 6rem;
   }
+}
+
+.link {
+  color: hsl(174, 100%, 62%);
+  cursor: pointer;
+}
+
+.link:hover {
+  color: hsl(142, 100%, 50%);
 }
 
 /* Header Section*/
@@ -95,22 +121,6 @@ h1.banner {
   padding: 0.25rem;
 }
 
-.skills ul {
-  background-color: hsla(220, 5%, 11%, 0.7);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  list-style-position: inside;
-  list-style-type: circle;
-}
-
-@media only screen and (min-width: 600px) {
-  .skills ul{
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-}
-
 .hardskills {
   width: 100vw;
 }
@@ -134,52 +144,6 @@ h1.banner {
 }
 
 /* AboutMe Section */
-.aboutMe {
-  background-size: contain;
-  background-position: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-}
-
-@media only screen and (min-width: 400px) {
-  .aboutMe {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media only screen and (min-width: 980px) {
-  /* desktops and laptops */
-  .aboutMe {
-    background-size: cover;
-    background-position: top;
-  }
-}
-
-@media only screen and (min-width: 1800px) {
-  /* large screen desktops */
-  .aboutMe {
-    background-size: contain;
-    background-position: none;
-  }
-}
-
-.aboutMeContent {
-  font-family: "Inconsolata", "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
-  font-size: 1.5rem;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: hsla(220, 5%, 11%, 0.8);
-  color: hsl(230, 36%, 84%);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
 
 /* Projects.js */
 .projectsTitle {
@@ -274,15 +238,6 @@ h1.banner {
 .projectsContent ul {
   padding-inline-start: 1rem;
   padding-top: 0.75rem;
-}
-
-.link {
-  color: hsl(240, 100%, 50%);
-  cursor: pointer;
-}
-
-.link:hover {
-  color: hsl(132, 100%, 50%);
 }
 
 .pagespeed {

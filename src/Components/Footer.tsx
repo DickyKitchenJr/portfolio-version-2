@@ -1,9 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 interface FooterProps {
   styling: string;
@@ -15,9 +11,6 @@ function Footer({ styling }: FooterProps) {
   );
   const LinkedIn = (
     <FontAwesomeIcon icon={faLinkedin} className={`${styling}-footerIcon`} />
-  );
-  const Instagram = (
-    <FontAwesomeIcon icon={faInstagram} className={`${styling}-footerIcon`} />
   );
 
   return (

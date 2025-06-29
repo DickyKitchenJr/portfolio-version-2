@@ -23,7 +23,7 @@ function Footer({ styling }: FooterProps) {
       >
         {GitHub} GitHub
       </a>
-      &nbsp;and &nbsp;&nbsp;
+      &nbsp;&nbsp;and &nbsp;&nbsp;
       <a
         href="https://www.linkedin.com/in/dicky-kitchen-jr-89727b240/"
         target="_blank"

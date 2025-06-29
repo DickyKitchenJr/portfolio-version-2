@@ -30,21 +30,13 @@ function Footer({ styling }: FooterProps) {
       >
         {GitHub} GitHub
       </a>
-      ,&nbsp;&nbsp;
+      &nbsp;and &nbsp;&nbsp;
       <a
         href="https://www.linkedin.com/in/dicky-kitchen-jr-89727b240/"
         target="_blank"
         rel="noreferrer"
       >
         {LinkedIn} LinkedIn
-      </a>
-      , and &nbsp;&nbsp;
-      <a
-        href="https://www.instagram.com/oldguylearnscoding/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        {Instagram} Instagram
       </a>
     </p>
   );

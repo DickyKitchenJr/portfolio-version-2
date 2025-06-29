@@ -65,7 +65,6 @@ export const ProjectEntries: Projects[] = [
       "continue to modify and add to the site based off user feedback",
     ],
     Source: "https://github.com/DickyKitchenJr/Indie-Book-Vault-Full-Project",
-    Live: "https://indiebookvault.com/",
   },
   {
     backgroundImage: MayhemBig,
